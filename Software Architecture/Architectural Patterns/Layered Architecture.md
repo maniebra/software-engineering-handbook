@@ -15,6 +15,16 @@ Simplest form of software architecture, dividing software into horizontal layers
 Presentation → Business Logic → Data Access
 ```
 
+### Example:
+
+An online store can use a layered structure:
+
+- **Presentation Layer**: Product pages, cart screen, and checkout form.
+- **Business Logic Layer**: Pricing rules, discount validation, stock checks, and order processing.
+- **Data Access Layer**: Queries for products, customers, inventory, and orders.
+
+When a customer places an order, the UI sends the request to the business layer, which validates the order and then uses the data layer to save it.
+
 ### Pros:
 
 - Easy to understand, widespread usage.

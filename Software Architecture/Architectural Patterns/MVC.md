@@ -15,6 +15,16 @@ MVC separates application logic into three components: **Model**, **View**, and 
 User → Controller → Model → View → User
 ```
 
+### Example:
+
+A blog application can follow MVC:
+
+- **Model**: `Post`, `Comment`, and `User` objects plus rules such as publishing status.
+- **View**: HTML pages that show the post list, post detail, and comment form.
+- **Controller**: Handles requests such as creating a post, loading comments, or updating a draft.
+
+When a user submits a new comment, the controller receives the request, updates the model, and returns a refreshed view.
+
 ### Pros:
 
 - Clear separation of concerns.
@@ -58,6 +68,17 @@ Similar to Clean Architecture; it's layered, focused on decoupling external depe
 ```
 Presentation/UI → Application Services → Domain ← Infrastructure
 ```
+
+### Example:
+
+A banking application can use Onion Architecture:
+
+- **Domain Layer**: Account, transaction, and balance rules.
+- **Application Services Layer**: Use cases such as transfer money, open account, or freeze card.
+- **Infrastructure Layer**: Database repositories, payment gateway clients, and email services.
+- **Presentation/UI Layer**: REST controllers, admin dashboard, or mobile app endpoints.
+
+The money-transfer rule stays in the domain even if the database, API framework, or payment provider changes.
 
 ### Pros:
 

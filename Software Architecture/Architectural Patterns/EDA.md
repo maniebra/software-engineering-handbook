@@ -14,6 +14,16 @@ System components communicate asynchronously via events/messages.
 Producer → Event Broker → Consumers
 ```
 
+### Example:
+
+A food delivery system can use Event-Driven Architecture:
+
+- **Event Producer**: Order service publishes `OrderPlaced`.
+- **Event Broker**: Kafka, RabbitMQ, or a cloud event bus routes the event.
+- **Event Consumers**: Payment service charges the customer, restaurant service notifies the restaurant, and delivery service looks for a driver.
+
+The producer does not need to call every service directly; it publishes an event and interested consumers react independently.
+
 ### Pros:
 
 - Loose coupling and flexibility.

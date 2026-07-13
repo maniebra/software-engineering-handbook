@@ -14,6 +14,16 @@ MVVM introduces a ViewModel to mediate between View and Model.
 User ↔ View ↔ ViewModel ↔ Model
 ```
 
+### Example:
+
+A mobile weather app can use MVVM:
+
+- **Model**: Weather forecast data and location information.
+- **View**: Screens that display current temperature, hourly forecast, and alerts.
+- **ViewModel**: Formats temperatures, exposes loading/error states, and prepares data for the View.
+
+When the forecast refreshes, the ViewModel updates its observable state and the View automatically re-renders.
+
 ### Pros:
 
 - Simplifies UI testing.

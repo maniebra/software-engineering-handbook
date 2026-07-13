@@ -14,6 +14,17 @@ Builds applications as independent, loosely coupled services.
 API Gateway → [Microservice 1, Microservice 2, ... Microservice N]
 ```
 
+### Example:
+
+An e-commerce platform can be split into microservices:
+
+- **Product Service**: Manages product catalog and search.
+- **Order Service**: Handles carts, checkout, and order history.
+- **Payment Service**: Processes payments and refunds.
+- **Notification Service**: Sends emails, SMS messages, or push notifications.
+
+Each service owns its own logic and can be deployed or scaled independently.
+
 ### Pros:
 
 - Independent scaling.
