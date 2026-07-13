@@ -64,6 +64,8 @@ Examples:
 
 ## Common Types of Testing
 
+Testing types describe what part or purpose of the system is being tested. For testing approaches such as black-box, white-box, static, dynamic, manual, and automated testing, see [Methods of Testing](Methods%20of%20Testing.md).
+
 ### Unit Testing
 
 Tests a small piece of code, usually one function, method, or class.

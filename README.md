@@ -32,6 +32,7 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 	- [Organizational Paradigms](Software%20Engineering/Organizational%20Paradigms.md)
 - [Quality Assurance](Quality%20Assurance)
 	- [Quality Assurance](Quality%20Assurance/Quality%20Assurance.md)
+	- [Methods of Testing](Quality%20Assurance/Methods%20of%20Testing.md)
 - [Software Architecture](Software%20Architecture)
 	- [Architectural Patterns](Software%20Architecture/Architectural%20Patterns)
 		- [Clean Architecture](Software%20Architecture/Architectural%20Patterns/Clean%20Architecture.md)
