@@ -29,7 +29,6 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 	- [Decorator Pattern](Design%20Patterns/Decorator%20Pattern.md)
 	- [Factory Pattern](Design%20Patterns/Factory%20Pattern.md)
 	- [Observer Pattern](Design%20Patterns/Observer%20Pattern.md)
-	- [Dependency Injection Pattern](Design%20Patterns/Dependency%20Injection%20Pattern.md)
 - [Software Engineering](Software%20Engineering)
 	- [Organizational Paradigms](Software%20Engineering/Organizational%20Paradigms.md)
 - [Quality Assurance](Quality%20Assurance)
@@ -62,6 +61,7 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 	- [Practice Principles](Principles/Practice%20Principles.md)
 - [Snippets and Cheatsheets](Snippets%20and%20Cheatsheets)
 	- [Process Models Use Cases](Snippets%20and%20Cheatsheets/Process%20Models%20Use%20cases.md)
+	- [Dependency Injection Pattern](Snippets%20and%20Cheatsheets/Dependency%20Injection%20Pattern.md)
 
 
 # 📚 Sources & References
