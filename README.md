@@ -15,6 +15,7 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 	- [Sprints](The%20Agile%20Philosophy/Sprints.md)
 - [System Design](/System%20Design/)
 	- [Load Balancers](/System%20Design/Load%20Balancers.md)
+	- [Message Queues](/System%20Design/Message%20Queues.md)
 	- [Introduction](/System%20Design/Introduction/)
 		- [Systems Development Life Cycle (SDLC)](Systems%20Development%20Life%20Cycle%20(SDLC).md)
 - [Process Models](/Process%20Models/)
