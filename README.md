@@ -27,6 +27,7 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 	- [Decorator Pattern](Design%20Patterns/Decorator%20Pattern.md)
 	- [Factory Pattern](Design%20Patterns/Factory%20Pattern.md)
 	- [Observer Pattern](Design%20Patterns/Observer%20Pattern.md)
+	- [Dependency Injection Pattern](Design%20Patterns/Dependency%20Injection%20Pattern.md)
 - [Software Engineering](Software%20Engineering)
 	- [Organizational Paradigms](Software%20Engineering/Organizational%20Paradigms.md)
 - [Software Architecture](Software%20Architecture)
