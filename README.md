@@ -30,6 +30,8 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 	- [Dependency Injection Pattern](Design%20Patterns/Dependency%20Injection%20Pattern.md)
 - [Software Engineering](Software%20Engineering)
 	- [Organizational Paradigms](Software%20Engineering/Organizational%20Paradigms.md)
+- [Quality Assurance](Quality%20Assurance)
+	- [Quality Assurance](Quality%20Assurance/Quality%20Assurance.md)
 - [Software Architecture](Software%20Architecture)
 	- [Architectural Patterns](Software%20Architecture/Architectural%20Patterns)
 		- [Clean Architecture](Software%20Architecture/Architectural%20Patterns/Clean%20Architecture.md)
