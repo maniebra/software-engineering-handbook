@@ -1,11 +1,16 @@
-.makemd/
+# Obsidian / editor state
 .obsidian/
-.space/
+.makemd/
+.trash/
+**/.space/
 Tags/
 Vault.md
-.trash/
 
-**/.space/
+# MkDocs build output and plugin caches
 build/
 site/
+.cache/
+
+# Python
 .venv/
+__pycache__/
