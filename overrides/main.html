@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% if page and page.canonical_url %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": {{ (page.meta and page.meta.title or page.title or config.site_name) | tojson }},
+      "description": {{ (page.meta and page.meta.description or config.site_description) | tojson }},
+      "url": {{ page.canonical_url | tojson }},
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "license": "https://opensource.org/licenses/MIT",
+      "author": {
+        "@type": "Person",
+        "name": {{ config.site_author | tojson }},
+        "url": "https://github.com/maniebra"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ config.site_name | tojson }},
+        "url": {{ config.site_url | tojson }}
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": {{ config.site_name | tojson }},
+        "url": {{ config.site_url | tojson }}
+      }
+    }
+  </script>
+  {% endif %}
+{% endblock %}
