@@ -59,4 +59,4 @@ improve a page, and open a pull request.
 1. [System Analysis and Design — Alan Dennis, Barbara Haley Wixom, Roberta M. Roth](https://www.uoitc.edu.iq/images/documents/informatics-institute/Competitive_exam/Systemanalysisanddesign.pdf)
 2. Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software
 
-Licensed under the MIT License. Copyright © 2025 Mani Ebrahimi.
+Licensed under the MIT License. Copyright © 2026 Mani Ebrahimi.

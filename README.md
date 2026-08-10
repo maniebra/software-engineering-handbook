@@ -87,7 +87,7 @@ Since I created this repository in hopes of becoming one of the most outstanding
 
 This project is licensed under the **MIT License**.
 
-Copyright © 2025 Mani Ebrahimi
+Copyright © 2026 Mani Ebrahimi
 
 You are free to use, copy, modify, merge, publish, distribute, sub-license, and/or sell copies of this software, subject to the following conditions:
 

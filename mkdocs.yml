@@ -8,7 +8,7 @@ site_description: >-
 repo_url: https://github.com/maniebra/software-engineering-docs
 repo_name: maniebra/software-engineering-docs
 edit_uri: edit/main/
-copyright: Copyright &copy; 2025 Mani Ebrahimi — MIT License
+copyright: Copyright &copy; 2026 Mani Ebrahimi — MIT License
 
 # Written by scripts/prepare-docs.sh from the notes at the repository root.
 docs_dir: build/docs
