@@ -6,3 +6,6 @@ Vault.md
 .trash/
 
 **/.space/
+build/
+site/
+.venv/
