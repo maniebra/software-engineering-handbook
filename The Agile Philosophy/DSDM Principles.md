@@ -1,8 +1,0 @@
-- Active user involvement is imperative.
-- DSDM teams must be empowered to make decisions.
-- The focus is on frequent delivery of products.
-- Fitness for business purpose is the essential criterion for acceptance of deliverables.
-- Iterative and incremental development is necessary to converge on an accurate business solution.
-- All changes during development are reversible.
-- Requirements are baselined at a high level
-- Testing is integrated throughout the life-cycle.

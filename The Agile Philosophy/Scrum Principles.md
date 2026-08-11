@@ -1,5 +1,0 @@
-- Development work is partitioned into “packets”
-- Testing and documentation are on-going as the product is constructed
-- Work occurs in “sprints” and is derived from a “backlog” of existing requirements
-- Meetings are very short and sometimes conducted without chairs
-- demos are delivered to the customer with the time-box allocated

@@ -6,8 +6,9 @@ description: A free, open-source handbook of software engineering concepts, desi
 
 A free, open-source handbook of the concepts every software engineer is expected
 to know: **design patterns**, **software architecture**, **SOLID principles**,
-**process models**, **Agile**, **system design** and **quality assurance**,
-each explained in short, example-driven pages.
+**process models**, **methodologies**, **system design** and
+**quality assurance**, each explained in short, example-driven pages with
+quizzes to check understanding.
 
 Written while studying software engineering, kept for peers and beginners.
 
@@ -29,9 +30,9 @@ Written while studying software engineering, kept for peers and beginners.
 
     Waterfall, V-Model, Incremental, Iterative and the Unified Process.
 
--   :material-run-fast: **[The Agile Philosophy](The Agile Philosophy/The Definition of Agility.md)**
+-   :material-run-fast: **[Methodologies](Methodologies/index.md)**
 
-    Agility, Scrum, XP, DSDM, sprints and team roles.
+    Agile, Scrum, XP, Kanban, Lean and DSDM, plus how to choose between them.
 
 -   :material-server-network: **[System Design](System Design/Load Balancers.md)**
 
@@ -45,6 +46,10 @@ Written while studying software engineering, kept for peers and beginners.
 
     Quick references, including the Dependency Injection pattern.
 
+-   :material-clipboard-check-outline: **[Assessments](Assessments/index.md)**
+
+    Longer mixed quizzes for checking what actually stuck.
+
 </div>
 
 ## Contributing
@@ -56,7 +61,29 @@ improve a page, and open a pull request.
 
 ## Sources & references
 
+### General
+
 1. [System Analysis and Design, Alan Dennis, Barbara Haley Wixom, Roberta M. Roth](https://www.uoitc.edu.iq/images/documents/informatics-institute/Competitive_exam/Systemanalysisanddesign.pdf)
 2. Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software
+3. Software Engineering: A Practitioner's Approach, Roger S. Pressman
+
+### Methodologies
+
+4. [Manifesto for Agile Software Development](https://agilemanifesto.org/), Beck et al., 2001
+5. [Principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html)
+6. [The Scrum Guide](https://scrumguides.org/scrum-guide.html), Ken Schwaber and Jeff Sutherland
+7. Extreme Programming Explained: Embrace Change, Kent Beck
+8. Test-Driven Development: By Example, Kent Beck
+9. User Stories Applied, Mike Cohn
+10. Agile Estimating and Planning, Mike Cohn
+11. Lean Software Development: An Agile Toolkit, Mary and Tom Poppendieck
+12. Kanban: Successful Evolutionary Change for Your Technology Business, David J. Anderson
+13. Actionable Agile Metrics for Predictability, Daniel S. Vacanti
+14. [The DSDM Agile Project Framework](https://www.agilebusiness.org/dsdm-project-framework.html), Agile Business Consortium
+15. [Large-Scale Scrum (LeSS)](https://less.works/), Craig Larman and Bas Vodde
+16. [Scaled Agile Framework (SAFe)](https://framework.scaledagile.com/)
+17. [Shape Up](https://basecamp.com/shapeup), Ryan Singer, Basecamp
+18. Agile Software Development: The Cooperative Game, Alistair Cockburn
+19. [Accelerate](https://itrevolution.com/product/accelerate/), Nicole Forsgren, Jez Humble and Gene Kim
 
 Licensed under the MIT License. Copyright © 2026 Mani Ebrahimi.

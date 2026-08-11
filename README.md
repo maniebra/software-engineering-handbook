@@ -7,14 +7,36 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 
 # 📃 Table of Contents
 
-- [The Agile Philosophy](The%20Agile%20Philosophy)
-	- [The Definition of Agility](The%20Agile%20Philosophy/The%20Definition%20of%20Agility.md)
-	- [Extreme Programming](The%20Agile%20Philosophy/Extreme%20Programming%20(XP).md)
-	- [Agile Principles](The%20Agile%20Philosophy/Agile%20Principles.md)
-	- [Scrum Principles](The%20Agile%20Philosophy/Scrum%20Principles.md)
-	- [DSDM Principles](The%20Agile%20Philosophy/DSDM%20Principles.md)
-	- [Roles in Scrum](The%20Agile%20Philosophy/Roles%20in%20Scrum.md)
-	- [Sprints](The%20Agile%20Philosophy/Sprints.md)
+- [Assessments](Assessments/Assessments.md)
+	- [Agile Foundations Quiz](Assessments/Methodologies/Agile%20Foundations%20Quiz.md)
+	- [Scrum Quiz](Assessments/Methodologies/Scrum%20Quiz.md)
+	- [Flow: Kanban and Lean Quiz](Assessments/Methodologies/Kanban%20and%20Lean%20Quiz.md)
+	- [Practices and Governance Quiz](Assessments/Methodologies/XP%20DSDM%20and%20Scaling%20Quiz.md)
+- [Methodologies](Methodologies/Methodologies.md)
+	- [Choosing a Methodology](Methodologies/Choosing%20a%20Methodology.md)
+	- [Agile](Methodologies/Agile/Agile.md)
+		- [The Definition of Agility](Methodologies/Agile/The%20Definition%20of%20Agility.md)
+		- [Agile Principles](Methodologies/Agile/Agile%20Principles.md)
+		- [User Stories](Methodologies/Agile/User%20Stories.md)
+		- [Estimation and Velocity](Methodologies/Agile/Estimation%20and%20Velocity.md)
+		- [Agile Anti-patterns](Methodologies/Agile/Agile%20Anti-patterns.md)
+	- [Scrum](Methodologies/Scrum/Scrum.md)
+		- [Scrum Principles](Methodologies/Scrum/Scrum%20Principles.md)
+		- [Roles in Scrum](Methodologies/Scrum/Roles%20in%20Scrum.md)
+		- [Sprints](Methodologies/Scrum/Sprints.md)
+		- [Scrum Events](Methodologies/Scrum/Scrum%20Events.md)
+		- [Scrum Artifacts](Methodologies/Scrum/Scrum%20Artifacts.md)
+		- [Definition of Done](Methodologies/Scrum/Definition%20of%20Done.md)
+	- [Extreme Programming](Methodologies/Extreme%20Programming/Extreme%20Programming.md)
+		- [XP Practices in Detail](Methodologies/Extreme%20Programming/XP%20Practices.md)
+	- [Kanban](Methodologies/Kanban/Kanban.md)
+		- [WIP Limits and Flow Metrics](Methodologies/Kanban/WIP%20Limits%20and%20Flow%20Metrics.md)
+	- [Lean Software Development](Methodologies/Lean/Lean.md)
+	- [DSDM](Methodologies/DSDM/DSDM.md)
+		- [MoSCoW Prioritization](Methodologies/DSDM/MoSCoW.md)
+		- [DSDM Phases and Roles](Methodologies/DSDM/DSDM%20Phases%20and%20Roles.md)
+	- [Scaling Agile](Methodologies/Scaling%20Agile.md)
+	- [Other Methodologies](Methodologies/Other%20Methodologies.md)
 - [System Design](/System%20Design/)
 	- [Load Balancers](/System%20Design/Load%20Balancers.md)
 	- [Message Queues](/System%20Design/Message%20Queues.md)
@@ -90,8 +112,30 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 
 # 📚 Sources & References
 
-1. [System Analysis and Design - Alan Dennis, Barbara Haley Wixom, Roberta M. Roth](https://www.uoitc.edu.iq/images/documents/informatics-institute/Competitive_exam/Systemanalysisanddesign.pdf)
+## General
+
+1. [System Analysis and Design, Alan Dennis, Barbara Haley Wixom, Roberta M. Roth](https://www.uoitc.edu.iq/images/documents/informatics-institute/Competitive_exam/Systemanalysisanddesign.pdf)
 2. Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software
+3. Software Engineering: A Practitioner's Approach, Roger S. Pressman
+
+## Methodologies
+
+4. [Manifesto for Agile Software Development](https://agilemanifesto.org/), Beck et al., 2001
+5. [Principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html)
+6. [The Scrum Guide](https://scrumguides.org/scrum-guide.html), Ken Schwaber and Jeff Sutherland
+7. Extreme Programming Explained: Embrace Change, Kent Beck
+8. Test-Driven Development: By Example, Kent Beck
+9. User Stories Applied, Mike Cohn
+10. Agile Estimating and Planning, Mike Cohn
+11. Lean Software Development: An Agile Toolkit, Mary and Tom Poppendieck
+12. Kanban: Successful Evolutionary Change for Your Technology Business, David J. Anderson
+13. Actionable Agile Metrics for Predictability, Daniel S. Vacanti
+14. [The DSDM Agile Project Framework](https://www.agilebusiness.org/dsdm-project-framework.html), Agile Business Consortium
+15. [Large-Scale Scrum (LeSS)](https://less.works/), Craig Larman and Bas Vodde
+16. [Scaled Agile Framework (SAFe)](https://framework.scaledagile.com/)
+17. [Shape Up](https://basecamp.com/shapeup), Ryan Singer, Basecamp
+18. Agile Software Development: The Cooperative Game, Alistair Cockburn
+19. [Accelerate](https://itrevolution.com/product/accelerate/), Nicole Forsgren, Jez Humble and Gene Kim
 
 
 # 🤝 Contributing

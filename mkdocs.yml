@@ -175,14 +175,45 @@ nav:
       - Unified Process Model (UP): Process Models/Unified Process Model (UP).md
       - Other Process Models: Process Models/Other Process Models.md
       - Use Cases Cheatsheet: Snippets and Cheatsheets/Process Models Use cases.md
-  - Agile:
-      - The Definition of Agility: The Agile Philosophy/The Definition of Agility.md
-      - Agile Principles: The Agile Philosophy/Agile Principles.md
-      - Scrum Principles: The Agile Philosophy/Scrum Principles.md
-      - Roles in Scrum: The Agile Philosophy/Roles in Scrum.md
-      - Sprints: The Agile Philosophy/Sprints.md
-      - Extreme Programming (XP): The Agile Philosophy/Extreme Programming (XP).md
-      - DSDM Principles: The Agile Philosophy/DSDM Principles.md
+  - Methodologies:
+      - Methodologies/index.md
+      - Choosing a Methodology: Methodologies/Choosing a Methodology.md
+      - Agile:
+          - Methodologies/Agile/index.md
+          - The Definition of Agility: Methodologies/Agile/The Definition of Agility.md
+          - Agile Principles: Methodologies/Agile/Agile Principles.md
+          - User Stories: Methodologies/Agile/User Stories.md
+          - Estimation and Velocity: Methodologies/Agile/Estimation and Velocity.md
+          - Agile Anti-patterns: Methodologies/Agile/Agile Anti-patterns.md
+      - Scrum:
+          - Methodologies/Scrum/index.md
+          - Scrum Principles: Methodologies/Scrum/Scrum Principles.md
+          - Roles in Scrum: Methodologies/Scrum/Roles in Scrum.md
+          - Sprints: Methodologies/Scrum/Sprints.md
+          - Scrum Events: Methodologies/Scrum/Scrum Events.md
+          - Scrum Artifacts: Methodologies/Scrum/Scrum Artifacts.md
+          - Definition of Done: Methodologies/Scrum/Definition of Done.md
+      - Extreme Programming:
+          - Methodologies/Extreme Programming/index.md
+          - XP Practices in Detail: Methodologies/Extreme Programming/XP Practices.md
+      - Kanban:
+          - Methodologies/Kanban/index.md
+          - WIP Limits and Flow Metrics: Methodologies/Kanban/WIP Limits and Flow Metrics.md
+      - Lean:
+          - Methodologies/Lean/index.md
+      - DSDM:
+          - Methodologies/DSDM/index.md
+          - MoSCoW Prioritization: Methodologies/DSDM/MoSCoW.md
+          - DSDM Phases and Roles: Methodologies/DSDM/DSDM Phases and Roles.md
+      - Scaling Agile: Methodologies/Scaling Agile.md
+      - Other Methodologies: Methodologies/Other Methodologies.md
+  - Assessments:
+      - Assessments/index.md
+      - Methodologies:
+          - Agile Foundations: Assessments/Methodologies/Agile Foundations Quiz.md
+          - Scrum: Assessments/Methodologies/Scrum Quiz.md
+          - Flow, Kanban and Lean: Assessments/Methodologies/Kanban and Lean Quiz.md
+          - Practices and Governance: Assessments/Methodologies/XP DSDM and Scaling Quiz.md
   - System Design:
       - Systems Development Life Cycle (SDLC): System Design/Introduction/Systems Development Life Cycle (SDLC).md
       - Load Balancers: System Design/Load Balancers.md
