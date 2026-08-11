@@ -31,11 +31,13 @@ point. The number is a by-product of the conversation.
 Velocity is the number of story points a team completes per Sprint, averaged over the
 last few Sprints. Its only legitimate use is forecasting:
 
-```text
-remaining backlog = 240 points
-average velocity  =  30 points / Sprint
-forecast          =  8 Sprints, plus or minus, and re-checked every Sprint
-```
+$$
+\text{Sprints remaining} = \frac{\text{remaining backlog}}{\text{average velocity}}
+= \frac{240 \text{ points}}{30 \text{ points/Sprint}}
+= 8 \text{ Sprints}
+$$
+
+The 8 is a forecast, plus or minus, and re-checked every Sprint.
 
 | Legitimate use | Abuse |
 |---|---|

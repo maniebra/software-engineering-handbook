@@ -31,20 +31,23 @@ Suppose an online store receives an order.
 
 Without a message queue:
 
-```text
-Order Service -> Payment Service
-              -> Inventory Service
-              -> Email Service
+```mermaid
+flowchart LR
+    O[Order Service] -->|blocking call| P[Payment Service]
+    O -->|blocking call| I[Inventory Service]
+    O -->|blocking call| E[Email Service]
 ```
 
 The order request may become slow because it waits for every service to finish.
 
 With a message queue:
 
-```text
-Order Service -> Queue -> Payment Worker
-                       -> Inventory Worker
-                       -> Email Worker
+```mermaid
+flowchart LR
+    O[Order Service] -->|publish| Q[(Queue)]
+    Q --> P[Payment Worker]
+    Q --> I[Inventory Worker]
+    Q --> E[Email Worker]
 ```
 
 The order service can save the order and publish messages. Other workers process payment, inventory, and email in the background.
@@ -57,10 +60,11 @@ In a queue, each message is usually processed by one consumer.
 
 Example:
 
-```text
-Queue -> Worker 1
-      -> Worker 2
-      -> Worker 3
+```mermaid
+flowchart LR
+    Q[(Queue)] -->|message 1| W1[Worker 1]
+    Q -->|message 2| W2[Worker 2]
+    Q -->|message 3| W3[Worker 3]
 ```
 
 If there are many workers, they share the work. This is useful for background jobs.
@@ -71,10 +75,12 @@ In pub/sub, one message can be delivered to many subscribers.
 
 Example:
 
-```text
-OrderPlaced Event -> Payment Service
-                  -> Inventory Service
-                  -> Notification Service
+```mermaid
+flowchart LR
+    E([OrderPlaced event]) --> T[[Topic]]
+    T -->|copy| P[Payment Service]
+    T -->|copy| I[Inventory Service]
+    T -->|copy| N[Notification Service]
 ```
 
 This is useful when several services need to react to the same event.
@@ -119,11 +125,15 @@ An acknowledgement tells the queue that a message was processed successfully.
 
 Basic flow:
 
-```text
-Consumer reads message
-Consumer processes message
-Consumer sends acknowledgement
-Queue removes message
+```mermaid
+sequenceDiagram
+    participant Q as Queue
+    participant C as Consumer
+    Q->>C: deliver message
+    C->>C: process message
+    C->>Q: acknowledge
+    Q->>Q: remove message
+    Note over Q,C: No acknowledgement, the message is delivered again
 ```
 
 If the consumer crashes before acknowledging the message, the queue can deliver the message again.
@@ -146,8 +156,13 @@ A dead-letter queue stores messages that cannot be processed successfully after 
 
 Example:
 
-```text
-Main Queue -> Retry -> Retry -> Retry -> Dead-letter Queue
+```mermaid
+flowchart LR
+    M[(Main Queue)] --> C[Consumer]
+    C -->|failure, attempt 1| M
+    C -->|failure, attempt 2| M
+    C -->|failure, attempt 3| D[(Dead-letter Queue)]
+    C -->|success| OK([Done])
 ```
 
 Dead-letter queues help teams inspect failed messages without blocking the main queue.
@@ -158,8 +173,9 @@ Some systems need messages to be processed in order.
 
 Example:
 
-```text
-OrderCreated -> OrderPaid -> OrderShipped
+```mermaid
+flowchart LR
+    A([OrderCreated]) --> B([OrderPaid]) --> C([OrderShipped])
 ```
 
 Maintaining strict order can reduce scalability because messages may need to be handled by the same partition or consumer.

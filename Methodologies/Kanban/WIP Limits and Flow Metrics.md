@@ -8,13 +8,13 @@ estimating**. Both follow from a small amount of queueing theory.
 
 For a stable system:
 
-```text
-cycle time = work in progress / throughput
-```
+$$
+\text{cycle time} = \frac{\text{work in progress}}{\text{throughput}}
+$$
 
 With 20 items in progress and a throughput of 5 items per week, average cycle time is
-4 weeks. Halve the work in progress to 10, and cycle time drops to 2 weeks, with
-throughput unchanged.
+$20 / 5 = 4$ weeks. Halve the work in progress to 10, and cycle time drops to
+$10 / 5 = 2$ weeks, with throughput unchanged.
 
 This is why WIP limits speed delivery up without anybody working harder. Nothing was
 made faster, there is simply less waiting in queues.

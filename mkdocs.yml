@@ -75,6 +75,12 @@ plugins:
 extra_css:
   - assets/extra.css
 
+# MathJax renders the $...$ and $$...$$ blocks produced by the arithmatex
+# extension; the config file must load before the library itself.
+extra_javascript:
+  - assets/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -82,6 +88,8 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
@@ -144,6 +152,27 @@ nav:
       - Dependency Injection: Snippets and Cheatsheets/Dependency Injection Pattern.md
   - Architecture:
       - Rules of Software Architecture: Software Architecture/Rules of Software Architecture.md
+      - Architectural Characteristics:
+          - Software Architecture/Architectural Characteristics/index.md
+          - Operational:
+              - Availability: Software Architecture/Architectural Characteristics/Availability.md
+              - Performance: Software Architecture/Architectural Characteristics/Performance.md
+              - Scalability: Software Architecture/Architectural Characteristics/Scalability.md
+              - Elasticity: Software Architecture/Architectural Characteristics/Elasticity.md
+              - Reliability: Software Architecture/Architectural Characteristics/Reliability.md
+              - Recoverability: Software Architecture/Architectural Characteristics/Recoverability.md
+          - Structural:
+              - Maintainability: Software Architecture/Architectural Characteristics/Maintainability.md
+              - Modularity: Software Architecture/Architectural Characteristics/Modularity.md
+              - Testability: Software Architecture/Architectural Characteristics/Testability.md
+              - Deployability: Software Architecture/Architectural Characteristics/Deployability.md
+              - Configurability: Software Architecture/Architectural Characteristics/Configurability.md
+          - Cross-cutting:
+              - Security: Software Architecture/Architectural Characteristics/Security.md
+              - Observability: Software Architecture/Architectural Characteristics/Observability.md
+              - Usability: Software Architecture/Architectural Characteristics/Usability.md
+              - Portability: Software Architecture/Architectural Characteristics/Portability.md
+              - Interoperability: Software Architecture/Architectural Characteristics/Interoperability.md
       - Architectural Patterns:
           - Clean Architecture: Software Architecture/Architectural Patterns/Clean Architecture.md
           - Hexagonal Architecture: Software Architecture/Architectural Patterns/Hexagonal.md
@@ -215,6 +244,12 @@ nav:
           - Scrum: Assessments/Methodologies/Scrum Quiz.md
           - Flow, Kanban and Lean: Assessments/Methodologies/Kanban and Lean Quiz.md
           - Practices and Governance: Assessments/Methodologies/XP DSDM and Scaling Quiz.md
+      - Software Architecture:
+          - Architecture Fundamentals: Assessments/Software Architecture/Architecture Fundamentals Quiz.md
+          - Architectural Characteristics: Assessments/Software Architecture/Architectural Characteristics Quiz.md
+          - Operational Characteristics: Assessments/Software Architecture/Operational Characteristics Quiz.md
+          - Structural and Cross-cutting: Assessments/Software Architecture/Structural and Cross-cutting Characteristics Quiz.md
+          - Architectural Patterns: Assessments/Software Architecture/Architectural Patterns Quiz.md
   - System Design:
       - Systems Development Life Cycle (SDLC): System Design/Introduction/Systems Development Life Cycle (SDLC).md
       - Load Balancers: System Design/Load Balancers.md

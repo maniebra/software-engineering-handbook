@@ -25,10 +25,27 @@ which is why adopting it is non-disruptive.
 
 ## A board
 
-```text
-Backlog | Ready (3) | Dev (2) | Review (2) | Test (2) | Done
---------|-----------|---------|------------|----------|------
-  ...   |  A  B  C  |  D  E   |  F         |  G  H    |  ...
+```mermaid
+flowchart LR
+    subgraph BL[Backlog]
+        b[...]
+    end
+    subgraph RD["Ready, limit 3"]
+        A(A) ~~~ B(B) ~~~ C(C)
+    end
+    subgraph DV["Dev, limit 2"]
+        D(D) ~~~ E(E)
+    end
+    subgraph RV["Review, limit 2"]
+        F(F)
+    end
+    subgraph TS["Test, limit 2"]
+        G(G) ~~~ H(H)
+    end
+    subgraph DN[Done]
+        d[...]
+    end
+    BL --> RD --> DV --> RV --> TS --> DN
 ```
 
 The numbers are WIP limits. When Dev is full, a developer finishing an item cannot
