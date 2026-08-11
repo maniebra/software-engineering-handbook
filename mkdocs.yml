@@ -144,6 +144,27 @@ nav:
       - Dependency Injection: Snippets and Cheatsheets/Dependency Injection Pattern.md
   - Architecture:
       - Rules of Software Architecture: Software Architecture/Rules of Software Architecture.md
+      - Architectural Characteristics:
+          - Software Architecture/Architectural Characteristics/index.md
+          - Operational:
+              - Availability: Software Architecture/Architectural Characteristics/Availability.md
+              - Performance: Software Architecture/Architectural Characteristics/Performance.md
+              - Scalability: Software Architecture/Architectural Characteristics/Scalability.md
+              - Elasticity: Software Architecture/Architectural Characteristics/Elasticity.md
+              - Reliability: Software Architecture/Architectural Characteristics/Reliability.md
+              - Recoverability: Software Architecture/Architectural Characteristics/Recoverability.md
+          - Structural:
+              - Maintainability: Software Architecture/Architectural Characteristics/Maintainability.md
+              - Modularity: Software Architecture/Architectural Characteristics/Modularity.md
+              - Testability: Software Architecture/Architectural Characteristics/Testability.md
+              - Deployability: Software Architecture/Architectural Characteristics/Deployability.md
+              - Configurability: Software Architecture/Architectural Characteristics/Configurability.md
+          - Cross-cutting:
+              - Security: Software Architecture/Architectural Characteristics/Security.md
+              - Observability: Software Architecture/Architectural Characteristics/Observability.md
+              - Usability: Software Architecture/Architectural Characteristics/Usability.md
+              - Portability: Software Architecture/Architectural Characteristics/Portability.md
+              - Interoperability: Software Architecture/Architectural Characteristics/Interoperability.md
       - Architectural Patterns:
           - Clean Architecture: Software Architecture/Architectural Patterns/Clean Architecture.md
           - Hexagonal Architecture: Software Architecture/Architectural Patterns/Hexagonal.md
