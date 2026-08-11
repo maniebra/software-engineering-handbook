@@ -7,6 +7,11 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 
 # 📃 Table of Contents
 
+- [Assessments](Assessments/Assessments.md)
+	- [Agile Foundations Quiz](Assessments/Methodologies/Agile%20Foundations%20Quiz.md)
+	- [Scrum Quiz](Assessments/Methodologies/Scrum%20Quiz.md)
+	- [Flow: Kanban and Lean Quiz](Assessments/Methodologies/Kanban%20and%20Lean%20Quiz.md)
+	- [Practices and Governance Quiz](Assessments/Methodologies/XP%20DSDM%20and%20Scaling%20Quiz.md)
 - [Methodologies](Methodologies/Methodologies.md)
 	- [Choosing a Methodology](Methodologies/Choosing%20a%20Methodology.md)
 	- [Agile](Methodologies/Agile/Agile.md)
