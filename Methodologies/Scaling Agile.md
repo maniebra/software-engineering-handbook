@@ -49,6 +49,30 @@ Squads, tribes, chapters and guilds. Widely copied, and worth remembering that i
 a **description of one company at one point in time**, not a framework, and Spotify
 itself moved on. Copying an org chart does not transfer the culture that made it work.
 
+## Two shapes of scaling
+
+```mermaid
+graph TD
+    subgraph L[LeSS: scale by removing]
+        PO[One Product Owner] --> PB[One Product Backlog]
+        PB --> T1[Team 1]
+        PB --> T2[Team 2]
+        PB --> T3[Team 3]
+        T1 --- T2 --- T3
+    end
+    subgraph S[SAFe: scale by adding]
+        PM[Portfolio and program layers] --> ART[Agile Release Train, 50 to 125 people]
+        ART --> ST1[Team 1]
+        ART --> ST2[Team 2]
+        ART --> ST3[Team 3]
+        ART --> PI[PI Planning every 8 to 12 weeks]
+    end
+```
+
+In LeSS the teams talk to each other directly. In SAFe the coordination is a layer
+with its own roles and cadence, which is both the criticism and the reason large
+organizations adopt it.
+
 ## Comparison
 
 | | LeSS | SAFe | Scrum@Scale | Spotify model |

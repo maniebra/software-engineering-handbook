@@ -43,7 +43,7 @@ and decides to make the interruptions visible instead of pretending they do not 
 Risk-driven, iterative, with each loop covering objectives, risk analysis, development
 and planning. Not agile, but it is where "address the highest risk first, in
 iterations" enters the mainstream. See
-[Other Process Models](../Process%20Models/Other%20Process%20Models.md).
+[Other Process Models](Process%20Models/Other%20Process%20Models.md).
 
 ## Shape Up
 
@@ -52,6 +52,23 @@ middle level of abstraction before it is handed to a team, and the team gets ful
 autonomy over how to build it. Distinctively, the appetite is fixed and the scope is
 cut to fit, which the method calls *hammering scope*, and projects that will not fit
 are stopped rather than extended.
+
+## Roughly when each appeared
+
+```mermaid
+graph LR
+    RAD[RAD, 1991] --> DSDM[DSDM, 1994]
+    SPIRAL[Spiral, 1986] --> UP[Unified Process, 1999]
+    SCRUM[Scrum, 1995] --> AM[Agile Manifesto, 2001]
+    XP[XP, 1999] --> AM
+    DSDM --> AM
+    CRYSTAL[Crystal, 1990s] --> AM
+    FDD[FDD, 1997] --> AM
+    AM --> KB[Kanban for software, 2007]
+    AM --> SU[Shape Up, 2019]
+    SCRUM --> SB[Scrumban, 2008]
+    KB --> SB
+```
 
 ## What each one contributed
 

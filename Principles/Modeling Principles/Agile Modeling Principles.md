@@ -1,5 +1,5 @@
 1. The primary goal of the software team is to build software not create models.
-2. Travel light – don’t create more models than you need.
+2. Travel light: don’t create more models than you need.
 3. Strive to produce the simplest model that will describe the problem or the software.
 4. Build models in a way that makes them amenable to change.
 5. Be able to state an explicit purpose for each model that is created.

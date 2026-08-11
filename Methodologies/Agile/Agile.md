@@ -17,6 +17,24 @@ the *Manifesto for Agile Software Development*, that concrete methodologies such
 The last line is the one teams forget. Agile does not say "no documentation" or
 "no plans". It says that when the two sides conflict, the left side wins.
 
+## From values to practice
+
+```mermaid
+graph TD
+    V[4 values] --> P[12 principles]
+    P --> S[Scrum: cadence and roles]
+    P --> X[XP: engineering practices]
+    P --> D[DSDM: fixed date, flexible scope]
+    S --> T[Team's actual way of working]
+    X --> T
+    D --> T
+    T -->|feedback each increment| P
+```
+
+The manifesto is the top of the chain and prescribes nothing concrete. Everything
+below it is one interpretation, which is why two agile teams can look very different
+and both be agile.
+
 ## Pages in this section
 
 - [The Definition of Agility](The%20Definition%20of%20Agility.md), what "agile" actually means as a property of a team.

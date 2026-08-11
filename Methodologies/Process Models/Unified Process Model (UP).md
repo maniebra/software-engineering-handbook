@@ -2,15 +2,32 @@
 
 The **Unified Process (UP)** is a **software development process framework** that is **iterative**, **incremental**, and **use-case driven**. It helps teams organize large and complex software projects by breaking them down into smaller, manageable phases and cycles.
 
-UP is not a rigid process—it’s a **flexible framework** that teams can adapt based on the project's size, complexity, and needs. One of the most well-known implementations of UP is the **Rational Unified Process (RUP)**.
+UP is not a rigid process, it’s a **flexible framework** that teams can adapt based on the project's size, complexity, and needs. One of the most well-known implementations of UP is the **Rational Unified Process (RUP)**.
 
 # Core Characteristics
 
-- **Iterative** – The software is built and improved over several short cycles rather than one long development phase.
-- **Incremental** – The product is developed in chunks (increments), with each new version adding more features.
-- **Architecture-Centric** – A strong focus on designing a robust and flexible software architecture early in the project.
-- **Use-Case Driven** – Requirements are gathered and organized based on real user interactions with the system.
+- **Iterative**: The software is built and improved over several short cycles rather than one long development phase.
+- **Incremental**: The product is developed in chunks (increments), with each new version adding more features.
+- **Architecture-Centric**: A strong focus on designing a robust and flexible software architecture early in the project.
+- **Use-Case Driven**: Requirements are gathered and organized based on real user interactions with the system.
     
+
+# Phases and iterations
+
+```mermaid
+graph LR
+    IN[Inception: scope and business case] --> EL[Elaboration: architecture and risk]
+    EL --> CO[Construction: build the bulk]
+    CO --> TR[Transition: deploy to users]
+    IN --- I1[1 to 2 iterations]
+    EL --- I2[1 to 3 iterations]
+    CO --- I3[Most of the iterations]
+    TR --- I4[1 to 2 iterations]
+```
+
+Each phase contains one or more iterations, and every iteration produces executable
+software. Elaboration carries the highest risk deliberately, since the architecture is
+proven while there is still time to change it.
 
 # Phases of the Unified Process
 
@@ -88,7 +105,7 @@ The Unified Process brings **structure** and **discipline** to software developm
 
 # Agile Unified Process (AUP)
 
-See [Methodologies](../Methodologies/index.md) for the agile methods this variant draws on.
+See [Methodologies](../index.md) for the agile methods this variant draws on.
 
 Each AUP iteration addresses these activities:
 - Modeling

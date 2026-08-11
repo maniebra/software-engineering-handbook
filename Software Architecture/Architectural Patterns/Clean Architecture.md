@@ -53,7 +53,7 @@ The booking rules remain independent from the database or web framework, so they
 <quiz>
 Which way do source-code dependencies point in Clean Architecture?
 
-- [x] Always inward, toward the entities and use cases — never outward toward frameworks or the database
+- [x] Always inward, toward the entities and use cases, never outward toward frameworks or the database
 > Correct. The Dependency Rule is what keeps business rules independent of the UI, the database, and any framework.
 - [ ] Outward, from the domain toward the infrastructure that stores it
 - [ ] Both ways, as long as the layers are adjacent

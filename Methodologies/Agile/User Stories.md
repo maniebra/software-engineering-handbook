@@ -49,6 +49,23 @@ Then a cart is created with the same items, quantities and options
 And out-of-stock items are flagged before checkout
 ```
 
+## Where a story sits
+
+```mermaid
+graph TD
+    T[Theme or Product Goal] --> E[Epic]
+    E --> S1[Story: reorder in one click]
+    E --> S2[Story: reorder with substitutions]
+    S1 --> A[Acceptance criteria, Given/When/Then]
+    A --> TE[Automated tests]
+    S1 --> TA[Tasks, owned by the Developers]
+    TE --> I[Increment]
+    TA --> I
+```
+
+Note where the detail appears. The story stays a placeholder for a conversation, and
+the precision lives in the acceptance criteria and the tests they become.
+
 ## Splitting stories
 
 When a story is too big, split it by **behavior**, never by technical layer. "Build

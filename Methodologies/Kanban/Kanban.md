@@ -35,6 +35,24 @@ The numbers are WIP limits. When Dev is full, a developer finishing an item cann
 start a new one. They go help move F out of Review instead. That is the mechanism:
 limits convert individual busyness into collective flow.
 
+## Push versus pull
+
+```mermaid
+graph TD
+    subgraph Push[Push system, no limits]
+        R1[Requests] --> D1[Dev] --> V1[Review] --> T1[Test] --> O1[Done]
+        V1 -. queue grows .- Q1[(Waiting)]
+    end
+    subgraph Pull[Pull system, WIP limited]
+        R2[Requests] --> D2["Dev (2)"] --> V2["Review (2)"] --> T2["Test (2)"] --> O2[Done]
+        V2 -. full, so Dev cannot start more .- D2
+    end
+```
+
+In the push system every station works flat out and the queues in front of the slow
+step grow. In the pull system a full downstream column stops the upstream one, so the
+bottleneck becomes visible on the first day instead of at the deadline.
+
 ## Kanban compared to Scrum
 
 | | [Scrum](../Scrum/index.md) | Kanban |

@@ -31,7 +31,7 @@ and that is normal rather than a failure of discipline.
 | Product team, evolving requirements | [Scrum](Scrum/index.md) plus [XP](Extreme%20Programming/index.md) practices | Cadence and feedback, with the engineering discipline to sustain it |
 | Support, operations, incident response | [Kanban](Kanban/index.md) | Continuous arrival, no useful Sprint boundary |
 | Fixed date, negotiable scope | [DSDM](DSDM/index.md) | MoSCoW makes the trade-off explicit and enforceable |
-| Safety-critical or regulated | [V-Model](../Process%20Models/V-Model.md), with agile practices inside phases | Verification evidence is a deliverable, not overhead |
+| Safety-critical or regulated | [V-Model](Process%20Models/V-Model.md), with agile practices inside phases | Verification evidence is a deliverable, not overhead |
 | Startup searching for product-market fit | Kanban plus continuous delivery | Learning speed dominates predictability |
 | Large multi-team product | [LeSS or SAFe](Scaling%20Agile.md) | Cross-team dependencies need explicit handling |
 | Fixed-price contract with a specified scope | Plan-driven, with iterative delivery inside | The contract already fixed what agile would flex |

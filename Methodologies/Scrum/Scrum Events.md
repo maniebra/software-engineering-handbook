@@ -12,6 +12,23 @@ later.
 | Sprint Review | 4 hours | The Increment | The Product Backlog |
 | Sprint Retrospective | 3 hours | The team's process | How the team works next Sprint |
 
+## One Sprint, event by event
+
+```mermaid
+sequenceDiagram
+    participant PO as Product Owner
+    participant DEV as Developers
+    participant SH as Stakeholders
+    PO->>DEV: Proposes value, ordered backlog
+    DEV->>DEV: Sprint Planning: Goal, selection, plan
+    loop Every day of the Sprint
+        DEV->>DEV: Daily Scrum, re-plan next 24 hours
+    end
+    DEV->>SH: Sprint Review, shows a Done Increment
+    SH-->>PO: Feedback, backlog is adapted
+    DEV->>DEV: Retrospective, one or two improvements
+```
+
 ## Sprint Planning
 
 Planning answers three questions:

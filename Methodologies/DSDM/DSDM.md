@@ -17,6 +17,21 @@ drops lower-priority requirements instead.
 - Testing is integrated throughout the life-cycle.
 - Collaboration and cooperation between all stakeholders is essential.
 
+## What is fixed and what flexes
+
+```mermaid
+graph TD
+    subgraph PD[Plan-driven]
+        S1[Scope: fixed] --- TC1[Time and cost: estimated, and they slip]
+    end
+    subgraph DS[DSDM]
+        TC2[Time, cost and quality: fixed] --- S2[Scope: varies through MoSCoW]
+    end
+```
+
+The two triangles carry the same total. DSDM's contribution is deciding in advance
+which corner absorbs the surprise, and writing it down.
+
 ## MoSCoW prioritization
 
 Fixing the date only works if priorities are explicit. DSDM's contribution to the wider

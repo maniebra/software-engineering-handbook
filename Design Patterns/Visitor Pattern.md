@@ -513,7 +513,7 @@ Reach for classic Visitor when the language lacks exhaustive pattern matching, o
 Why would you use the Visitor Pattern?
 
 - [x] To add new operations over an object structure without modifying the classes in it
-> Correct. The operation moves into a visitor, and each element accepts it — the trade-off is that adding a new element type means touching every visitor.
+> Correct. The operation moves into a visitor, and each element accepts it, the trade-off is that adding a new element type means touching every visitor.
 - [ ] To traverse a collection without exposing its representation
 - [ ] To restore an object to an earlier state
 - [ ] To control access to an expensive object

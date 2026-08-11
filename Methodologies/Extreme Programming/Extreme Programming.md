@@ -2,11 +2,11 @@
 **Extreme Programming (XP)** is a **software development methodology** that focuses on **improving software quality** and **responsiveness to changing customer needs**. It promotes **frequent releases**, close collaboration with the customer, and continuous improvement through short development cycles and regular feedback.
 
 # Core Principles
-- **Communication** – Developers constantly talk with each other and with stakeholders to keep everyone on the same page.
-- **Simplicity** – The team only builds what’s needed right now, no over-engineering.
-- **Feedback** – Frequent releases and constant testing provide fast feedback.
-- **Courage** – Developers are encouraged to make bold changes, like refactoring or discarding failing code.
-- **Respect** – Team members trust and support one another.
+- **Communication**: Developers constantly talk with each other and with stakeholders to keep everyone on the same page.
+- **Simplicity**: The team only builds what’s needed right now, no over-engineering.
+- **Feedback**: Frequent releases and constant testing provide fast feedback.
+- **Courage**: Developers are encouraged to make bold changes, like refactoring or discarding failing code.
+- **Respect**: Team members trust and support one another.
 
 
 # Key Practices
@@ -62,7 +62,7 @@ quality over years are running XP practices underneath.
 
 | Concern | Scrum | XP |
 |---|---|---|
-| Timebox | Sprint (1–4 weeks) | Iteration (1–2 weeks) |
+| Timebox | Sprint (1 to 4 weeks) | Iteration (1 to 2 weeks) |
 | Customer | Product Owner | On-site customer |
 | Engineering practices | Not specified | TDD, pairing, CI, refactoring, collective ownership |
 | Change during the timebox | Sprint Goal is protected | An unstarted story may be swapped for one of equal size |

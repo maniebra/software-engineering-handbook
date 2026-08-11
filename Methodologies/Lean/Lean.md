@@ -35,6 +35,21 @@ actually produces value for a customer".
 Partially done work is the expensive one. It has consumed cost, produced no value, and
 can be invalidated at any moment by a change in priority.
 
+## A value stream, and where the time actually goes
+
+```mermaid
+graph LR
+    I[Idea] -->|wait 12d| A[Analysis 2d]
+    A -->|wait 5d| D[Development 4d]
+    D -->|wait 6d| R[Review 0.5d]
+    R -->|wait 9d| T[Test 1d]
+    T -->|wait 14d| P[Production]
+```
+
+Working time is 7.5 days and elapsed time is 53.5 days, which is a flow efficiency of
+about 14%. Hiring more developers shortens the 4-day box. Removing queues shortens
+everything else, which is where the delay actually lives.
+
 ## The last responsible moment
 
 Deferring commitment is not procrastination. It is deciding when the cost of deciding

@@ -9,6 +9,18 @@ measurable. Without the commitment, the artifact is just a list.
 | Sprint Backlog | Sprint Goal | Developers |
 | Increment | Definition of Done | Developers |
 
+## Artifacts and their commitments
+
+```mermaid
+graph LR
+    PG[Product Goal] -. commitment .- PB[Product Backlog]
+    SG[Sprint Goal] -. commitment .- SB[Sprint Backlog]
+    DOD[Definition of Done] -. commitment .- INC[Increment]
+    PB -->|Sprint Planning| SB
+    SB -->|work during the Sprint| INC
+    INC -->|Sprint Review| PB
+```
+
 ## Product Backlog
 
 The single, ordered list of everything that might be needed in the product. Key

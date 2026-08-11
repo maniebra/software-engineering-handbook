@@ -45,6 +45,22 @@ The **Developers** (sometimes called the **Development Team**) are the people wh
 - Self-organizing, collaborative, and committed to the Sprint Goal.
 
 
+# How the roles interact
+
+```mermaid
+graph TD
+    ST[Stakeholders] -->|needs and feedback| PO[Product Owner]
+    PO -->|ordered Product Backlog| DEV[Developers]
+    DEV -->|Increment| ST
+    SM[Scrum Master] -.->|coaching, facilitation| PO
+    SM -.->|removes impediments| DEV
+    SM -.->|shields from disruption| ORG[Organization]
+```
+
+Solid edges are the value flow, and dotted edges are enabling work. The Scrum Master
+never sits between the Product Owner and the Developers, which is the difference
+between coaching and managing.
+
 # Summary Table
 
 | Role           | Focus                        | Key Responsibilities                              |

@@ -32,6 +32,22 @@ between the four abstract values and the concrete practices of
 11. The best architectures, requirements, and designs emerge from self-organizing teams.
 12. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
 
+## The principles as one loop
+
+```mermaid
+graph LR
+    C[Customer states a need] --> B[Small increment built]
+    B --> D[Delivered, principles 1 and 3]
+    D --> F[Feedback from real use]
+    F --> R[Reflect and adjust, principle 12]
+    R --> C
+    B -.->|technical excellence, principles 9 and 10| B
+    D -.->|sustainable pace, principle 8| B
+```
+
+The dotted edges are the ones teams drop first. Without them the loop still turns for
+a while, then slows down as the codebase and the people wear out.
+
 ## Where each principle shows up
 
 | Principle | Practice that implements it |

@@ -26,13 +26,10 @@ Written while studying software engineering, kept for peers and beginners.
 
     SOLID, plus design, process, modeling, planning and deployment principles.
 
--   :material-sitemap-outline: **[Process Models](Process Models/Waterfall Model.md)**
-
-    Waterfall, V-Model, Incremental, Iterative and the Unified Process.
-
 -   :material-run-fast: **[Methodologies](Methodologies/index.md)**
 
-    Agile, Scrum, XP, Kanban, Lean and DSDM, plus how to choose between them.
+    Waterfall, V-Model and the Unified Process, plus Agile, Scrum, XP, Kanban,
+    Lean and DSDM, and how to choose between them.
 
 -   :material-server-network: **[System Design](System Design/Load Balancers.md)**
 
