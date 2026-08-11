@@ -45,3 +45,7 @@ The Agile Manifesto values "working software over comprehensive documentation". 
 > Correct. The manifesto explicitly says the items on the right have value, and the left side simply wins ties.
 - [ ] Only tests count as documentation
 </quiz>
+
+## Assessment
+
+Work through the [Agile Foundations assessment](../../Assessments/Methodologies/Agile%20Foundations%20Quiz.md) once you have read this section.

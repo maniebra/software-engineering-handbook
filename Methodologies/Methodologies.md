@@ -54,6 +54,15 @@ graph TD
 - **Requirements stable, regulated or contract-bound?** A plan-driven
   [process model](../Process%20Models/Waterfall%20Model.md) is often the safer fit.
 
+## Assessments
+
+Longer mixed quizzes covering this whole section:
+
+- [Agile Foundations](../Assessments/Methodologies/Agile%20Foundations%20Quiz.md), 16 questions.
+- [Scrum](../Assessments/Methodologies/Scrum%20Quiz.md), 16 questions.
+- [Flow, Kanban and Lean](../Assessments/Methodologies/Kanban%20and%20Lean%20Quiz.md), 14 questions.
+- [Practices and Governance](../Assessments/Methodologies/XP%20DSDM%20and%20Scaling%20Quiz.md), 16 questions.
+
 ## Check Your Understanding
 
 <quiz>

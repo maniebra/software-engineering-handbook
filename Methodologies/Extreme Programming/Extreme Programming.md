@@ -104,3 +104,7 @@ A team adopts Scrum but keeps a two-week manual regression phase before every re
 - [ ] On-site customer
 - [ ] Collective code ownership
 </quiz>
+
+## Assessment
+
+Work through the [Practices and Governance assessment](../../Assessments/Methodologies/XP%20DSDM%20and%20Scaling%20Quiz.md) once you have read this section.

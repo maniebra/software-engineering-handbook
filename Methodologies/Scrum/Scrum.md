@@ -68,3 +68,7 @@ What makes an Increment "potentially shippable"?
 - [x] It meets the team's Definition of Done, so it is tested, integrated, and releasable without extra work
 > Correct. Potentially shippable is a quality statement, not a promise that it will actually be released.
 </quiz>
+
+## Assessment
+
+Work through the [Scrum assessment](../../Assessments/Methodologies/Scrum%20Quiz.md) once you have read this section.

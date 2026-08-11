@@ -89,3 +89,7 @@ A team doubles its feature throughput, and production incidents triple. Which Le
 > Correct. Optimizing one station and pushing the cost downstream is the classic local optimum.
 - [ ] Defer commitment
 </quiz>
+
+## Assessment
+
+Work through the [Flow, Kanban and Lean assessment](../../Assessments/Methodologies/Kanban%20and%20Lean%20Quiz.md) once you have read this section.

@@ -84,3 +84,7 @@ A support team handles unpredictable incidents alongside planned work. Which fit
 - [ ] Scrum, because velocity forecasts incident volume
 - [ ] Neither, unpredictable work cannot be managed
 </quiz>
+
+## Assessment
+
+Work through the [Flow, Kanban and Lean assessment](../../Assessments/Methodologies/Kanban%20and%20Lean%20Quiz.md) once you have read this section.

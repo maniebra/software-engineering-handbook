@@ -76,3 +76,7 @@ Why does DSDM cap "Must have" items at roughly 60% of the effort in a timebox?
 > Correct. With 100% Must haves there is nothing left to drop, and the fixed date becomes unachievable on any surprise.
 - [ ] Because the remaining 40% is reserved for documentation
 </quiz>
+
+## Assessment
+
+Work through the [Practices and Governance assessment](../../Assessments/Methodologies/XP%20DSDM%20and%20Scaling%20Quiz.md) once you have read this section.

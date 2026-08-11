@@ -88,6 +88,8 @@ The Unified Process brings **structure** and **discipline** to software developm
 
 # Agile Unified Process (AUP)
 
+See [Methodologies](../Methodologies/index.md) for the agile methods this variant draws on.
+
 Each AUP iteration addresses these activities:
 - Modeling
 - Implementation
