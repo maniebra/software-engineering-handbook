@@ -27,10 +27,32 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 	- [Other Process Models](Process%20Models/Other%20Process%20Models.md)
 	- [Unified Process Model (UP)](Process%20Models/Unified%20Process%20Model%20(UP).md)
 - [Design Patterns](Design%20Patterns)
-	- [Singleton Pattern](Design%20Patterns/Singleton%20Pattern.md)
-	- [Decorator Pattern](Design%20Patterns/Decorator%20Pattern.md)
-	- [Factory Pattern](Design%20Patterns/Factory%20Pattern.md)
-	- [Observer Pattern](Design%20Patterns/Observer%20Pattern.md)
+	- Creational
+		- [Singleton Pattern](Design%20Patterns/Singleton%20Pattern.md)
+		- [Factory Pattern](Design%20Patterns/Factory%20Pattern.md)
+		- [Abstract Factory Pattern](Design%20Patterns/Abstract%20Factory%20Pattern.md)
+		- [Builder Pattern](Design%20Patterns/Builder%20Pattern.md)
+		- [Prototype Pattern](Design%20Patterns/Prototype%20Pattern.md)
+	- Structural
+		- [Adapter Pattern](Design%20Patterns/Adapter%20Pattern.md)
+		- [Bridge Pattern](Design%20Patterns/Bridge%20Pattern.md)
+		- [Composite Pattern](Design%20Patterns/Composite%20Pattern.md)
+		- [Decorator Pattern](Design%20Patterns/Decorator%20Pattern.md)
+		- [Facade Pattern](Design%20Patterns/Facade%20Pattern.md)
+		- [Flyweight Pattern](Design%20Patterns/Flyweight%20Pattern.md)
+		- [Proxy Pattern](Design%20Patterns/Proxy%20Pattern.md)
+	- Behavioural
+		- [Chain of Responsibility Pattern](Design%20Patterns/Chain%20of%20Responsibility%20Pattern.md)
+		- [Command Pattern](Design%20Patterns/Command%20Pattern.md)
+		- [Interpreter Pattern](Design%20Patterns/Interpreter%20Pattern.md)
+		- [Iterator Pattern](Design%20Patterns/Iterator%20Pattern.md)
+		- [Mediator Pattern](Design%20Patterns/Mediator%20Pattern.md)
+		- [Memento Pattern](Design%20Patterns/Memento%20Pattern.md)
+		- [Observer Pattern](Design%20Patterns/Observer%20Pattern.md)
+		- [State Pattern](Design%20Patterns/State%20Pattern.md)
+		- [Strategy Pattern](Design%20Patterns/Strategy%20Pattern.md)
+		- [Template Method Pattern](Design%20Patterns/Template%20Method%20Pattern.md)
+		- [Visitor Pattern](Design%20Patterns/Visitor%20Pattern.md)
 - [Software Engineering](Software%20Engineering)
 	- [Organizational Paradigms](Software%20Engineering/Organizational%20Paradigms.md)
 - [Quality Assurance](Quality%20Assurance)
@@ -87,7 +109,7 @@ Since I created this repository in hopes of becoming one of the most outstanding
 
 This project is licensed under the **MIT License**.
 
-Copyright © 2025 Mani Ebrahimi
+Copyright © 2026 Mani Ebrahimi
 
 You are free to use, copy, modify, merge, publish, distribute, sub-license, and/or sell copies of this software, subject to the following conditions:
 

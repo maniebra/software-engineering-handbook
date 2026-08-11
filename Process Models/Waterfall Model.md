@@ -1,6 +1,6 @@
 # Description
 
-The Waterfall model is one of the earliest and simplest models used in software development. It’s a **linear and sequential** approach, where each phase must be completed before the next one begins — like water flowing down a waterfall.
+The Waterfall model is one of the earliest and simplest models used in software development. It’s a **linear and sequential** approach, where each phase must be completed before the next one begins, like water flowing down a waterfall.
 
 # Phases of the Waterfall Model:
 
@@ -22,4 +22,12 @@ The Waterfall model is one of the earliest and simplest models used in software 
 - Risky for complex or long-term projects.
 
 # Diagram
-![diagram](https://github.com/maniebra/software-engineering-docs/blob/main/Process%20Models/images/Pasted%20image%2020250413225615.png?raw=true)
+
+```mermaid
+graph TD
+    R[Requirements Analysis] --> D[System Design]
+    D --> I[Implementation]
+    I --> T[Testing]
+    T --> P[Deployment]
+    P --> M[Maintenance]
+```

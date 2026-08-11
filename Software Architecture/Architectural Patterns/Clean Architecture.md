@@ -12,9 +12,15 @@ Clean Architecture emphasizes decoupling, independence of frameworks, testabilit
 
 ### Structure (Inner layers don't depend on outer layers):
 
+```mermaid
+graph RL
+    F[Frameworks &amp; Drivers] --> I[Interface Adapters]
+    I --> U[Use Cases]
+    U --> E[Entities]
 ```
-Entities ← Use Cases ← Interface Adapters ← Frameworks & Drivers
-```
+
+Arrows show the direction of dependency: every layer may depend on the one
+inside it, never the other way around.
 
 ### Example:
 

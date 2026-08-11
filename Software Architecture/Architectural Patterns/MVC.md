@@ -11,8 +11,19 @@ MVC separates application logic into three components: **Model**, **View**, and 
 
 ### Interaction Flow:
 
-```
-User → Controller → Model → View → User
+```plantuml
+@startuml
+actor User
+participant Controller
+participant Model
+participant View
+
+User -> Controller : action / request
+Controller -> Model : read or update state
+Model --> Controller : data
+Controller -> View : select and feed view
+View --> User : rendered output
+@enduml
 ```
 
 ### Example:

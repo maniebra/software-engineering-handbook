@@ -10,8 +10,12 @@ System components communicate asynchronously via events/messages.
 
 ### Structure:
 
-```
-Producer → Event Broker → Consumers
+```mermaid
+graph LR
+    P[Event Producer] -->|publishes event| B[Event Broker]
+    B --> C1[Consumer A]
+    B --> C2[Consumer B]
+    B --> C3[Consumer C]
 ```
 
 ### Example:

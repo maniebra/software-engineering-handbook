@@ -1,12 +1,12 @@
 ---
-description: A free, open-source handbook of software engineering concepts — design patterns, software architecture, SOLID principles, process models, Agile, system design and QA, explained with examples.
+description: A free, open-source handbook of software engineering concepts, design patterns, software architecture, SOLID principles, process models, Agile, system design and QA, explained with examples.
 ---
 
 # Software Engineering Docs
 
 A free, open-source handbook of the concepts every software engineer is expected
 to know: **design patterns**, **software architecture**, **SOLID principles**,
-**process models**, **Agile**, **system design** and **quality assurance** —
+**process models**, **Agile**, **system design** and **quality assurance**,
 each explained in short, example-driven pages.
 
 Written while studying software engineering, kept for peers and beginners.
@@ -56,7 +56,7 @@ improve a page, and open a pull request.
 
 ## Sources & references
 
-1. [System Analysis and Design — Alan Dennis, Barbara Haley Wixom, Roberta M. Roth](https://www.uoitc.edu.iq/images/documents/informatics-institute/Competitive_exam/Systemanalysisanddesign.pdf)
+1. [System Analysis and Design, Alan Dennis, Barbara Haley Wixom, Roberta M. Roth](https://www.uoitc.edu.iq/images/documents/informatics-institute/Competitive_exam/Systemanalysisanddesign.pdf)
 2. Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software
 
-Licensed under the MIT License. Copyright © 2025 Mani Ebrahimi.
+Licensed under the MIT License. Copyright © 2026 Mani Ebrahimi.

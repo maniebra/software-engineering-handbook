@@ -3,7 +3,7 @@ The **Incremental Model** combines elements of the **Waterfall model** with iter
 
 - The product is **designed, implemented, and tested** incrementally (a little more is added each time).
 - Each increment adds **new functionality**.
-- The **first increment** is usually the core product — additional features are built on top of it.
+- The **first increment** is usually the core product, additional features are built on top of it.
     
 
 # Structure:
@@ -26,4 +26,4 @@ The **Incremental Model** combines elements of the **Waterfall model** with iter
 
 # Diagram
 
-![incremental model](https://github.com/maniebra/software-engineering-docs/blob/main/Process%20Models/images/Pasted%20image%2020250413231002.png?raw=true)
+![incremental model](https://github.com/maniebra/software-engineering-docs/blob/main/Process%20Models/images/Pasted%20image%2020260413231002.png?raw=true)
