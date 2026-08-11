@@ -122,3 +122,15 @@ public class Main {
 
 - Always terminate the chain, either with a catch-all handler or an explicit error, as above. A silently unhandled request is a bug that is painful to find.
 - Long chains are hard to debug; keep the wiring in one visible place.
+
+## Check Your Understanding
+
+<quiz>
+What happens to a request in a Chain of Responsibility?
+
+- [x] It travels along a chain of handlers until one of them handles it
+> Correct. The sender does not know which handler will act, and handlers can be reordered or added without touching the sender.
+- [ ] It is broadcast to every registered observer at once
+- [ ] It is stored so it can be undone later
+- [ ] It is delegated to a single mediator that decides everything
+</quiz>

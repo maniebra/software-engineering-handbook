@@ -104,3 +104,15 @@ public class Main {
 ```
 
 As you can see, for each additional property that can be in a cup of coffee, we create a decorator class. This decorator class can alter other attributes of the main object (like `cost` and `description`). Using this pattern will able us to create extensions and removes the need to alter the original class.
+
+## Check Your Understanding
+
+<quiz>
+What advantage does Decorator have over subclassing?
+
+- [ ] It guarantees a single shared instance of the behaviour
+- [x] Behaviour can be added and combined at runtime, without a subclass for every combination
+> Correct. Each decorator wraps the same interface, so wrappers stack freely and the wrapped object never changes.
+- [ ] It hides a complex subsystem behind one facade
+- [ ] It converts one interface into another
+</quiz>

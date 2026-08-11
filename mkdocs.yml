@@ -58,6 +58,9 @@ theme:
 
 plugins:
   - search
+  # Renders the <quiz> blocks at the end of the pattern notes as interactive
+  # questions with per-answer feedback.
+  - mkdocs_quiz
   # Generates the Open Graph / Twitter preview images used when pages are shared.
   # Needs the imaging extras; set SOCIAL=false to skip it for a quick local build.
   - social:

@@ -46,3 +46,15 @@ Each service owns its own logic and can be deployed or scaled independently.
 
 - Large-scale distributed systems.
 - Continuous deployment scenarios.
+
+## Check Your Understanding
+
+<quiz>
+What is the strongest argument for a Microservice Architecture?
+
+- [x] Services are independently deployable and scalable, each owning its own data
+> Correct. The price is real: network failure, distributed transactions, and operational complexity a monolith never has to pay.
+- [ ] It removes the need for integration testing
+- [ ] It guarantees strong consistency across the whole system
+- [ ] It reduces the total amount of infrastructure to run
+</quiz>

@@ -107,3 +107,15 @@ private Order(Order other) {
     this.items = new ArrayList<>(other.items); // new list, not the same reference
 }
 ```
+
+## Check Your Understanding
+
+<quiz>
+How does the Prototype Pattern create new objects?
+
+- [ ] By calling a static factory method for each concrete type
+- [x] By cloning an existing instance that already carries the desired configuration
+> Correct. Cloning avoids re-running expensive setup and works without knowing the object's concrete class.
+- [ ] By reusing one shared instance across the whole application
+- [ ] By wrapping the object in a proxy that builds it lazily
+</quiz>

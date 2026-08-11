@@ -49,3 +49,15 @@ When the forecast refreshes, the ViewModel updates its observable state and the 
 ### When to use:
 
 - Client-side applications with complex UI (e.g., Android apps, WPF apps, React/Angular apps).
+
+## Check Your Understanding
+
+<quiz>
+What sets MVVM apart from MVC?
+
+- [x] The ViewModel exposes bindable state, and the View synchronises with it through data binding
+> Correct. Because the ViewModel never references the View, the presentation logic is testable without a UI at all.
+- [ ] The View updates the Model directly
+- [ ] The ViewModel replaces the Model entirely
+- [ ] Business rules move into the View
+</quiz>

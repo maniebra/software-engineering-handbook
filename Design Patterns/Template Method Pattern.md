@@ -116,3 +116,15 @@ They solve the same problem with different tools:
 | Bound | At compile time | At runtime, swappable |
 
 Prefer [Strategy](Strategy%20Pattern.md) when the variation must change while the program runs, or when subclassing would force you into an awkward hierarchy.
+
+## Check Your Understanding
+
+<quiz>
+What does a Template Method define?
+
+- [x] The skeleton of an algorithm in a base class, leaving specific steps to subclasses
+> Correct. The order of the steps is fixed in the base class; subclasses override only the steps that differ.
+- [ ] A separate object for each algorithm, chosen at runtime
+- [ ] A single interface over several subsystems
+- [ ] A clone of a configured prototype object
+</quiz>

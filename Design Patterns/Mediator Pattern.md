@@ -153,3 +153,15 @@ Both decouple senders from receivers. [Observer](Observer%20Pattern.md) is a bro
 ## Watch out
 
 The mediator absorbs the complexity it removed from the colleagues. If it grows into an unreadable god object, split it per interaction area.
+
+## Check Your Understanding
+
+<quiz>
+How does a Mediator change how objects communicate?
+
+- [ ] Every object subscribes to every other object's events
+- [x] Objects stop referring to each other directly and talk through one mediator instead
+> Correct. Many-to-many references collapse into one-to-many with the mediator, which keeps the interaction logic in a single place.
+- [ ] Each object handles the request or passes it to the next
+- [ ] Requests are wrapped as objects and queued
+</quiz>

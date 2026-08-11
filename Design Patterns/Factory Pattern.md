@@ -61,3 +61,15 @@ public class Main {
     }
 }
 ```
+
+## Check Your Understanding
+
+<quiz>
+Why use a Factory instead of calling a constructor directly?
+
+- [x] The caller depends on an interface, and the factory decides which concrete class to instantiate
+> Correct. Object creation is moved behind one method, so adding a new product does not touch every call site.
+- [ ] It guarantees only one instance of the product ever exists
+- [ ] It converts an incompatible interface into the one the client expects
+- [ ] It stores and restores the previous state of an object
+</quiz>

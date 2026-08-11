@@ -30,3 +30,15 @@ public class Singleton {
 }
 
 ```
+
+## Check Your Understanding
+
+<quiz>
+What problem does the Singleton Pattern solve?
+
+- [ ] It creates a family of related objects without naming their concrete classes
+- [x] It guarantees a class has exactly one instance and a global access point to it
+> Correct. Singleton restricts instantiation to a single object shared for the whole application life-cycle.
+- [ ] It copies an existing object instead of building a new one
+- [ ] It lets an object change its behaviour when its internal state changes
+</quiz>

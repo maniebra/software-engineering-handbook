@@ -147,3 +147,15 @@ public class Main {
 ```
 
 Notice what the last line buys you: shipping an unpaid order or cancelling a delivered one is not a bug you have to remember to guard against, there is simply no method to call.
+
+## Check Your Understanding
+
+<quiz>
+What does the State Pattern replace?
+
+- [ ] A long constructor parameter list
+- [x] Large conditionals on a state field, by giving each state its own class
+> Correct. The context delegates to its current state object, and transitions are just a swap of that object.
+- [ ] Direct instantiation of concrete classes
+- [ ] Duplicate traversal code across collections
+</quiz>

@@ -104,3 +104,15 @@ The client never touches `books` or `count`. Swapping the array for a `LinkedLis
 - **Internal** (`forEach`, `Stream`): the collection drives the loop and you hand it a function. Less control, less code.
 
 Java gives you both; reach for streams first and write an explicit iterator when you need lazy, resumable or infinite traversal.
+
+## Check Your Understanding
+
+<quiz>
+What does an Iterator give a client?
+
+- [x] Sequential access to a collection's elements without exposing how the collection is stored
+> Correct. The traversal logic lives in the iterator, so a list, tree, or generator can all be walked the same way.
+- [ ] A snapshot of the collection's state for later restore
+- [ ] A single point of access to a shared collection
+- [ ] A way to add operations to the collection without modifying it
+</quiz>

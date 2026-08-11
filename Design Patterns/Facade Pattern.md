@@ -109,3 +109,15 @@ Without the facade, every caller would repeat those four steps, and eventually o
 ## Watch out
 
 A facade that keeps growing becomes a god object. When it does, split it by use case rather than piling more methods onto one class.
+
+## Check Your Understanding
+
+<quiz>
+What does a Facade provide?
+
+- [x] A single simplified interface in front of a complex subsystem
+> Correct. The facade does not hide the subsystem, it just gives the common use cases one convenient entry point.
+- [ ] A placeholder that controls access to another object
+- [ ] A way to share the memory of many similar objects
+- [ ] A way to undo and redo operations
+</quiz>

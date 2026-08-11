@@ -127,3 +127,15 @@ Adding a `Triangle` costs one class. Adding a `WebGLRenderer` costs one class. N
 ## Bridge vs. Strategy
 
 Structurally they are near-identical. The difference is intent: Strategy swaps an **algorithm** inside one object; Bridge splits an entire **abstraction hierarchy** from an entire **implementation hierarchy**, and is a design decision made up front.
+
+## Check Your Understanding
+
+<quiz>
+What does the Bridge Pattern decouple?
+
+- [ ] A client from the concrete class it instantiates
+- [x] An abstraction from its implementation, so both can be extended independently
+> Correct. Instead of a class per combination, you compose one hierarchy with the other and avoid the combinatorial explosion of subclasses.
+- [ ] A request from the object that handles it
+- [ ] An object from the state it currently holds
+</quiz>
