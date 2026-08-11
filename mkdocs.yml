@@ -244,6 +244,12 @@ nav:
           - Scrum: Assessments/Methodologies/Scrum Quiz.md
           - Flow, Kanban and Lean: Assessments/Methodologies/Kanban and Lean Quiz.md
           - Practices and Governance: Assessments/Methodologies/XP DSDM and Scaling Quiz.md
+      - Software Architecture:
+          - Architecture Fundamentals: Assessments/Software Architecture/Architecture Fundamentals Quiz.md
+          - Architectural Characteristics: Assessments/Software Architecture/Architectural Characteristics Quiz.md
+          - Operational Characteristics: Assessments/Software Architecture/Operational Characteristics Quiz.md
+          - Structural and Cross-cutting: Assessments/Software Architecture/Structural and Cross-cutting Characteristics Quiz.md
+          - Architectural Patterns: Assessments/Software Architecture/Architectural Patterns Quiz.md
   - System Design:
       - Systems Development Life Cycle (SDLC): System Design/Introduction/Systems Development Life Cycle (SDLC).md
       - Load Balancers: System Design/Load Balancers.md

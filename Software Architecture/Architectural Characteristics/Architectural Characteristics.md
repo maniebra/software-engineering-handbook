@@ -13,26 +13,30 @@ A requirement qualifies when all three of these hold:
 ### The three families
 
 ```mermaid
-mindmap
-  root((Architectural<br/>Characteristics))
-    Operational
-      Availability
-      Performance
-      Scalability
-      Elasticity
-      Reliability
-      Recoverability
-    Structural
-      Maintainability
-      Testability
-      Deployability
-      Modularity
-      Configurability
-    Cross-cutting
-      Security
-      Usability
-      Observability
-      Portability
+flowchart LR
+    R([Architectural characteristics])
+    R --> O[Operational]
+    R --> S[Structural]
+    R --> C[Cross-cutting]
+
+    O --> O1[Availability]
+    O --> O2[Performance]
+    O --> O3[Scalability]
+    O --> O4[Elasticity]
+    O --> O5[Reliability]
+    O --> O6[Recoverability]
+
+    S --> S1[Maintainability]
+    S --> S2[Modularity]
+    S --> S3[Testability]
+    S --> S4[Deployability]
+    S --> S5[Configurability]
+
+    C --> C1[Security]
+    C --> C2[Observability]
+    C --> C3[Usability]
+    C --> C4[Portability]
+    C --> C5[Interoperability]
 ```
 
 - **Operational** characteristics concern the system while it runs, and overlap heavily with operations and DevOps concerns.
