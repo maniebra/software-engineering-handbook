@@ -14,22 +14,142 @@ The Singleton Pattern ensures that a class has only one instance throughout the 
 - Database Connection Pool
 
 ## Example
-### Java
-```java
-public class Singleton {
-    private static Singleton instance;
 
-    private Singleton() {}
+Every language solves the "exactly one instance" problem differently: some need
+explicit locking, others get the guarantee from the runtime or the type system.
 
-    public static synchronized Singleton getInstance() {
-        if (instance == null) {
-            instance = new Singleton();
+=== "Java"
+
+    ```java
+    // The enum constant is created once by the class loader, which makes this
+    // form thread-safe and serialization-safe without any locking.
+    public enum Singleton {
+        INSTANCE;
+
+        public void doWork() {
+            System.out.println("working");
         }
-        return instance;
     }
-}
 
-```
+    // Lazy variant when the instance is expensive and may never be needed.
+    public class LazySingleton {
+        private LazySingleton() {}
+
+        private static class Holder {
+            static final LazySingleton INSTANCE = new LazySingleton();
+        }
+
+        public static LazySingleton getInstance() {
+            return Holder.INSTANCE; // initialized on first access, once
+        }
+    }
+    ```
+
+=== "C#"
+
+    ```csharp
+    public sealed class Singleton
+    {
+        // Lazy<T> is thread-safe by default, so no double-checked locking.
+        private static readonly Lazy<Singleton> _instance =
+            new(() => new Singleton());
+
+        private Singleton() { }
+
+        public static Singleton Instance => _instance.Value;
+
+        public void DoWork() => Console.WriteLine("working");
+    }
+    ```
+
+=== "C++"
+
+    ```cpp
+    class Singleton {
+    public:
+        // Since C++11 the initialization of a function-local static is
+        // guaranteed to happen exactly once, even with concurrent callers.
+        static Singleton& instance() {
+            static Singleton instance;
+            return instance;
+        }
+
+        Singleton(const Singleton&) = delete;
+        Singleton& operator=(const Singleton&) = delete;
+
+        void doWork() { std::cout << "working\n"; }
+
+    private:
+        Singleton() = default;
+    };
+    ```
+
+=== "Python"
+
+    ```python
+    # A module is already a singleton: it is imported and executed once.
+    # Prefer this over a Singleton class in Python.
+    _instance = None
+
+
+    def get_logger() -> "Logger":
+        global _instance
+        if _instance is None:
+            _instance = Logger()
+        return _instance
+
+
+    # The class-based form, when a class is really wanted.
+    class Singleton:
+        _instance = None
+
+        def __new__(cls):
+            if cls._instance is None:
+                cls._instance = super().__new__(cls)
+            return cls._instance
+    ```
+
+=== "Rust"
+
+    ```rust
+    use std::sync::OnceLock;
+
+    pub struct Config {
+        pub name: String,
+    }
+
+    // OnceLock initializes at most once, no matter how many threads race.
+    static CONFIG: OnceLock<Config> = OnceLock::new();
+
+    pub fn config() -> &'static Config {
+        CONFIG.get_or_init(|| Config { name: "app".to_string() })
+    }
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    // A module-level constant is the idiomatic singleton: ES modules are
+    // evaluated once per program.
+    class Logger {
+      log(message: string): void {
+        console.log(message);
+      }
+    }
+
+    export const logger = new Logger();
+
+    // The explicit form, when lazy creation is required.
+    export class Singleton {
+      private static instance?: Singleton;
+
+      private constructor() {}
+
+      static getInstance(): Singleton {
+        return (Singleton.instance ??= new Singleton());
+      }
+    }
+    ```
 
 ## Check Your Understanding
 

@@ -36,6 +36,9 @@ theme:
     - search.highlight
     - search.share
     - content.code.copy
+    # Picking a language in one content tab switches every other tab set on
+    # the site to the same language.
+    - content.tabs.link
   palette:
     - media: "(prefers-color-scheme)"
       toggle:

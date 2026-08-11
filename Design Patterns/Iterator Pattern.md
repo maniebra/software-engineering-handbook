@@ -46,57 +46,205 @@ BookShelfIterator --> BookShelf : reads
 
 ## Example
 
-Implementing `Iterable` is what makes an object work with Java's for-each loop:
+Every one of these languages has a built-in iteration protocol; implementing it
+is what makes a custom collection work with the language's own loop syntax.
 
-```java
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+=== "Java"
 
-public class BookShelf implements Iterable<String> {
-    private final String[] books = new String[10];
-    private int count;
+    ```java
+    import java.util.Iterator;
+    import java.util.NoSuchElementException;
 
-    public void add(String book) {
-        books[count++] = book;
-    }
+    public class BookShelf implements Iterable<String> {
+        private final String[] books = new String[10];
+        private int count;
 
-    @Override
-    public Iterator<String> iterator() {
-        return new Iterator<>() {
-            private int index;
+        public void add(String book) {
+            books[count++] = book;
+        }
 
-            @Override
-            public boolean hasNext() {
-                return index < count;
-            }
+        @Override
+        public Iterator<String> iterator() {
+            return new Iterator<>() {
+                private int index;
 
-            @Override
-            public String next() {
-                if (!hasNext()) {
-                    throw new NoSuchElementException();
+                @Override
+                public boolean hasNext() {
+                    return index < count;
                 }
-                return books[index++];
-            }
-        };
-    }
-}
-```
 
-```java
-public class Main {
-    public static void main(String[] args) {
-        BookShelf shelf = new BookShelf();
+                @Override
+                public String next() {
+                    if (!hasNext()) {
+                        throw new NoSuchElementException();
+                    }
+                    return books[index++];
+                }
+            };
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            BookShelf shelf = new BookShelf();
+            shelf.add("Design Patterns");
+            shelf.add("Refactoring");
+
+            for (String book : shelf) { // no idea there is an array in there
+                System.out.println(book);
+            }
+        }
+    }
+    ```
+
+=== "C#"
+
+    ```csharp
+    public class BookShelf : IEnumerable<string>
+    {
+        private readonly string[] _books = new string[10];
+        private int _count;
+
+        public void Add(string book) => _books[_count++] = book;
+
+        // yield return builds the iterator's state machine for you.
+        public IEnumerator<string> GetEnumerator()
+        {
+            for (var i = 0; i < _count; i++) yield return _books[i];
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+    }
+
+    var shelf = new BookShelf();
+    shelf.Add("Design Patterns");
+    shelf.Add("Refactoring");
+
+    foreach (var book in shelf) // no idea there is an array in there
+        Console.WriteLine(book);
+    ```
+
+=== "C++"
+
+    ```cpp
+    #include <array>
+    #include <iostream>
+    #include <string>
+
+    class BookShelf {
+    public:
+        void add(const std::string& book) { books_[count_++] = book; }
+
+        // begin()/end() are the protocol the range-for loop expects.
+        const std::string* begin() const { return books_.data(); }
+        const std::string* end() const { return books_.data() + count_; }
+
+    private:
+        std::array<std::string, 10> books_{};
+        std::size_t count_ = 0;
+    };
+
+    int main() {
+        BookShelf shelf;
         shelf.add("Design Patterns");
         shelf.add("Refactoring");
 
-        for (String book : shelf) { // no idea there is an array in there
-            System.out.println(book);
+        for (const auto& book : shelf) { // no idea there is an array in there
+            std::cout << book << '\n';
         }
     }
-}
-```
+    ```
 
-The client never touches `books` or `count`. Swapping the array for a `LinkedList` changes nothing outside the class, that is the encapsulation the pattern buys.
+=== "Python"
+
+    ```python
+    from collections.abc import Iterator
+
+
+    class BookShelf:
+        def __init__(self) -> None:
+            self._books: list[str] = []
+
+        def add(self, book: str) -> None:
+            self._books.append(book)
+
+        # A generator is the shortest possible iterator implementation.
+        def __iter__(self) -> Iterator[str]:
+            yield from self._books
+
+
+    shelf = BookShelf()
+    shelf.add("Design Patterns")
+    shelf.add("Refactoring")
+
+    for book in shelf:  # no idea there is a list in there
+        print(book)
+    ```
+
+=== "Rust"
+
+    ```rust
+    struct BookShelf {
+        books: Vec<String>,
+    }
+
+    impl BookShelf {
+        fn new() -> Self {
+            Self { books: Vec::new() }
+        }
+
+        fn add(&mut self, book: &str) {
+            self.books.push(book.to_string());
+        }
+    }
+
+    // Implementing IntoIterator is what makes `for book in &shelf` compile.
+    impl<'a> IntoIterator for &'a BookShelf {
+        type Item = &'a String;
+        type IntoIter = std::slice::Iter<'a, String>;
+
+        fn into_iter(self) -> Self::IntoIter {
+            self.books.iter()
+        }
+    }
+
+    fn main() {
+        let mut shelf = BookShelf::new();
+        shelf.add("Design Patterns");
+        shelf.add("Refactoring");
+
+        for book in &shelf {
+            println!("{book}");
+        }
+    }
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    class BookShelf implements Iterable<string> {
+      private readonly books: string[] = [];
+
+      add(book: string): void {
+        this.books.push(book);
+      }
+
+      // A generator method satisfies the iterable protocol.
+      *[Symbol.iterator](): Iterator<string> {
+        yield* this.books;
+      }
+    }
+
+    const shelf = new BookShelf();
+    shelf.add("Design Patterns");
+    shelf.add("Refactoring");
+
+    for (const book of shelf) { // no idea there is an array in there
+      console.log(book);
+    }
+    ```
+
+The client never touches the backing array. Swapping it for a linked list changes nothing outside the class, that is the encapsulation the pattern buys.
 
 ## External vs. internal iterators
 
