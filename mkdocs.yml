@@ -36,7 +36,6 @@ theme:
     - search.highlight
     - search.share
     - content.code.copy
-    - content.action.edit
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
