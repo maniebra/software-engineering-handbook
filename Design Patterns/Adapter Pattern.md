@@ -42,50 +42,203 @@ Adapter --> Adaptee : delegates
 
 ## Example
 
-The interface our application is written against:
+Three pieces: the `PaymentProcessor` interface our application is written
+against, the third-party class we are stuck with (different method name,
+different units), and the adapter that bridges them.
 
-```java
-public interface PaymentProcessor {
-    void pay(double amountInDollars);
-}
-```
+=== "Java"
 
-The third-party class we are stuck with, different method name, different units:
-
-```java
-public class LegacyStripeApi {
-    public void makePayment(long amountInCents, String currency) {
-        System.out.println("Charging " + amountInCents + " " + currency + " via Stripe");
-    }
-}
-```
-
-The adapter bridges the two:
-
-```java
-public class StripeAdapter implements PaymentProcessor {
-    private final LegacyStripeApi stripe;
-
-    public StripeAdapter(LegacyStripeApi stripe) {
-        this.stripe = stripe;
+    ```java
+    public interface PaymentProcessor {
+        void pay(double amountInDollars);
     }
 
-    @Override
-    public void pay(double amountInDollars) {
-        long cents = Math.round(amountInDollars * 100);
-        stripe.makePayment(cents, "USD");
+    // Third-party, unmodifiable.
+    public class LegacyStripeApi {
+        public void makePayment(long amountInCents, String currency) {
+            System.out.println("Charging " + amountInCents + " " + currency + " via Stripe");
+        }
     }
-}
-```
 
-```java
-public class Checkout {
-    public static void main(String[] args) {
-        PaymentProcessor processor = new StripeAdapter(new LegacyStripeApi());
+    public class StripeAdapter implements PaymentProcessor {
+        private final LegacyStripeApi stripe;
+
+        public StripeAdapter(LegacyStripeApi stripe) {
+            this.stripe = stripe;
+        }
+
+        @Override
+        public void pay(double amountInDollars) {
+            long cents = Math.round(amountInDollars * 100);
+            stripe.makePayment(cents, "USD");
+        }
+    }
+
+    public class Checkout {
+        public static void main(String[] args) {
+            PaymentProcessor processor = new StripeAdapter(new LegacyStripeApi());
+            processor.pay(19.99); // Charging 1999 USD via Stripe
+        }
+    }
+    ```
+
+=== "C#"
+
+    ```csharp
+    public interface IPaymentProcessor
+    {
+        void Pay(decimal amountInDollars);
+    }
+
+    // Third-party, unmodifiable.
+    public class LegacyStripeApi
+    {
+        public void MakePayment(long amountInCents, string currency) =>
+            Console.WriteLine($"Charging {amountInCents} {currency} via Stripe");
+    }
+
+    public class StripeAdapter : IPaymentProcessor
+    {
+        private readonly LegacyStripeApi _stripe;
+
+        public StripeAdapter(LegacyStripeApi stripe) => _stripe = stripe;
+
+        public void Pay(decimal amountInDollars) =>
+            _stripe.MakePayment((long)Math.Round(amountInDollars * 100), "USD");
+    }
+
+    IPaymentProcessor processor = new StripeAdapter(new LegacyStripeApi());
+    processor.Pay(19.99m); // Charging 1999 USD via Stripe
+    ```
+
+=== "C++"
+
+    ```cpp
+    #include <cmath>
+    #include <iostream>
+    #include <string>
+
+    class PaymentProcessor {
+    public:
+        virtual ~PaymentProcessor() = default;
+        virtual void pay(double amountInDollars) = 0;
+    };
+
+    // Third-party, unmodifiable.
+    class LegacyStripeApi {
+    public:
+        void makePayment(long amountInCents, const std::string& currency) {
+            std::cout << "Charging " << amountInCents << " " << currency
+                      << " via Stripe\n";
+        }
+    };
+
+    class StripeAdapter : public PaymentProcessor {
+    public:
+        explicit StripeAdapter(LegacyStripeApi& stripe) : stripe_(stripe) {}
+
+        void pay(double amountInDollars) override {
+            stripe_.makePayment(std::lround(amountInDollars * 100), "USD");
+        }
+
+    private:
+        LegacyStripeApi& stripe_;
+    };
+
+    int main() {
+        LegacyStripeApi stripe;
+        StripeAdapter processor(stripe);
         processor.pay(19.99); // Charging 1999 USD via Stripe
     }
-}
-```
+    ```
+
+=== "Python"
+
+    ```python
+    from typing import Protocol
+
+
+    # A Protocol expresses "the shape my code needs" without inheritance.
+    class PaymentProcessor(Protocol):
+        def pay(self, amount_in_dollars: float) -> None: ...
+
+
+    # Third-party, unmodifiable.
+    class LegacyStripeApi:
+        def make_payment(self, amount_in_cents: int, currency: str) -> None:
+            print(f"Charging {amount_in_cents} {currency} via Stripe")
+
+
+    class StripeAdapter:
+        def __init__(self, stripe: LegacyStripeApi) -> None:
+            self._stripe = stripe
+
+        def pay(self, amount_in_dollars: float) -> None:
+            self._stripe.make_payment(round(amount_in_dollars * 100), "USD")
+
+
+    processor: PaymentProcessor = StripeAdapter(LegacyStripeApi())
+    processor.pay(19.99)  # Charging 1999 USD via Stripe
+    ```
+
+=== "Rust"
+
+    ```rust
+    trait PaymentProcessor {
+        fn pay(&self, amount_in_dollars: f64);
+    }
+
+    // Third-party, unmodifiable.
+    struct LegacyStripeApi;
+
+    impl LegacyStripeApi {
+        fn make_payment(&self, amount_in_cents: i64, currency: &str) {
+            println!("Charging {amount_in_cents} {currency} via Stripe");
+        }
+    }
+
+    struct StripeAdapter {
+        stripe: LegacyStripeApi,
+    }
+
+    impl PaymentProcessor for StripeAdapter {
+        fn pay(&self, amount_in_dollars: f64) {
+            let cents = (amount_in_dollars * 100.0).round() as i64;
+            self.stripe.make_payment(cents, "USD");
+        }
+    }
+
+    fn main() {
+        let processor = StripeAdapter { stripe: LegacyStripeApi };
+        processor.pay(19.99); // Charging 1999 USD via Stripe
+    }
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    interface PaymentProcessor {
+      pay(amountInDollars: number): void;
+    }
+
+    // Third-party, unmodifiable.
+    class LegacyStripeApi {
+      makePayment(amountInCents: number, currency: string): void {
+        console.log(`Charging ${amountInCents} ${currency} via Stripe`);
+      }
+    }
+
+    class StripeAdapter implements PaymentProcessor {
+      constructor(private readonly stripe: LegacyStripeApi) {}
+
+      pay(amountInDollars: number): void {
+        this.stripe.makePayment(Math.round(amountInDollars * 100), "USD");
+      }
+    }
+
+    const processor: PaymentProcessor = new StripeAdapter(new LegacyStripeApi());
+    processor.pay(19.99); // Charging 1999 USD via Stripe
+    ```
 
 ## Adapter vs. Decorator vs. Facade
 
