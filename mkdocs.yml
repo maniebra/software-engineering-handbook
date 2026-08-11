@@ -175,14 +175,21 @@ nav:
       - Unified Process Model (UP): Process Models/Unified Process Model (UP).md
       - Other Process Models: Process Models/Other Process Models.md
       - Use Cases Cheatsheet: Snippets and Cheatsheets/Process Models Use cases.md
-  - Agile:
-      - The Definition of Agility: The Agile Philosophy/The Definition of Agility.md
-      - Agile Principles: The Agile Philosophy/Agile Principles.md
-      - Scrum Principles: The Agile Philosophy/Scrum Principles.md
-      - Roles in Scrum: The Agile Philosophy/Roles in Scrum.md
-      - Sprints: The Agile Philosophy/Sprints.md
-      - Extreme Programming (XP): The Agile Philosophy/Extreme Programming (XP).md
-      - DSDM Principles: The Agile Philosophy/DSDM Principles.md
+  - Methodologies:
+      - Methodologies/index.md
+      - Agile:
+          - Methodologies/Agile/index.md
+          - The Definition of Agility: Methodologies/Agile/The Definition of Agility.md
+          - Agile Principles: Methodologies/Agile/Agile Principles.md
+      - Scrum:
+          - Methodologies/Scrum/index.md
+          - Scrum Principles: Methodologies/Scrum/Scrum Principles.md
+          - Roles in Scrum: Methodologies/Scrum/Roles in Scrum.md
+          - Sprints: Methodologies/Scrum/Sprints.md
+      - Extreme Programming:
+          - Methodologies/Extreme Programming/index.md
+      - DSDM:
+          - Methodologies/DSDM/index.md
   - System Design:
       - Systems Development Life Cycle (SDLC): System Design/Introduction/Systems Development Life Cycle (SDLC).md
       - Load Balancers: System Design/Load Balancers.md

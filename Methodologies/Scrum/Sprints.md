@@ -25,7 +25,7 @@ A **Sprint** is a **short, fixed-length timebox** in the Scrum framework during 
         
 
 ## 3. Sprint Work
-- The team works on the **Sprint Backlog**—a subset of Product Backlog items chosen for the Sprint.
+- The team works on the **Sprint Backlog**, a subset of Product Backlog items chosen for the Sprint.
 - Developers collaborate closely, test often, and update progress daily.
 
 ## 4. Sprint Review
@@ -70,3 +70,46 @@ Sprints are ideal when:
 - You expect **changing requirements**.
 - Your team is **collaborative and self-organizing**.
 - You’re aiming for **continuous delivery and feedback**.
+# Sprint Events at a Glance
+
+| Event | Timebox (1-month Sprint) | Purpose | Who |
+|---|---|---|---|
+| Sprint Planning | 8 hours | Pick the work, set the Sprint Goal | Whole Scrum Team |
+| Daily Scrum | 15 minutes | Re-plan the next 24 hours, surface blockers | Developers |
+| Sprint Review | 4 hours | Inspect the Increment, adapt the Product Backlog | Team + stakeholders |
+| Sprint Retrospective | 3 hours | Improve the *process* | Scrum Team only |
+
+Shorter Sprints scale the timeboxes down proportionally: a 2-week Sprint gets roughly
+4 hours of Planning, a 2-hour Review and a 90-minute Retrospective.
+
+Note the split: the **Review** inspects the *product*, the **Retrospective** inspects
+the *process*. Merging them reliably means the process discussion gets dropped.
+
+## Cancelling a Sprint
+
+A Sprint can be cancelled, only by the Product Owner, when the **Sprint Goal becomes
+obsolete**. This is rare. Incomplete items return to the Product Backlog. A Sprint is
+never cancelled just because the team will not finish everything. Unfinished items are
+simply re-ordered into a later Sprint.
+
+## Check Your Understanding
+
+<quiz>
+The Sprint Backlog turns out to be more work than the team can finish. What happens?
+
+- [x] The Sprint still ends on its fixed date, and unfinished items go back to the Product Backlog for re-ordering
+> Correct. The timebox is fixed, scope flexes, and the date never does. Extending a Sprint destroys the cadence that makes forecasting possible.
+- [ ] The Sprint is extended by a few days to finish the work
+- [ ] The Sprint is cancelled by the Scrum Master
+- [ ] The unfinished items are marked done and fixed next Sprint
+</quiz>
+
+<quiz>
+What is the difference between the Sprint Review and the Sprint Retrospective?
+
+- [ ] The Review is for the Scrum Master, the Retrospective for the Product Owner
+- [x] The Review inspects the product with stakeholders, and the Retrospective inspects the team's process, privately
+> Correct. Different subject, different audience, which is why merging them usually costs you the process improvements.
+- [ ] The Review happens daily, the Retrospective at the end of the Sprint
+- [ ] The Review is optional when nothing shipped
+</quiz>

@@ -29,9 +29,9 @@ Written while studying software engineering, kept for peers and beginners.
 
     Waterfall, V-Model, Incremental, Iterative and the Unified Process.
 
--   :material-run-fast: **[The Agile Philosophy](The Agile Philosophy/The Definition of Agility.md)**
+-   :material-run-fast: **[Methodologies](Methodologies/index.md)**
 
-    Agility, Scrum, XP, DSDM, sprints and team roles.
+    Agile, Scrum, XP and DSDM: sprints, team roles and practices.
 
 -   :material-server-network: **[System Design](System Design/Load Balancers.md)**
 
