@@ -71,7 +71,7 @@ The core payment logic depends on ports, so the team can replace Stripe with ano
 What do ports and adapters mean in Hexagonal Architecture?
 
 - [x] The application defines ports (interfaces); adapters connect those ports to the UI, database, or external services
-> Correct. The core states what it needs, and technology-specific adapters plug in — so the database or delivery mechanism can be swapped without touching the core.
+> Correct. The core states what it needs, and technology-specific adapters plug in, so the database or delivery mechanism can be swapped without touching the core.
 - [ ] Ports are network sockets and adapters are protocol converters
 - [ ] Ports are the outermost layer and adapters are the innermost
 - [ ] Ports are concrete classes the domain imports directly

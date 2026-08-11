@@ -28,6 +28,18 @@ inspect reality frequently and adapt.
 Removing any one pillar breaks the other two: you cannot inspect what is not
 transparent, and inspection that changes nothing is theatre.
 
+## The empirical loop
+
+```mermaid
+graph LR
+    T[Transparency: work and state are visible] --> I[Inspection: examined frequently]
+    I --> A[Adaptation: what is found changes what happens next]
+    A --> T
+```
+
+Each pillar depends on the previous one. You cannot inspect what is not transparent,
+and inspection that changes nothing is theatre.
+
 ## The five values
 
 **Commitment**, **Focus**, **Openness**, **Respect**, **Courage**. These are what make

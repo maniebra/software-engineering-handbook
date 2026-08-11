@@ -41,6 +41,20 @@ Should haves          ####                   20%   <- contingency
 Could haves           ####                   20%   <- dropped first
 ```
 
+## The effort budget
+
+```mermaid
+pie showData
+    title Effort budget inside one timebox
+    "Must have" : 60
+    "Should have" : 20
+    "Could have" : 20
+```
+
+The Should and Could slices are not leftovers, they are the contingency. Any timebox
+whose Must slice approaches the whole circle has a date that depends on nothing going
+wrong.
+
 ## Won't have is a real decision
 
 The fourth category is often skipped, which is a mistake. Writing something down as

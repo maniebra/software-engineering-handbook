@@ -26,4 +26,20 @@ The **Incremental Model** combines elements of the **Waterfall model** with iter
 
 # Diagram
 
-![incremental model](https://github.com/maniebra/software-engineering-docs/blob/main/Process%20Models/images/Pasted%20image%2020260413231002.png?raw=true)
+![incremental model](images/Pasted%20image%2020250413231002.png)
+
+## How the increments stack up
+
+```mermaid
+graph TD
+    RQ[Full requirements known up front] --> P[Split into increments]
+    P --> A["Increment 1: core, design, build, test, deliver"]
+    A --> B["Increment 2: adds features, design, build, test, deliver"]
+    B --> C["Increment 3: completes the scope"]
+    A -. in use by customers .- U[Users]
+    B -. in use by customers .- U
+    C -. in use by customers .- U
+```
+
+Each increment is a working part of the final product, so users get value before the
+whole scope is finished, and feedback arrives while later increments can still change.

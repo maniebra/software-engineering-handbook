@@ -39,19 +39,36 @@ A **Sprint** is a **short, fixed-length timebox** in the Scrum framework during 
 - Focused on **continuous improvement**.
 
 
+# A Sprint on a calendar
+
+```mermaid
+gantt
+    title Two-week Sprint
+    dateFormat YYYY-MM-DD
+    axisFormat %d %b
+    section Events
+    Sprint Planning        :milestone, m1, 2026-03-02, 0d
+    Daily Scrum, every day     :active, d1, 2026-03-02, 10d
+    Sprint Review          :milestone, m2, 2026-03-13, 0d
+    Sprint Retrospective   :milestone, m3, 2026-03-13, 0d
+    section Work
+    Development toward the Sprint Goal :2026-03-02, 10d
+    Backlog refinement, about 10%      :2026-03-04, 8d
+```
+
 # Key Principles of Sprints
 
-- **Consistent Duration** – Sprints should be the same length throughout the project to maintain rhythm.
-- **No Scope Changes Mid-Sprint** – Once a Sprint starts, its goal and backlog are **fixed**.
-- **Done = Shippable** – Work completed in a Sprint should be ready to release, even if not always released.
-- **Focus and Commitment** – The team commits to the Sprint Goal and works with focus to achieve it.
+- **Consistent Duration**: Sprints should be the same length throughout the project to maintain rhythm.
+- **No Scope Changes Mid-Sprint**: Once a Sprint starts, its goal and backlog are **fixed**.
+- **Done = Shippable**: Work completed in a Sprint should be ready to release, even if not always released.
+- **Focus and Commitment**: The team commits to the Sprint Goal and works with focus to achieve it.
 
 # Benefits
 
-- **Fast Feedback** – Regular reviews let stakeholders respond to progress quickly.
-- **Predictability** – Fixed-length Sprints help with planning and forecasting.
-- **Focus on Value** – The Sprint Goal keeps the team aligned on delivering business value.
-- **Continuous Improvement** – Frequent retrospectives help the team evolve.
+- **Fast Feedback**: Regular reviews let stakeholders respond to progress quickly.
+- **Predictability**: Fixed-length Sprints help with planning and forecasting.
+- **Focus on Value**: The Sprint Goal keeps the team aligned on delivering business value.
+- **Continuous Improvement**: Frequent retrospectives help the team evolve.
 
 # Challenges
 

@@ -21,6 +21,22 @@ An item is Done when:
 Notice what is not on the list: "developer says it works". Every line is verifiable by
 someone other than its author.
 
+## The states an item passes through
+
+```mermaid
+stateDiagram-v2
+    [*] --> Backlog
+    Backlog --> InProgress: pulled in Sprint Planning
+    InProgress --> InReview: code complete
+    InReview --> Done: meets every line of the DoD
+    InReview --> InProgress: review or tests fail
+    Done --> [*]
+    InProgress --> Backlog: not finished when the Sprint ends
+```
+
+There is no "done except for testing" state. An item either meets the Definition of
+Done or it returns to the Product Backlog.
+
 ## Rules of thumb
 
 - **One DoD per team, at minimum.** If several teams work on one product, the DoD is

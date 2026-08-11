@@ -167,17 +167,18 @@ nav:
           - Design Modeling Principles: Principles/Modeling Principles/Design Modeling Principles.md
           - Requirements Modeling Principles: Principles/Modeling Principles/Requirements Modeling Principles.md
           - Living Modeling Principles: Principles/Modeling Principles/Living Modeling Principles.md
-  - Process Models:
-      - Waterfall Model: Process Models/Waterfall Model.md
-      - V-Model: Process Models/V-Model.md
-      - Incremental Model: Process Models/Incremental Model.md
-      - Iterative Model: Process Models/Iterative Model.md
-      - Unified Process Model (UP): Process Models/Unified Process Model (UP).md
-      - Other Process Models: Process Models/Other Process Models.md
-      - Use Cases Cheatsheet: Snippets and Cheatsheets/Process Models Use cases.md
   - Methodologies:
       - Methodologies/index.md
       - Choosing a Methodology: Methodologies/Choosing a Methodology.md
+      - Process Models:
+          - Methodologies/Process Models/index.md
+          - Waterfall Model: Methodologies/Process Models/Waterfall Model.md
+          - V-Model: Methodologies/Process Models/V-Model.md
+          - Incremental Model: Methodologies/Process Models/Incremental Model.md
+          - Iterative Model: Methodologies/Process Models/Iterative Model.md
+          - Unified Process Model (UP): Methodologies/Process Models/Unified Process Model (UP).md
+          - Other Process Models: Methodologies/Process Models/Other Process Models.md
+          - Use Cases Cheatsheet: Snippets and Cheatsheets/Process Models Use cases.md
       - Agile:
           - Methodologies/Agile/index.md
           - The Definition of Agility: Methodologies/Agile/The Definition of Agility.md

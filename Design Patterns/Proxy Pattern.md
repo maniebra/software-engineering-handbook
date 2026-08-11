@@ -326,7 +326,7 @@ Same shape, different intent: a decorator **adds behaviour** the client asked fo
 <quiz>
 What is a Proxy used for?
 
-- [x] To stand in for another object and control access to it — lazy loading, caching, access checks, or remote calls
+- [x] To stand in for another object and control access to it, lazy loading, caching, access checks, or remote calls
 > Correct. The proxy implements the same interface as the real subject, so clients cannot tell the difference.
 - [ ] To combine several incompatible interfaces into one
 - [ ] To let an object notify its dependents when it changes

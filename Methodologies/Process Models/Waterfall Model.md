@@ -4,12 +4,12 @@ The Waterfall model is one of the earliest and simplest models used in software 
 
 # Phases of the Waterfall Model:
 
-1. **Requirements Analysis** – Gather and document what the software should do.
-2. **System Design** – Create architecture and design specifications.
-3. **Implementation** – Write the actual code based on the design.
-4. **Testing** – Test the software for bugs and verify it meets requirements.
-5. **Deployment** – Deliver the final product to users.
-6. **Maintenance** – Fix issues and make improvements post-launch.
+1. **Requirements Analysis**: Gather and document what the software should do.
+2. **System Design**: Create architecture and design specifications.
+3. **Implementation**: Write the actual code based on the design.
+4. **Testing**: Test the software for bugs and verify it meets requirements.
+5. **Deployment**: Deliver the final product to users.
+6. **Maintenance**: Fix issues and make improvements post-launch.
 
 # Advantages:
 - Simple and easy to manage.

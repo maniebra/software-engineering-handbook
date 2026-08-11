@@ -19,6 +19,19 @@ throughput unchanged.
 This is why WIP limits speed delivery up without anybody working harder. Nothing was
 made faster, there is simply less waiting in queues.
 
+## Where the time goes
+
+```mermaid
+graph LR
+    RQ[Request made] -->|waiting in backlog| ST[Work started]
+    ST -->|working and waiting| DN[Done]
+    RQ -. lead time, what the customer feels .- DN
+    ST -. cycle time, what the team measures .- DN
+```
+
+Cycle time starts when work begins, so a team can report a healthy cycle time while
+customers wait months. Lead time is the honest number.
+
 ## Why high WIP is expensive
 
 - **Context switching.** Every parallel item costs re-orientation time.

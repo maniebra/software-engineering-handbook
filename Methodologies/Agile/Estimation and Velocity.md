@@ -48,6 +48,21 @@ two currencies by the number printed on the notes. Worse, any velocity target is
 trivially met by inflating estimates, so the metric destroys itself the moment it is
 used as a goal.
 
+## How a size becomes a date
+
+```mermaid
+graph LR
+    ST[Stories sized in points] --> SB[Sprint Backlog]
+    SB --> DONE[Points completed per Sprint]
+    DONE --> V[Velocity, averaged over recent Sprints]
+    V --> FC[Forecast range for the remaining backlog]
+    FC -.->|re-checked every Sprint| V
+    V ==>|used as a target| G[Estimates inflate, metric dies]
+```
+
+The thick edge is the failure path. Everything left of it is measurement, and the
+moment velocity becomes a goal it stops measuring anything.
+
 ## Burndown and burnup
 
 - **Burndown** shows work remaining against time. Simple, but a flat line is ambiguous

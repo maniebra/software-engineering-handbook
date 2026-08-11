@@ -1,10 +1,10 @@
 # Methodologies
 
 A **methodology** is the set of values, roles, events and practices a team uses to turn
-requirements into working software. A
-[process model](../Process%20Models/Waterfall%20Model.md) describes the *shape* of the
-work, meaning its phases, ordering and feedback points. A methodology describes *how a
-team actually works day to day* inside that shape.
+requirements into working software. A [process model](Process%20Models/index.md)
+describes the *shape* of the work, meaning its phases, ordering and feedback points. A
+methodology describes *how a team actually works day to day* inside that shape. Both
+live in this section, because in practice a team picks them together.
 
 ## The families
 
@@ -16,6 +16,7 @@ team actually works day to day* inside that shape.
 | [Kanban](Kanban/index.md) | Limiting work in progress makes work finish faster | Continuous flow | Visualization, WIP limits, flow metrics |
 | [Lean](Lean/index.md) | Most of the delay is waste, not work | Whole value stream | Thinking tools, not a process |
 | [DSDM](DSDM/index.md) | Time and cost are fixed, scope flexes | Timeboxes | Lifecycle, roles, MoSCoW governance |
+| [Process Models](Process%20Models/index.md) | The shape of the work decides when you learn you were wrong | Phases or iterations | Ordering of phases and feedback points |
 
 Scrum, XP, Kanban and DSDM are all compatible with the
 [agile values](Agile/index.md). Teams routinely mix them, most commonly Scrum for the
@@ -52,7 +53,7 @@ graph TD
 - **The date cannot move?** Use [MoSCoW](DSDM/MoSCoW.md) and flex scope.
 - **Many teams, one product?** See [Scaling Agile](Scaling%20Agile.md).
 - **Requirements stable, regulated or contract-bound?** A plan-driven
-  [process model](../Process%20Models/Waterfall%20Model.md) is often the safer fit.
+  [process model](Process%20Models/index.md) is often the safer fit.
 
 ## Assessments
 

@@ -14,3 +14,18 @@ Iterative methodology is a development approach that emphasizes **repetition and
 - **Implementing**: Develop the product or solution.
 - **Testing**: Evaluate performance and functionality.
 - **Reviewing**: Analyze results and gather feedback for the next cycle
+
+## Refining the same product
+
+```mermaid
+graph LR
+    I1[Iteration 1: rough version of the whole] --> E1[Evaluate]
+    E1 --> I2[Iteration 2: refined]
+    E2[Evaluate] --> I3[Iteration 3: refined again]
+    I2 --> E2
+    I3 --> E3[Evaluate]
+    E3 -->|converged| REL[Release]
+```
+
+Iterative differs from incremental in what each pass produces. An increment adds a new
+finished slice, while an iteration improves the quality of what already exists.

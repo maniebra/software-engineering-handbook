@@ -21,6 +21,25 @@ was never the bottleneck.
 
 **Tell:** the first Increment reaches a real user months after the project starts.
 
+### What Water-Scrum-Fall looks like on a calendar
+
+```mermaid
+gantt
+    title Water-Scrum-Fall, first user feedback arrives in month 8
+    dateFormat YYYY-MM-DD
+    axisFormat %b
+    section Up front
+    Requirements and design sign-off :a1, 2026-01-01, 90d
+    section Sprints
+    Sprint 1 to 6                    :a2, after a1, 84d
+    section Release
+    Integration and hardening        :a3, after a2, 60d
+    First real user feedback         :milestone, after a3, 0d
+```
+
+The Sprints are real, and the feedback loop is still eight months long, so the team
+gets the cost of the ceremonies without the benefit.
+
 ## Scrum as a delivery mechanism for fixed scope
 
 Fixed scope, fixed date, fixed budget, and Sprints used as progress reporting. Because
