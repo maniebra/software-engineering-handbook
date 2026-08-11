@@ -34,11 +34,12 @@ estimation error moves the date. Keeping Musts at or below 60% of effort leaves
 Should and Could haves as the contingency that absorbs the surprises. That contingency
 is exactly what makes a fixed date credible instead of aspirational.
 
-```text
-Timebox capacity      ####################  100%
-Must haves            ############           60%
-Should haves          ####                   20%   <- contingency
-Could haves           ####                   20%   <- dropped first
+```mermaid
+pie showData
+    title Effort in one timebox
+    "Must haves" : 60
+    "Should haves, the contingency" : 20
+    "Could haves, dropped first" : 20
 ```
 
 ## The effort budget

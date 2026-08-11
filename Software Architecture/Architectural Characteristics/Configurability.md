@@ -35,7 +35,7 @@ flowchart LR
 
 ### Trade-offs
 
-- Against **testability**: every flag doubles the number of possible behaviours; ten independent flags give 1024 combinations, of which you test a handful.
+- Against **testability**: every flag doubles the number of possible behaviours; $n$ independent flags give $2^n$ combinations, so ten flags are $2^{10} = 1024$ states, of which you test a handful.
 - Against **understandability**: behaviour that lives in a config store is invisible to someone reading the code.
 - Against **reliability**: dynamic configuration is a live change to production with no code review; treat changes as deployments, with versioning, audit, and rollback.
 

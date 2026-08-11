@@ -33,11 +33,21 @@ Requests are sent to servers one by one in order.
 
 Example:
 
-```text
-Request 1 -> Server A
-Request 2 -> Server B
-Request 3 -> Server C
-Request 4 -> Server A
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant LB as Load Balancer
+    participant A as Server A
+    participant B as Server B
+    participant D as Server C
+    C->>LB: Request 1
+    LB->>A: forward
+    C->>LB: Request 2
+    LB->>B: forward
+    C->>LB: Request 3
+    LB->>D: forward
+    C->>LB: Request 4
+    LB->>A: forward (back to the start)
 ```
 
 Use it when servers have similar capacity and requests have similar cost.
@@ -99,10 +109,12 @@ It can route traffic using HTTP information such as:
 
 Example:
 
-```text
-/api/users  -> User Service
-/api/orders -> Order Service
-/images     -> Static File Service
+```mermaid
+flowchart LR
+    R[HTTP request] --> LB[Layer 7 Load Balancer]
+    LB -->|/api/users| U[User Service]
+    LB -->|/api/orders| O[Order Service]
+    LB -->|/images| S[Static File Service]
 ```
 
 Layer 7 load balancing is more flexible, but usually has more overhead than Layer 4.
@@ -115,7 +127,7 @@ Health checks are small requests used to verify that a server is working.
 
 Example:
 
-```text
+```http
 GET /health
 ```
 
@@ -149,18 +161,21 @@ Suppose an online store has three application servers.
 
 Without a load balancer:
 
-```text
-Users -> Server A
+```mermaid
+flowchart LR
+    U[Users] --> A[Server A]
 ```
 
 If Server A fails, the whole application may become unavailable.
 
 With a load balancer:
 
-```text
-Users -> Load Balancer -> Server A
-                     -> Server B
-                     -> Server C
+```mermaid
+flowchart LR
+    U[Users] --> LB[Load Balancer]
+    LB --> A[Server A]
+    LB --> B[Server B]
+    LB --> C[Server C]
 ```
 
 If Server A fails, the load balancer can send traffic to Server B and Server C.

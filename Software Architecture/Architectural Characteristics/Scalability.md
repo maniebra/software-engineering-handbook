@@ -41,9 +41,17 @@ flowchart TB
 - **Backpressure and load shedding.** A system that accepts more than it can process fails worse than one that rejects early.
 - **Idempotency.** Retries and redelivery are inevitable once work is distributed.
 
-### Amdahl's law, informally
+### Amdahl's law
 
-Speedup is limited by the part that cannot be parallelised. If 5% of the work is a serialised section (a global lock, a single sequence generator, one shared table row), no amount of extra instances gets you past a 20× improvement. Hunt for the serial section before buying capacity.
+Speedup is limited by the part that cannot be parallelised. With a serial fraction $s$ and $n$ workers:
+
+$$
+S(n) = \frac{1}{s + \dfrac{1 - s}{n}}
+\qquad\Longrightarrow\qquad
+\lim_{n \to \infty} S(n) = \frac{1}{s}
+$$
+
+So if 5% of the work is a serialised section (a global lock, a single sequence generator, one shared table row), then $s = 0.05$ and no amount of extra instances gets you past $1/0.05 = 20\times$. Hunt for the serial section before buying capacity.
 
 ### Trade-offs
 

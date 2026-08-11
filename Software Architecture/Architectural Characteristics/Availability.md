@@ -4,7 +4,9 @@ Availability is the proportion of time the system is able to serve requests succ
 
 ### How it is measured
 
-`availability = uptime / (uptime + downtime)`
+$$
+\text{availability} = \frac{\text{uptime}}{\text{uptime} + \text{downtime}}
+$$
 
 Expressed as "nines", over a 30-day month:
 
@@ -20,6 +22,12 @@ Two related metrics drive the number:
 
 - **MTBF**: mean time between failures. Reduced by removing single points of failure.
 - **MTTR**: mean time to recovery. Reduced by fast detection and automated failover. See [Recoverability](Recoverability.md).
+
+Together they give the same quantity from the failure side:
+
+$$
+A = \frac{\text{MTBF}}{\text{MTBF} + \text{MTTR}}
+$$
 
 Beyond three nines, improvements come almost entirely from cutting MTTR, not from preventing failures.
 
@@ -47,7 +55,11 @@ flowchart LR
 
 For components in series, availabilities multiply. Three services at 99.9% each, all required for a request, give:
 
-`0.999 × 0.999 × 0.999 ≈ 0.997`, roughly 2 h 10 min of downtime per month.
+$$
+A_{\text{total}} = \prod_{i=1}^{n} A_i = 0.999^3 \approx 0.997
+$$
+
+That is roughly 2 h 10 min of downtime per month.
 
 This is why adding synchronous dependencies quietly lowers availability, and why asynchronous messaging (see [Event-Driven Architecture](../Architectural%20Patterns/EDA.md)) is an availability tactic: the caller stays up when the callee is down.
 

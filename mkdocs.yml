@@ -75,6 +75,12 @@ plugins:
 extra_css:
   - assets/extra.css
 
+# MathJax renders the $...$ and $$...$$ blocks produced by the arithmatex
+# extension; the config file must load before the library itself.
+extra_javascript:
+  - assets/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -82,6 +88,8 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
