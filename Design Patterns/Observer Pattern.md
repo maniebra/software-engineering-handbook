@@ -18,6 +18,35 @@ When two objects are loosely coupled, they can interact but they have little-to-
 
 Loosely coupled designs allow us to build flexible object oriented systems that can handle change because they minimize the inter-dependency between objects.
 
+# Structure
+
+```plantuml
+@startuml
+interface Subject {
+  +registerObserver(o)
+  +removeObserver(o)
+  +notifyObservers()
+}
+
+interface Observer {
+  +update(data)
+}
+
+class ConcreteSubject implements Subject {
+  -observers
+  -state
+  +setState(state)
+}
+
+class ConcreteObserver implements Observer {
+  -subject
+}
+
+Subject o--> "0..*" Observer : notifies
+ConcreteObserver --> ConcreteSubject : subscribes to
+@enduml
+```
+
 # Practical Examples
 
 - The **event listeners** in a web app follow this pattern.

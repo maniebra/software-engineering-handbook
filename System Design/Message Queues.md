@@ -6,8 +6,10 @@ Instead of one service calling another service directly and waiting for the work
 
 ## Basic Structure
 
-```text
-Producer -> Message Queue -> Consumer
+```mermaid
+graph LR
+    P[Producer] -->|publish| Q[(Message Queue)]
+    Q -->|consume| C[Consumer]
 ```
 
 - **Producer**: The service that sends a message.

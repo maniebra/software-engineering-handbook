@@ -169,3 +169,19 @@
 .md-footer-meta {
   font-size: 0.68rem;
 }
+
+/* PlantUML diagrams render as SVGs with a hard-coded white background, so give
+   them a light plate of their own instead of letting them clash with the
+   slate colour scheme in dark mode. */
+.md-typeset img.uml {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 0.2rem;
+  padding: 0.6rem;
+}
+
+.md-typeset .mermaid {
+  margin: 1em auto;
+}

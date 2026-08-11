@@ -79,7 +79,18 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        # ```mermaid blocks are rendered client-side by Material's mermaid support.
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # ```plantuml blocks are rendered to inline SVG at build time by the public
+  # PlantUML server. Set PLANTUML_SERVER to point at a self-hosted instance.
+  - plantuml_markdown:
+      server: !ENV [PLANTUML_SERVER, "https://www.plantuml.com/plantuml"]
+      format: svg
+      cachedir: .cache/plantuml
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:

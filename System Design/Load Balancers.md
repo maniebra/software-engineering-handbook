@@ -15,10 +15,12 @@ Instead of sending every request to one server, it spreads requests between heal
 
 ## Basic Structure
 
-```text
-Client -> Load Balancer -> Server 1
-                        -> Server 2
-                        -> Server 3
+```mermaid
+graph LR
+    C[Client] --> LB[Load Balancer]
+    LB --> S1[Server 1]
+    LB --> S2[Server 2]
+    LB --> S3[Server 3]
 ```
 
 The client sends a request to the load balancer. The load balancer chooses one backend server and forwards the request.

@@ -10,8 +10,15 @@ Builds applications as independent, loosely coupled services.
 
 ### Structure:
 
-```
-API Gateway → [Microservice 1, Microservice 2, ... Microservice N]
+```mermaid
+graph LR
+    C[Client] --> G[API Gateway]
+    G --> S1[Microservice 1]
+    G --> S2[Microservice 2]
+    G --> SN[Microservice N]
+    S1 --> D1[(DB 1)]
+    S2 --> D2[(DB 2)]
+    SN --> DN[(DB N)]
 ```
 
 ### Example:

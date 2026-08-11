@@ -11,8 +11,11 @@ Simplest form of software architecture, dividing software into horizontal layers
 
 ### Structure:
 
-```
-Presentation → Business Logic → Data Access
+```mermaid
+graph TD
+    P[Presentation] --> B[Business Logic]
+    B --> D[Data Access]
+    D --> DB[(Database)]
 ```
 
 ### Example:

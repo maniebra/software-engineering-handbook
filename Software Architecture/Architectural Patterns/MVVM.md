@@ -10,8 +10,20 @@ MVVM introduces a ViewModel to mediate between View and Model.
 
 ### Interaction Flow:
 
-```
-User ↔ View ↔ ViewModel ↔ Model
+```plantuml
+@startuml
+actor User
+participant View
+participant ViewModel
+participant Model
+
+User -> View : interacts
+View -> ViewModel : command / input
+ViewModel -> Model : read or update data
+Model --> ViewModel : data
+ViewModel --> View : observable state (data binding)
+View --> User : updated UI
+@enduml
 ```
 
 ### Example:
