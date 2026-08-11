@@ -185,3 +185,43 @@
 .md-typeset .mermaid {
   margin: 1em auto;
 }
+
+/* mkdocs-quiz ships no styling for its buttons, so the "Try Again" and submit
+   buttons would render as bare browser controls. Give them the same accent
+   treatment as the rest of the site. */
+.md-typeset .quiz-button {
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0.8em;
+  padding: 0.4em 1.1em;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--md-default-fg-color--light);
+  background: var(--se-surface-color);
+  border: 1px solid var(--se-rule-color);
+  border-radius: 0.3rem;
+  transition: color 120ms, border-color 120ms, background 120ms;
+}
+
+.md-typeset .quiz-button:hover {
+  color: var(--md-default-fg-color);
+  border-color: var(--md-default-fg-color--lighter);
+  background: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .quiz-button:active {
+  background: var(--md-default-fg-color--lighter);
+}
+
+.md-typeset .quiz-button:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* The plugin toggles this class to swap between submit and "Try Again". */
+.md-typeset .quiz-button.hidden {
+  display: none;
+}
