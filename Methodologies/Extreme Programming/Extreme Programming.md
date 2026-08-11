@@ -49,6 +49,10 @@ Code is regularly cleaned and improved without changing its behavior. This keeps
 - Doesn’t work well with large or distributed teams.
 - Needs full commitment from the customer to be on-site and involved.
 
+# Pages in this section
+
+- [XP Practices in Detail](XP%20Practices.md), how the practices work and why they depend on each other.
+
 # XP and Scrum
 
 XP and [Scrum](../Scrum/index.md) are complementary, not competing: Scrum prescribes the

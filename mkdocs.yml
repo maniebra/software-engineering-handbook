@@ -177,19 +177,36 @@ nav:
       - Use Cases Cheatsheet: Snippets and Cheatsheets/Process Models Use cases.md
   - Methodologies:
       - Methodologies/index.md
+      - Choosing a Methodology: Methodologies/Choosing a Methodology.md
       - Agile:
           - Methodologies/Agile/index.md
           - The Definition of Agility: Methodologies/Agile/The Definition of Agility.md
           - Agile Principles: Methodologies/Agile/Agile Principles.md
+          - User Stories: Methodologies/Agile/User Stories.md
+          - Estimation and Velocity: Methodologies/Agile/Estimation and Velocity.md
+          - Agile Anti-patterns: Methodologies/Agile/Agile Anti-patterns.md
       - Scrum:
           - Methodologies/Scrum/index.md
           - Scrum Principles: Methodologies/Scrum/Scrum Principles.md
           - Roles in Scrum: Methodologies/Scrum/Roles in Scrum.md
           - Sprints: Methodologies/Scrum/Sprints.md
+          - Scrum Events: Methodologies/Scrum/Scrum Events.md
+          - Scrum Artifacts: Methodologies/Scrum/Scrum Artifacts.md
+          - Definition of Done: Methodologies/Scrum/Definition of Done.md
       - Extreme Programming:
           - Methodologies/Extreme Programming/index.md
+          - XP Practices in Detail: Methodologies/Extreme Programming/XP Practices.md
+      - Kanban:
+          - Methodologies/Kanban/index.md
+          - WIP Limits and Flow Metrics: Methodologies/Kanban/WIP Limits and Flow Metrics.md
+      - Lean:
+          - Methodologies/Lean/index.md
       - DSDM:
           - Methodologies/DSDM/index.md
+          - MoSCoW Prioritization: Methodologies/DSDM/MoSCoW.md
+          - DSDM Phases and Roles: Methodologies/DSDM/DSDM Phases and Roles.md
+      - Scaling Agile: Methodologies/Scaling Agile.md
+      - Other Methodologies: Methodologies/Other Methodologies.md
   - System Design:
       - Systems Development Life Cycle (SDLC): System Design/Introduction/Systems Development Life Cycle (SDLC).md
       - Load Balancers: System Design/Load Balancers.md

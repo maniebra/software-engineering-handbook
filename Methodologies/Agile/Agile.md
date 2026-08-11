@@ -21,6 +21,9 @@ The last line is the one teams forget. Agile does not say "no documentation" or
 
 - [The Definition of Agility](The%20Definition%20of%20Agility.md), what "agile" actually means as a property of a team.
 - [Agile Principles](Agile%20Principles.md), the twelve principles behind the manifesto.
+- [User Stories](User%20Stories.md), how requirements are expressed and split.
+- [Estimation and Velocity](Estimation%20and%20Velocity.md), sizing work and forecasting honestly.
+- [Agile Anti-patterns](Agile%20Anti-patterns.md), the ways adoptions fail while keeping the label.
 
 ## Common misreadings
 

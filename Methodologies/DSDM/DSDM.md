@@ -41,6 +41,11 @@ business purpose*, DSDM's acceptance criterion, deliberately weaker than
 "All changes during development are reversible" is what makes exploratory work safe:
 a timebox that goes the wrong way can be rolled back rather than defended.
 
+## Pages in this section
+
+- [MoSCoW Prioritization](MoSCoW.md), the technique that makes a fixed date credible.
+- [DSDM Phases and Roles](DSDM%20Phases%20and%20Roles.md), the lifecycle and who decides what.
+
 ## Compared to the others
 
 | | DSDM | [Scrum](../Scrum/index.md) | [XP](../Extreme%20Programming/index.md) |

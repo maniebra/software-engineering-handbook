@@ -42,7 +42,10 @@ drifts and the Increment silently accumulates technical debt.
 
 - [Scrum Principles](Scrum%20Principles.md), the ideas the framework rests on.
 - [Roles in Scrum](Roles%20in%20Scrum.md), who is accountable for what.
-- [Sprints](Sprints.md), the timebox and its five events.
+- [Sprints](Sprints.md), the timebox that contains everything else.
+- [Scrum Events](Scrum%20Events.md), the five events and what each inspects.
+- [Scrum Artifacts](Scrum%20Artifacts.md), the backlogs, the Increment and their commitments.
+- [Definition of Done](Definition%20of%20Done.md), the quality gate that makes "done" mean something.
 
 ## Check Your Understanding
 

@@ -1,30 +1,57 @@
 # Methodologies
 
-A **methodology** is the set of values, roles, events and practices a team uses to
-turn requirements into working software. A [process model](../Process%20Models/Waterfall%20Model.md)
-describes the *shape* of the work (phases, ordering, feedback points), and a methodology
-describes *how a team actually works day to day* inside that shape.
+A **methodology** is the set of values, roles, events and practices a team uses to turn
+requirements into working software. A
+[process model](../Process%20Models/Waterfall%20Model.md) describes the *shape* of the
+work, meaning its phases, ordering and feedback points. A methodology describes *how a
+team actually works day to day* inside that shape.
 
 ## The families
 
-| Family | Core bet | Typical cadence | Notes |
+| Family | Core bet | Cadence | Prescribes |
 |---|---|---|---|
-| [Agile](Agile/index.md) | Change is cheaper to absorb than to prevent | Weeks | An umbrella of values and principles, not a process |
-| [Scrum](Scrum/index.md) | Fixed-length timeboxes create rhythm and feedback | 1–4 week Sprints | Roles, events, artifacts are prescribed |
-| [Extreme Programming](Extreme%20Programming/index.md) | Engineering discipline drives agility | Days to weeks | Prescribes technical practices (TDD, pairing, CI) |
-| [DSDM](DSDM/index.md) | Time and cost are fixed, scope flexes | Timeboxes | Business-focused, formal governance |
+| [Agile](Agile/index.md) | Change is cheaper to absorb than to prevent | Weeks | Values and principles, not a process |
+| [Scrum](Scrum/index.md) | Fixed timeboxes create rhythm and feedback | 1 to 4 week Sprints | Roles, events, artifacts |
+| [Extreme Programming](Extreme%20Programming/index.md) | Engineering discipline drives agility | Days to weeks | Technical practices |
+| [Kanban](Kanban/index.md) | Limiting work in progress makes work finish faster | Continuous flow | Visualization, WIP limits, flow metrics |
+| [Lean](Lean/index.md) | Most of the delay is waste, not work | Whole value stream | Thinking tools, not a process |
+| [DSDM](DSDM/index.md) | Time and cost are fixed, scope flexes | Timeboxes | Lifecycle, roles, MoSCoW governance |
 
-Scrum, XP and DSDM are all *agile* methodologies: they are concrete instances of the
-values described in [The Definition of Agility](Agile/The%20Definition%20of%20Agility.md).
-Teams routinely mix them, taking Scrum for the management frame and XP for the engineering
-practices.
+Scrum, XP, Kanban and DSDM are all compatible with the
+[agile values](Agile/index.md). Teams routinely mix them, most commonly Scrum for the
+management frame with XP for the engineering practices.
 
-## Choosing one
+## Cross-cutting pages
 
-- **Requirements are volatile, customer is available** → Agile family.
-- **Small, co-located, quality-critical team** → XP practices.
-- **Deadline and budget are immovable** → DSDM, drop scope instead of slipping.
-- **Requirements are stable, regulated, contract-bound** → a plan-driven
+- [Choosing a Methodology](Choosing%20a%20Methodology.md), how to pick, and why hybrids are normal.
+- [Scaling Agile](Scaling%20Agile.md), LeSS, SAFe, Scrum@Scale and what actually breaks with many teams.
+- [Other Methodologies](Other%20Methodologies.md), Crystal, FDD, RAD, Scrumban, Spiral and Shape Up.
+- [Agile Anti-patterns](Agile/Agile%20Anti-patterns.md), how adoptions fail while keeping the name.
+
+## How the pieces relate
+
+```mermaid
+graph TD
+    AG[Agile values and principles] --> SC[Scrum]
+    AG --> XP[Extreme Programming]
+    AG --> DS[DSDM]
+    LN[Lean thinking] --> KB[Kanban]
+    LN --> AG
+    SC -->|management frame| HY[Common hybrid]
+    XP -->|engineering practices| HY
+    SC --> SB[Scrumban]
+    KB --> SB
+```
+
+## Quick orientation
+
+- **Want a rhythm and clear accountabilities?** Start with [Scrum](Scrum/index.md).
+- **Delivery keeps slipping on quality?** The gap is engineering, so read
+  [XP Practices](Extreme%20Programming/XP%20Practices.md).
+- **Work arrives unpredictably?** Use [Kanban](Kanban/index.md).
+- **The date cannot move?** Use [MoSCoW](DSDM/MoSCoW.md) and flex scope.
+- **Many teams, one product?** See [Scaling Agile](Scaling%20Agile.md).
+- **Requirements stable, regulated or contract-bound?** A plan-driven
   [process model](../Process%20Models/Waterfall%20Model.md) is often the safer fit.
 
 ## Check Your Understanding
@@ -37,4 +64,14 @@ What is the difference between a process model and a methodology?
 > Correct. The Incremental Model says "deliver in increments". Scrum says who is in the room, for how long, and with which artifacts.
 - [ ] A methodology only applies to agile teams, a process model only to plan-driven teams
 - [ ] A process model is documentation, a methodology is code
+</quiz>
+
+<quiz>
+Why do Scrum and XP combine so often?
+
+- [ ] Because both were written by the same authors
+- [ ] Because Scrum requires pair programming
+- [ ] Because XP has no way to plan work
+- [x] Because Scrum prescribes a management frame and no engineering practices, while XP prescribes engineering practices and little management structure
+> Correct. They cover each other's gaps, which is why Scrum teams without technical practices tend to slow down after a year.
 </quiz>
