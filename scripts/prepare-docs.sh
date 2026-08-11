@@ -61,7 +61,7 @@ for path in sorted(pathlib.Path(sys.argv[1]).rglob('*.md')):
     )
     if len(summary) > 160:
         summary = summary[:157].rsplit(' ', 1)[0] + '…'
-    description = f'{name} — {summary}' if summary else f'{name} in software engineering.'
+    description = f'{name}, {summary}' if summary else f'{name} in software engineering.'
 
     path.write_text(f'---\ndescription: {json.dumps(description)}\n---\n\n{body}', encoding='utf-8')
 PY

@@ -3,7 +3,7 @@ The **Incremental Model** combines elements of the **Waterfall model** with iter
 
 - The product is **designed, implemented, and tested** incrementally (a little more is added each time).
 - Each increment adds **new functionality**.
-- The **first increment** is usually the core product — additional features are built on top of it.
+- The **first increment** is usually the core product, additional features are built on top of it.
     
 
 # Structure:

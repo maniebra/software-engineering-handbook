@@ -2,13 +2,13 @@ site_name: Software Engineering Docs
 site_url: https://maniebra.github.io/software-engineering-docs/
 site_author: Mani Ebrahimi
 site_description: >-
-  A free, open-source handbook of software engineering concepts — design
+  A free, open-source handbook of software engineering concepts, design
   patterns, software architecture, SOLID principles, process models, Agile,
   system design and quality assurance, explained with examples.
 repo_url: https://github.com/maniebra/software-engineering-docs
 repo_name: maniebra/software-engineering-docs
 edit_uri: edit/main/
-copyright: Copyright &copy; 2026 Mani Ebrahimi — MIT License
+copyright: Copyright &copy; 2026 Mani Ebrahimi, MIT License
 
 # Written by scripts/prepare-docs.sh from the notes at the repository root.
 docs_dir: build/docs
@@ -107,10 +107,32 @@ nav:
   - Home: index.md
   - Design Patterns:
       - Design Patterns/index.md
-      - Singleton Pattern: Design Patterns/Singleton Pattern.md
-      - Factory Pattern: Design Patterns/Factory Pattern.md
-      - Decorator Pattern: Design Patterns/Decorator Pattern.md
-      - Observer Pattern: Design Patterns/Observer Pattern.md
+      - Creational:
+          - Singleton Pattern: Design Patterns/Singleton Pattern.md
+          - Factory Pattern: Design Patterns/Factory Pattern.md
+          - Abstract Factory Pattern: Design Patterns/Abstract Factory Pattern.md
+          - Builder Pattern: Design Patterns/Builder Pattern.md
+          - Prototype Pattern: Design Patterns/Prototype Pattern.md
+      - Structural:
+          - Adapter Pattern: Design Patterns/Adapter Pattern.md
+          - Bridge Pattern: Design Patterns/Bridge Pattern.md
+          - Composite Pattern: Design Patterns/Composite Pattern.md
+          - Decorator Pattern: Design Patterns/Decorator Pattern.md
+          - Facade Pattern: Design Patterns/Facade Pattern.md
+          - Flyweight Pattern: Design Patterns/Flyweight Pattern.md
+          - Proxy Pattern: Design Patterns/Proxy Pattern.md
+      - Behavioural:
+          - Chain of Responsibility Pattern: Design Patterns/Chain of Responsibility Pattern.md
+          - Command Pattern: Design Patterns/Command Pattern.md
+          - Interpreter Pattern: Design Patterns/Interpreter Pattern.md
+          - Iterator Pattern: Design Patterns/Iterator Pattern.md
+          - Mediator Pattern: Design Patterns/Mediator Pattern.md
+          - Memento Pattern: Design Patterns/Memento Pattern.md
+          - Observer Pattern: Design Patterns/Observer Pattern.md
+          - State Pattern: Design Patterns/State Pattern.md
+          - Strategy Pattern: Design Patterns/Strategy Pattern.md
+          - Template Method Pattern: Design Patterns/Template Method Pattern.md
+          - Visitor Pattern: Design Patterns/Visitor Pattern.md
       - Dependency Injection: Snippets and Cheatsheets/Dependency Injection Pattern.md
   - Architecture:
       - Rules of Software Architecture: Software Architecture/Rules of Software Architecture.md
