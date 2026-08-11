@@ -105,3 +105,15 @@ The money-transfer rule stays in the domain even if the database, API framework,
 
 - Complex applications with evolving business logic.
 - Enterprise apps with strong domain models.
+
+## Check Your Understanding
+
+<quiz>
+In MVC, what is the Controller responsible for?
+
+- [x] Handling input, updating the Model, and selecting the View to render
+> Correct. The Model holds state and business rules, the View renders it, and the Controller is the piece that reacts to user input.
+- [ ] Holding the application's business rules and data
+- [ ] Rendering the user interface
+- [ ] Exposing bindable state that the View observes
+</quiz>

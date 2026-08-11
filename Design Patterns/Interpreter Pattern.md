@@ -117,3 +117,15 @@ Note that the pattern covers **evaluation**, not parsing. Turning the text `"(x 
 ## Watch out
 
 This is the least-used GoF pattern, for good reason: one class per grammar rule stops scaling around a dozen rules. For anything bigger, use a parser generator (ANTLR, JavaCC) or an existing expression library, writing a language is a much larger project than it first looks.
+
+## Check Your Understanding
+
+<quiz>
+What is the Interpreter Pattern for?
+
+- [x] Representing the grammar of a simple language and evaluating sentences written in it
+> Correct. Each grammar rule becomes a class, and the expression tree is evaluated by recursively interpreting its nodes.
+- [ ] Converting an object into a different interface
+- [ ] Iterating over the elements of a composite structure
+- [ ] Selecting one of several algorithms at runtime
+</quiz>

@@ -111,3 +111,15 @@ public class Main {
 ## Proxy vs. Decorator
 
 Same shape, different intent: a decorator **adds behaviour** the client asked for and can be stacked freely; a proxy **controls access** to the subject and usually manages its life-cycle. If the wrapper decides *whether* the call reaches the real object, it is a proxy.
+
+## Check Your Understanding
+
+<quiz>
+What is a Proxy used for?
+
+- [x] To stand in for another object and control access to it — lazy loading, caching, access checks, or remote calls
+> Correct. The proxy implements the same interface as the real subject, so clients cannot tell the difference.
+- [ ] To combine several incompatible interfaces into one
+- [ ] To let an object notify its dependents when it changes
+- [ ] To encapsulate a request as an object
+</quiz>

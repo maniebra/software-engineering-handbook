@@ -184,3 +184,15 @@ This style is less common than constructor injection and setter injection.
 ## Summary
 
 Dependency Injection helps keep classes flexible and testable by moving dependency creation outside the class that uses them.
+
+## Check Your Understanding
+
+<quiz>
+What does Dependency Injection change about a class?
+
+- [x] The class receives its dependencies from outside instead of constructing them itself
+> Correct. Depending on an abstraction that is handed in keeps the class decoupled from concrete implementations and easy to test with a substitute.
+- [ ] The class caches its dependencies so only one instance ever exists
+- [ ] The class exposes a simpler interface over its dependencies
+- [ ] The class copies its dependencies from a prototype
+</quiz>

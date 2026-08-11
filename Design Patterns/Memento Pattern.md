@@ -131,3 +131,15 @@ public class Main {
 - Snapshots of large objects cost memory. Cap the history, or store deltas instead of full copies.
 - Copy mutable fields when snapshotting (`new ArrayList<>(items)`), or the "snapshot" mutates along with the original.
 - [Command](Command%20Pattern.md) offers a lighter alternative to undo: store the *inverse operation* rather than the whole state.
+
+## Check Your Understanding
+
+<quiz>
+What does the Memento Pattern make possible?
+
+- [x] Capturing an object's internal state so it can be restored later, without breaking encapsulation
+> Correct. Only the originator can read the memento's contents; the caretaker just stores it, which is what makes undo safe.
+- [ ] Notifying dependents whenever an object changes
+- [ ] Adding new operations to a class hierarchy from outside
+- [ ] Reusing one instance instead of creating many
+</quiz>

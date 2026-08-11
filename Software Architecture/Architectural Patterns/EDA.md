@@ -42,3 +42,15 @@ The producer does not need to call every service directly; it publishes an event
 
 - Real-time applications.
 - Systems requiring asynchronous handling and scalability (IoT, real-time analytics).
+
+## Check Your Understanding
+
+<quiz>
+What characterises an Event-Driven Architecture?
+
+- [x] Components communicate by producing and consuming events, without knowing who consumes them
+> Correct. That indirection gives loose coupling and easy extension, but makes end-to-end flows harder to trace and usually only eventually consistent.
+- [ ] Every call is a synchronous request that waits for a reply
+- [ ] All components share a single database schema
+- [ ] Components are ordered in a strict top-down hierarchy
+</quiz>

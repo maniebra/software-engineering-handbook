@@ -130,3 +130,15 @@ public class NewsAgency implements Subject {
     }
 }
 ```
+
+## Check Your Understanding
+
+<quiz>
+What relationship does the Observer Pattern define?
+
+- [x] A one-to-many dependency, where every observer is notified when the subject's state changes
+> Correct. The subject knows only the observer interface, so observers can be added or removed at runtime.
+- [ ] A one-to-one bridge between an abstraction and its implementation
+- [ ] A chain in which only the first willing handler responds
+- [ ] A hub through which all colleagues communicate
+</quiz>

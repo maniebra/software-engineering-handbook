@@ -132,3 +132,15 @@ A million trees, one `TreeType` instance.
 - Flyweights **must** be immutable; a shared object that one client mutates corrupts every other client.
 - The factory pool is global state, in a multi-threaded program use a `ConcurrentHashMap`.
 - This is a memory optimization. Do not apply it before you have measured a memory problem.
+
+## Check Your Understanding
+
+<quiz>
+What does the Flyweight Pattern optimise?
+
+- [ ] The number of network calls made by a client
+- [x] Memory use, by sharing the state that is common to many similar objects
+> Correct. Intrinsic (shared) state lives in the flyweight, and extrinsic (per-use) state is passed in by the caller.
+- [ ] The order in which handlers process a request
+- [ ] The time taken to construct one very complex object
+</quiz>

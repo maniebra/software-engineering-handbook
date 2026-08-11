@@ -42,3 +42,15 @@ When a customer places an order, the UI sends the request to the business layer,
 
 - Simple CRUD applications.
 - Small to medium-sized web apps.
+
+## Check Your Understanding
+
+<quiz>
+What is the defining rule of a Layered Architecture?
+
+- [x] Each layer depends only on the layer below it, and each layer has one responsibility
+> Correct. The strict form forbids skipping layers, which keeps the structure predictable — at the cost of extra pass-through code.
+- [ ] Every layer may call every other layer freely
+- [ ] Layers communicate only through asynchronous events
+- [ ] Each layer is deployed as an independent service
+</quiz>

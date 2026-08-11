@@ -146,3 +146,15 @@ public record MacroCommand(java.util.List<Command> commands) implements Command 
     }
 }
 ```
+
+## Check Your Understanding
+
+<quiz>
+What does the Command Pattern encapsulate?
+
+- [ ] The traversal logic of a collection
+- [x] A request as an object, with the receiver and the parameters it needs
+> Correct. Because the request is an object, it can be queued, logged, replayed, or reversed to support undo.
+- [ ] The construction steps of a complex object
+- [ ] The interface differences between two classes
+</quiz>

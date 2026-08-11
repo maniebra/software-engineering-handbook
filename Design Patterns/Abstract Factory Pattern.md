@@ -149,3 +149,15 @@ The `Application` class never names a concrete widget. Adding a Linux family mea
 
 - Adding a new *product type* to the family forces every factory to change.
 - The number of classes grows quickly; do not reach for it until you actually have two families.
+
+## Check Your Understanding
+
+<quiz>
+What distinguishes Abstract Factory from a plain Factory Method?
+
+- [ ] It always returns a cached instance instead of a new one
+- [x] It creates whole families of related products that must be used together
+> Correct. One factory per family keeps the products consistent, so you never mix a Windows button with a macOS checkbox.
+- [ ] It builds one complex object step by step
+- [ ] It exposes a simplified interface over a complicated subsystem
+</quiz>

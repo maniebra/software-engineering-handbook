@@ -132,3 +132,15 @@ Where do `add()` and `remove()` belong?
 - **On the composite only**, type-safe, but the client must know it holds a composite before it can add to it.
 
 GoF favours uniformity; most modern code favours safety. Pick one deliberately, and be consistent.
+
+## Check Your Understanding
+
+<quiz>
+What does the Composite Pattern let a client do?
+
+- [x] Treat individual objects and compositions of objects through the same interface
+> Correct. Leaves and containers share one interface, so client code walks a tree without asking which kind of node it is holding.
+- [ ] Attach extra behaviour to a single object at runtime
+- [ ] Traverse a collection without exposing its internals
+- [ ] Restore an object to a previously saved state
+</quiz>

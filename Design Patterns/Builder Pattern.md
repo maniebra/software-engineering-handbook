@@ -130,3 +130,15 @@ public class PizzaDirector {
 ```
 
 Use a director when the same sequence of steps must be reused with different builders; skip it when the client is happy to chain the calls itself.
+
+## Check Your Understanding
+
+<quiz>
+When is the Builder Pattern the right choice?
+
+- [x] When an object has many optional parts and a constructor would need a long, confusing parameter list
+> Correct. Builder assembles the object step by step, so the construction code stays readable and the object is only exposed once it is complete.
+- [ ] When you need exactly one instance of a class
+- [ ] When two class hierarchies must vary independently
+- [ ] When you want to add behaviour to an object at runtime
+</quiz>

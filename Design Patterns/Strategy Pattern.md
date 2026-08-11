@@ -128,3 +128,15 @@ The pattern is unchanged, only the syntax got shorter. Keep named classes when t
 ## Strategy vs. State
 
 Both hold a reference to an interchangeable object. In Strategy the **client** picks the behaviour and the strategies do not know about each other; in the [State Pattern](State%20Pattern.md) the objects themselves decide the next transition.
+
+## Check Your Understanding
+
+<quiz>
+What is the key idea behind the Strategy Pattern?
+
+- [x] A family of interchangeable algorithms, each in its own class, selected at runtime
+> Correct. The context depends on the strategy interface, so a new algorithm is a new class rather than another branch in a conditional.
+- [ ] One object per state of the context
+- [ ] A shared instance reused across the application
+- [ ] A wrapper that adds behaviour around an existing object
+</quiz>

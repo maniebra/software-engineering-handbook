@@ -96,3 +96,15 @@ All three wrap something, which is why they get confused:
 | Adapter | Make an incompatible interface usable | **Different** from the wrapped object |
 | Decorator | Add behaviour at runtime | **Same** as the wrapped object |
 | Facade | Simplify a whole subsystem | **New, smaller** interface over many objects |
+
+## Check Your Understanding
+
+<quiz>
+What is the purpose of the Adapter Pattern?
+
+- [x] To let two classes with incompatible interfaces work together without changing either one
+> Correct. The adapter translates calls from the interface the client expects into the one the existing class offers.
+- [ ] To add responsibilities to an object dynamically
+- [ ] To decouple an abstraction from its implementation
+- [ ] To give a subsystem a single, simpler entry point
+</quiz>

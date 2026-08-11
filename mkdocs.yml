@@ -58,6 +58,12 @@ theme:
 
 plugins:
   - search
+  # Renders the <quiz> blocks at the end of the pattern notes as interactive
+  # questions with per-answer feedback.
+  - mkdocs_quiz:
+      # Keep the inputs live after an answer is checked, so the quiz shows a
+      # "Try Again" button instead of locking the question.
+      disable_after_submit: false
   # Generates the Open Graph / Twitter preview images used when pages are shared.
   # Needs the imaging extras; set SOCIAL=false to skip it for a quick local build.
   - social:
