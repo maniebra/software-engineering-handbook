@@ -2,9 +2,9 @@ site_name: Software Engineering Handbook
 site_url: https://maniebra.github.io/software-engineering-handbook/
 site_author: Mani Ebrahimi
 site_description: >-
-    A free, open-source handbook of software engineering concepts, design
-    patterns, software architecture, SOLID principles, process models, Agile,
-    system design and quality assurance, explained with examples.
+      A free, open-source handbook of software engineering concepts, design
+      patterns, software architecture, SOLID principles, process models, Agile,
+      system design and quality assurance, explained with examples.
 repo_url: https://github.com/maniebra/software-engineering-handbook
 repo_name: maniebra/software-engineering-handbook
 edit_uri: edit/main/
@@ -15,248 +15,255 @@ docs_dir: build/docs
 site_dir: site
 
 theme:
-    name: material
-    language: en
-    custom_dir: overrides
-    font:
-        text: Inter
-        code: JetBrains Mono
-    icon:
-        repo: fontawesome/brands/github
-    features:
-        - navigation.instant
-        - navigation.tracking
-        - navigation.tabs
-        - navigation.sections
-        - navigation.footer
-        - navigation.top
-        - navigation.indexes
-        - toc.follow
-        - search.suggest
-        - search.highlight
-        - search.share
-        - content.code.copy
-        # Picking a language in one content tab switches every other tab set on
-        # the site to the same language.
-        - content.tabs.link
-    palette:
-        - media: "(prefers-color-scheme)"
-          toggle:
-              icon: material/brightness-auto
-              name: Switch to light mode
-        - media: "(prefers-color-scheme: light)"
-          scheme: default
-          primary: custom
-          accent: custom
-          toggle:
-              icon: material/brightness-7
-              name: Switch to dark mode
-        - media: "(prefers-color-scheme: dark)"
-          scheme: slate
-          primary: custom
-          accent: custom
-          toggle:
-              icon: material/brightness-4
-              name: Switch to system preference
+      name: material
+      language: en
+      custom_dir: overrides
+      font:
+            text: Inter
+            code: JetBrains Mono
+      icon:
+            repo: fontawesome/brands/github
+      features:
+            - navigation.instant
+            - navigation.tracking
+            - navigation.tabs
+            - navigation.sections
+            - navigation.footer
+            - navigation.top
+            - navigation.indexes
+            - toc.follow
+            - search.suggest
+            - search.highlight
+            - search.share
+            - content.code.copy
+            # Picking a language in one content tab switches every other tab set on
+            # the site to the same language.
+            - content.tabs.link
+      palette:
+            - media: "(prefers-color-scheme)"
+              toggle:
+                    icon: material/brightness-auto
+                    name: Switch to light mode
+            - media: "(prefers-color-scheme: light)"
+              scheme: default
+              primary: custom
+              accent: custom
+              toggle:
+                    icon: material/brightness-7
+                    name: Switch to dark mode
+            - media: "(prefers-color-scheme: dark)"
+              scheme: slate
+              primary: custom
+              accent: custom
+              toggle:
+                    icon: material/brightness-4
+                    name: Switch to system preference
 
 plugins:
-    - search
-    # Renders the <quiz> blocks at the end of the pattern notes as interactive
-    # questions with per-answer feedback.
-    - mkdocs_quiz:
-          # Keep the inputs live after an answer is checked, so the quiz shows a
-          # "Try Again" button instead of locking the question.
-          disable_after_submit: false
-    # Generates the Open Graph / Twitter preview images used when pages are shared.
-    # Needs the imaging extras; set SOCIAL=false to skip it for a quick local build.
-    - social:
-          enabled: !ENV [SOCIAL, true]
+      - search
+      # Renders the <quiz> blocks at the end of the pattern notes as interactive
+      # questions with per-answer feedback.
+      - mkdocs_quiz:
+              # Keep the inputs live after an answer is checked, so the quiz shows a
+              # "Try Again" button instead of locking the question.
+              disable_after_submit: false
+      # Generates the Open Graph / Twitter preview images used when pages are shared.
+      # Needs the imaging extras; set SOCIAL=false to skip it for a quick local build.
+      - social:
+              enabled: !ENV [SOCIAL, true]
 
 extra_css:
-    - assets/extra.css
+      - assets/extra.css
 
 # MathJax renders the $...$ and $$...$$ blocks produced by the arithmatex
 # extension; the config file must load before the library itself.
 extra_javascript:
-    - assets/mathjax.js
-    - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+      - assets/mathjax.js
+      - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:
-    - admonition
-    - attr_list
-    - md_in_html
-    - tables
-    - toc:
-          permalink: true
-    - pymdownx.arithmatex:
-          generic: true
-    - pymdownx.details
-    - pymdownx.highlight:
-          anchor_linenums: true
-    - pymdownx.inlinehilite
-    - pymdownx.snippets
-    - pymdownx.superfences:
-          custom_fences:
-              # ```mermaid blocks are rendered client-side by Material's mermaid support.
-              - name: mermaid
-                class: mermaid
-                format: !!python/name:pymdownx.superfences.fence_code_format
-    # ```plantuml blocks are rendered to inline SVG at build time by the public
-    # PlantUML server. Set PLANTUML_SERVER to point at a self-hosted instance.
-    - plantuml_markdown:
-          server: !ENV [PLANTUML_SERVER, "https://www.plantuml.com/plantuml"]
-          format: svg
-          cachedir: .cache/plantuml
-    - pymdownx.tabbed:
-          alternate_style: true
-    - pymdownx.emoji:
-          emoji_index: !!python/name:material.extensions.emoji.twemoji
-          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      - admonition
+      - attr_list
+      - md_in_html
+      - tables
+      - toc:
+              permalink: true
+      - pymdownx.arithmatex:
+              generic: true
+      - pymdownx.details
+      - pymdownx.highlight:
+              anchor_linenums: true
+      - pymdownx.inlinehilite
+      - pymdownx.snippets
+      - pymdownx.superfences:
+              custom_fences:
+                    # ```mermaid blocks are rendered client-side by Material's mermaid support.
+                    - name: mermaid
+                      class: mermaid
+                      format: !!python/name:pymdownx.superfences.fence_code_format
+      # ```plantuml blocks are rendered to inline SVG at build time by the public
+      # PlantUML server. Set PLANTUML_SERVER to point at a self-hosted instance.
+      - plantuml_markdown:
+              server:
+                    !ENV [PLANTUML_SERVER, "https://www.plantuml.com/plantuml"]
+              format: svg
+              cachedir: .cache/plantuml
+      - pymdownx.tabbed:
+              alternate_style: true
+      - pymdownx.emoji:
+              emoji_index: !!python/name:material.extensions.emoji.twemoji
+              emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra:
-    social:
-        - icon: fontawesome/brands/github
-          link: https://github.com/maniebra/software-engineering-handbook
-          name: The repository on GitHub
+      social:
+            - icon: fontawesome/brands/github
+              link: https://github.com/maniebra/software-engineering-handbook
+              name: The repository on GitHub
 
 nav:
-    - Home: index.md
-    - Design Patterns:
-          - Design Patterns/index.md
-          - Creational:
-                - Singleton Pattern: Design Patterns/Singleton Pattern.md
-                - Factory Pattern: Design Patterns/Factory Pattern.md
-                - Abstract Factory Pattern: Design Patterns/Abstract Factory Pattern.md
-                - Builder Pattern: Design Patterns/Builder Pattern.md
-                - Prototype Pattern: Design Patterns/Prototype Pattern.md
-          - Structural:
-                - Adapter Pattern: Design Patterns/Adapter Pattern.md
-                - Bridge Pattern: Design Patterns/Bridge Pattern.md
-                - Composite Pattern: Design Patterns/Composite Pattern.md
-                - Decorator Pattern: Design Patterns/Decorator Pattern.md
-                - Facade Pattern: Design Patterns/Facade Pattern.md
-                - Flyweight Pattern: Design Patterns/Flyweight Pattern.md
-                - Proxy Pattern: Design Patterns/Proxy Pattern.md
-          - Behavioural:
-                - Chain of Responsibility Pattern: Design Patterns/Chain of Responsibility Pattern.md
-                - Command Pattern: Design Patterns/Command Pattern.md
-                - Interpreter Pattern: Design Patterns/Interpreter Pattern.md
-                - Iterator Pattern: Design Patterns/Iterator Pattern.md
-                - Mediator Pattern: Design Patterns/Mediator Pattern.md
-                - Memento Pattern: Design Patterns/Memento Pattern.md
-                - Observer Pattern: Design Patterns/Observer Pattern.md
-                - State Pattern: Design Patterns/State Pattern.md
-                - Strategy Pattern: Design Patterns/Strategy Pattern.md
-                - Template Method Pattern: Design Patterns/Template Method Pattern.md
-                - Visitor Pattern: Design Patterns/Visitor Pattern.md
-          - Dependency Injection: Snippets and Cheatsheets/Dependency Injection Pattern.md
-    - Architecture:
-          - Rules of Software Architecture: Software Architecture/Rules of Software Architecture.md
-          - Architectural Characteristics:
-                - Software Architecture/Architectural Characteristics/index.md
-                - Operational:
-                      - Availability: Software Architecture/Architectural Characteristics/Availability.md
-                      - Performance: Software Architecture/Architectural Characteristics/Performance.md
-                      - Scalability: Software Architecture/Architectural Characteristics/Scalability.md
-                      - Elasticity: Software Architecture/Architectural Characteristics/Elasticity.md
-                      - Reliability: Software Architecture/Architectural Characteristics/Reliability.md
-                      - Recoverability: Software Architecture/Architectural Characteristics/Recoverability.md
-                - Structural:
-                      - Maintainability: Software Architecture/Architectural Characteristics/Maintainability.md
-                      - Modularity: Software Architecture/Architectural Characteristics/Modularity.md
-                      - Testability: Software Architecture/Architectural Characteristics/Testability.md
-                      - Deployability: Software Architecture/Architectural Characteristics/Deployability.md
-                      - Configurability: Software Architecture/Architectural Characteristics/Configurability.md
-                - Cross-cutting:
-                      - Security: Software Architecture/Architectural Characteristics/Security.md
-                      - Observability: Software Architecture/Architectural Characteristics/Observability.md
-                      - Usability: Software Architecture/Architectural Characteristics/Usability.md
-                      - Portability: Software Architecture/Architectural Characteristics/Portability.md
-                      - Interoperability: Software Architecture/Architectural Characteristics/Interoperability.md
-          - Architectural Patterns:
-                - Clean Architecture: Software Architecture/Architectural Patterns/Clean Architecture.md
-                - Hexagonal Architecture: Software Architecture/Architectural Patterns/Hexagonal.md
-                - Layered Architecture: Software Architecture/Architectural Patterns/Layered Architecture.md
-                - Event-Driven Architecture: Software Architecture/Architectural Patterns/EDA.md
-                - Microservice Architecture: Software Architecture/Architectural Patterns/Microservice Architecture.md
-                - MVC: Software Architecture/Architectural Patterns/MVC.md
-                - MVVM: Software Architecture/Architectural Patterns/MVVM.md
-    - Principles:
-          - SOLID Principles: Principles/SOLID Principles.md
-          - Design Principles: Principles/Design Principles.md
-          - Process Principles: Principles/Process Principles.md
-          - Planning Principles: Principles/Planning Principles.md
-          - Communication Principles: Principles/Communication Principles.md
-          - Construction Principles: Principles/Construction Principles.md
-          - Deployment Principles: Principles/Deployment Principles.md
-          - Practice Principles: Principles/Practice Principles.md
-          - Contribution Principles: Principles/Contribution Principles.md
-          - Modeling Principles:
-                - Agile Modeling Principles: Principles/Modeling Principles/Agile Modeling Principles.md
-                - Design Modeling Principles: Principles/Modeling Principles/Design Modeling Principles.md
-                - Requirements Modeling Principles: Principles/Modeling Principles/Requirements Modeling Principles.md
-                - Living Modeling Principles: Principles/Modeling Principles/Living Modeling Principles.md
-    - Methodologies:
-          - Methodologies/index.md
-          - Choosing a Methodology: Methodologies/Choosing a Methodology.md
-          - Process Models:
-                - Methodologies/Process Models/index.md
-                - Waterfall Model: Methodologies/Process Models/Waterfall Model.md
-                - V-Model: Methodologies/Process Models/V-Model.md
-                - Incremental Model: Methodologies/Process Models/Incremental Model.md
-                - Iterative Model: Methodologies/Process Models/Iterative Model.md
-                - Unified Process Model (UP): Methodologies/Process Models/Unified Process Model (UP).md
-                - Other Process Models: Methodologies/Process Models/Other Process Models.md
-                - Use Cases Cheatsheet: Snippets and Cheatsheets/Process Models Use cases.md
-          - Agile:
-                - Methodologies/Agile/index.md
-                - The Definition of Agility: Methodologies/Agile/The Definition of Agility.md
-                - Agile Principles: Methodologies/Agile/Agile Principles.md
-                - User Stories: Methodologies/Agile/User Stories.md
-                - Estimation and Velocity: Methodologies/Agile/Estimation and Velocity.md
-                - Agile Anti-patterns: Methodologies/Agile/Agile Anti-patterns.md
-          - Scrum:
-                - Methodologies/Scrum/index.md
-                - Scrum Principles: Methodologies/Scrum/Scrum Principles.md
-                - Roles in Scrum: Methodologies/Scrum/Roles in Scrum.md
-                - Sprints: Methodologies/Scrum/Sprints.md
-                - Scrum Events: Methodologies/Scrum/Scrum Events.md
-                - Scrum Artifacts: Methodologies/Scrum/Scrum Artifacts.md
-                - Definition of Done: Methodologies/Scrum/Definition of Done.md
-          - Extreme Programming:
-                - Methodologies/Extreme Programming/index.md
-                - XP Practices in Detail: Methodologies/Extreme Programming/XP Practices.md
-          - Kanban:
-                - Methodologies/Kanban/index.md
-                - WIP Limits and Flow Metrics: Methodologies/Kanban/WIP Limits and Flow Metrics.md
-          - Lean:
-                - Methodologies/Lean/index.md
-          - DSDM:
-                - Methodologies/DSDM/index.md
-                - MoSCoW Prioritization: Methodologies/DSDM/MoSCoW.md
-                - DSDM Phases and Roles: Methodologies/DSDM/DSDM Phases and Roles.md
-          - Scaling Agile: Methodologies/Scaling Agile.md
-          - Other Methodologies: Methodologies/Other Methodologies.md
-    - Assessments:
-          - Assessments/index.md
-          - Methodologies:
-                - Agile Foundations: Assessments/Methodologies/Agile Foundations Quiz.md
-                - Scrum: Assessments/Methodologies/Scrum Quiz.md
-                - Flow, Kanban and Lean: Assessments/Methodologies/Kanban and Lean Quiz.md
-                - Practices and Governance: Assessments/Methodologies/XP DSDM and Scaling Quiz.md
-          - Software Architecture:
-                - Architecture Fundamentals: Assessments/Software Architecture/Architecture Fundamentals Quiz.md
-                - Architectural Characteristics: Assessments/Software Architecture/Architectural Characteristics Quiz.md
-                - Operational Characteristics: Assessments/Software Architecture/Operational Characteristics Quiz.md
-                - Structural and Cross-cutting: Assessments/Software Architecture/Structural and Cross-cutting Characteristics Quiz.md
-                - Architectural Patterns: Assessments/Software Architecture/Architectural Patterns Quiz.md
-    - System Design:
-          - Systems Development Life Cycle (SDLC): System Design/Introduction/Systems Development Life Cycle (SDLC).md
-          - Load Balancers: System Design/Load Balancers.md
-          - Message Queues: System Design/Message Queues.md
-    - Quality Assurance:
-          - Quality Assurance/index.md
-          - Methods of Testing: Quality Assurance/Methods of Testing.md
-    - More:
-          - Snippets and Cheatsheets: Snippets and Cheatsheets/index.md
-          - Organizational Paradigms: Software Engineering/Organizational Paradigms.md
+      - Home: index.md
+      - Design Patterns:
+              - Design Patterns/index.md
+              - Creational:
+                      - Singleton Pattern: Design Patterns/Singleton Pattern.md
+                      - Factory Pattern: Design Patterns/Factory Pattern.md
+                      - Abstract Factory Pattern: Design Patterns/Abstract Factory Pattern.md
+                      - Builder Pattern: Design Patterns/Builder Pattern.md
+                      - Prototype Pattern: Design Patterns/Prototype Pattern.md
+              - Structural:
+                      - Adapter Pattern: Design Patterns/Adapter Pattern.md
+                      - Bridge Pattern: Design Patterns/Bridge Pattern.md
+                      - Composite Pattern: Design Patterns/Composite Pattern.md
+                      - Decorator Pattern: Design Patterns/Decorator Pattern.md
+                      - Facade Pattern: Design Patterns/Facade Pattern.md
+                      - Flyweight Pattern: Design Patterns/Flyweight Pattern.md
+                      - Proxy Pattern: Design Patterns/Proxy Pattern.md
+              - Behavioural:
+                      - Chain of Responsibility Pattern: Design Patterns/Chain of Responsibility Pattern.md
+                      - Command Pattern: Design Patterns/Command Pattern.md
+                      - Interpreter Pattern: Design Patterns/Interpreter Pattern.md
+                      - Iterator Pattern: Design Patterns/Iterator Pattern.md
+                      - Mediator Pattern: Design Patterns/Mediator Pattern.md
+                      - Memento Pattern: Design Patterns/Memento Pattern.md
+                      - Observer Pattern: Design Patterns/Observer Pattern.md
+                      - State Pattern: Design Patterns/State Pattern.md
+                      - Strategy Pattern: Design Patterns/Strategy Pattern.md
+                      - Template Method Pattern: Design Patterns/Template Method Pattern.md
+                      - Visitor Pattern: Design Patterns/Visitor Pattern.md
+              - Dependency Injection: Snippets and Cheatsheets/Dependency Injection Pattern.md
+      - Architecture:
+              - Rules of Software Architecture: Software Architecture/Rules of Software Architecture.md
+              - Architectural Characteristics:
+                      - Software Architecture/Architectural Characteristics/index.md
+                      - Operational:
+                              - Availability: Software Architecture/Architectural Characteristics/Availability.md
+                              - Performance: Software Architecture/Architectural Characteristics/Performance.md
+                              - Scalability: Software Architecture/Architectural Characteristics/Scalability.md
+                              - Elasticity: Software Architecture/Architectural Characteristics/Elasticity.md
+                              - Reliability: Software Architecture/Architectural Characteristics/Reliability.md
+                              - Recoverability: Software Architecture/Architectural Characteristics/Recoverability.md
+                      - Structural:
+                              - Maintainability: Software Architecture/Architectural Characteristics/Maintainability.md
+                              - Modularity: Software Architecture/Architectural Characteristics/Modularity.md
+                              - Testability: Software Architecture/Architectural Characteristics/Testability.md
+                              - Deployability: Software Architecture/Architectural Characteristics/Deployability.md
+                              - Configurability: Software Architecture/Architectural Characteristics/Configurability.md
+                      - Cross-cutting:
+                              - Security: Software Architecture/Architectural Characteristics/Security.md
+                              - Observability: Software Architecture/Architectural Characteristics/Observability.md
+                              - Usability: Software Architecture/Architectural Characteristics/Usability.md
+                              - Portability: Software Architecture/Architectural Characteristics/Portability.md
+                              - Interoperability: Software Architecture/Architectural Characteristics/Interoperability.md
+              - C4 Modeling:
+                      - Software Architecture/C4 Modeling/index.md
+                      - Level 1, System Context: Software Architecture/C4 Modeling/Level 1 - System Context.md
+                      - Level 2, Containers: Software Architecture/C4 Modeling/Level 2 - Containers.md
+                      - Level 3, Components: Software Architecture/C4 Modeling/Level 3 - Components.md
+                      - Level 4, Code: Software Architecture/C4 Modeling/Level 4 - Code.md
+              - Architectural Patterns:
+                      - Clean Architecture: Software Architecture/Architectural Patterns/Clean Architecture.md
+                      - Hexagonal Architecture: Software Architecture/Architectural Patterns/Hexagonal.md
+                      - Layered Architecture: Software Architecture/Architectural Patterns/Layered Architecture.md
+                      - Event-Driven Architecture: Software Architecture/Architectural Patterns/EDA.md
+                      - Microservice Architecture: Software Architecture/Architectural Patterns/Microservice Architecture.md
+                      - MVC: Software Architecture/Architectural Patterns/MVC.md
+                      - MVVM: Software Architecture/Architectural Patterns/MVVM.md
+      - Principles:
+              - SOLID Principles: Principles/SOLID Principles.md
+              - Design Principles: Principles/Design Principles.md
+              - Process Principles: Principles/Process Principles.md
+              - Planning Principles: Principles/Planning Principles.md
+              - Communication Principles: Principles/Communication Principles.md
+              - Construction Principles: Principles/Construction Principles.md
+              - Deployment Principles: Principles/Deployment Principles.md
+              - Practice Principles: Principles/Practice Principles.md
+              - Contribution Principles: Principles/Contribution Principles.md
+              - Modeling Principles:
+                      - Agile Modeling Principles: Principles/Modeling Principles/Agile Modeling Principles.md
+                      - Design Modeling Principles: Principles/Modeling Principles/Design Modeling Principles.md
+                      - Requirements Modeling Principles: Principles/Modeling Principles/Requirements Modeling Principles.md
+                      - Living Modeling Principles: Principles/Modeling Principles/Living Modeling Principles.md
+      - Methodologies:
+              - Methodologies/index.md
+              - Choosing a Methodology: Methodologies/Choosing a Methodology.md
+              - Process Models:
+                      - Methodologies/Process Models/index.md
+                      - Waterfall Model: Methodologies/Process Models/Waterfall Model.md
+                      - V-Model: Methodologies/Process Models/V-Model.md
+                      - Incremental Model: Methodologies/Process Models/Incremental Model.md
+                      - Iterative Model: Methodologies/Process Models/Iterative Model.md
+                      - Unified Process Model (UP): Methodologies/Process Models/Unified Process Model (UP).md
+                      - Other Process Models: Methodologies/Process Models/Other Process Models.md
+                      - Use Cases Cheatsheet: Snippets and Cheatsheets/Process Models Use cases.md
+              - Agile:
+                      - Methodologies/Agile/index.md
+                      - The Definition of Agility: Methodologies/Agile/The Definition of Agility.md
+                      - Agile Principles: Methodologies/Agile/Agile Principles.md
+                      - User Stories: Methodologies/Agile/User Stories.md
+                      - Estimation and Velocity: Methodologies/Agile/Estimation and Velocity.md
+                      - Agile Anti-patterns: Methodologies/Agile/Agile Anti-patterns.md
+              - Scrum:
+                      - Methodologies/Scrum/index.md
+                      - Scrum Principles: Methodologies/Scrum/Scrum Principles.md
+                      - Roles in Scrum: Methodologies/Scrum/Roles in Scrum.md
+                      - Sprints: Methodologies/Scrum/Sprints.md
+                      - Scrum Events: Methodologies/Scrum/Scrum Events.md
+                      - Scrum Artifacts: Methodologies/Scrum/Scrum Artifacts.md
+                      - Definition of Done: Methodologies/Scrum/Definition of Done.md
+              - Extreme Programming:
+                      - Methodologies/Extreme Programming/index.md
+                      - XP Practices in Detail: Methodologies/Extreme Programming/XP Practices.md
+              - Kanban:
+                      - Methodologies/Kanban/index.md
+                      - WIP Limits and Flow Metrics: Methodologies/Kanban/WIP Limits and Flow Metrics.md
+              - Lean:
+                      - Methodologies/Lean/index.md
+              - DSDM:
+                      - Methodologies/DSDM/index.md
+                      - MoSCoW Prioritization: Methodologies/DSDM/MoSCoW.md
+                      - DSDM Phases and Roles: Methodologies/DSDM/DSDM Phases and Roles.md
+              - Scaling Agile: Methodologies/Scaling Agile.md
+              - Other Methodologies: Methodologies/Other Methodologies.md
+      - Assessments:
+              - Assessments/index.md
+              - Methodologies:
+                      - Agile Foundations: Assessments/Methodologies/Agile Foundations Quiz.md
+                      - Scrum: Assessments/Methodologies/Scrum Quiz.md
+                      - Flow, Kanban and Lean: Assessments/Methodologies/Kanban and Lean Quiz.md
+                      - Practices and Governance: Assessments/Methodologies/XP DSDM and Scaling Quiz.md
+              - Software Architecture:
+                      - Architecture Fundamentals: Assessments/Software Architecture/Architecture Fundamentals Quiz.md
+                      - Architectural Characteristics: Assessments/Software Architecture/Architectural Characteristics Quiz.md
+                      - Operational Characteristics: Assessments/Software Architecture/Operational Characteristics Quiz.md
+                      - Structural and Cross-cutting: Assessments/Software Architecture/Structural and Cross-cutting Characteristics Quiz.md
+                      - Architectural Patterns: Assessments/Software Architecture/Architectural Patterns Quiz.md
+      - System Design:
+              - Systems Development Life Cycle (SDLC): System Design/Introduction/Systems Development Life Cycle (SDLC).md
+              - Load Balancers: System Design/Load Balancers.md
+              - Message Queues: System Design/Message Queues.md
+      - Quality Assurance:
+              - Quality Assurance/index.md
+              - Methods of Testing: Quality Assurance/Methods of Testing.md
+      - More:
+              - Snippets and Cheatsheets: Snippets and Cheatsheets/index.md
+              - Organizational Paradigms: Software Engineering/Organizational Paradigms.md
