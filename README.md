@@ -94,6 +94,7 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 - [Principles](Principles)
 	- [SOLID Principles](Principles/SOLID%20Principles.md)
 	- [Design Principles](Principles/Design%20Principles.md)
+	- [UI/UX Design Principles](Principles/UI-UX%20Design%20Principles.md)
 	- [Process Principles](Principles/Process%20Principles.md)
 	- [Modeling Principles](Principles/Modeling%20Principles)
 		- [Agile Modeling Principles](Principles/Modeling%20Principles/Agile%20Modeling%20Principles.md)
@@ -137,6 +138,14 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 17. [Shape Up](https://basecamp.com/shapeup), Ryan Singer, Basecamp
 18. Agile Software Development: The Cooperative Game, Alistair Cockburn
 19. [Accelerate](https://itrevolution.com/product/accelerate/), Nicole Forsgren, Jez Humble and Gene Kim
+
+## UI/UX
+
+20. Universal Principles of Design, William Lidwell, Kritina Holden, Jill Butler
+21. [Laws of UX](https://lawsofux.com), Jon Yablonski
+22. [10 Usability Heuristics for User Interface Design](https://www.nngroup.com/articles/ten-usability-heuristics/), Jakob Nielsen
+23. Thinking, Fast and Slow, Daniel Kahneman
+24. Flow: The Psychology of Optimal Experience, Mihaly Csikszentmihalyi
 
 
 # 🤝 Contributing
