@@ -66,6 +66,6 @@ for path in sorted(pathlib.Path(sys.argv[1]).rglob('*.md')):
     path.write_text(f'---\ndescription: {json.dumps(description)}\n---\n\n{body}', encoding='utf-8')
 PY
 
-printf 'User-agent: *\nAllow: /\nSitemap: https://maniebra.github.io/software-engineering-docs/sitemap.xml\n' > "$out/robots.txt"
+printf 'User-agent: *\nAllow: /\nSitemap: https://maniebra.github.io/software-engineering-handbook/sitemap.xml\n' > "$out/robots.txt"
 
 echo "prepared $(find "$out" -name '*.md' | wc -l) pages in $out"

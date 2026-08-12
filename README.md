@@ -1,7 +1,7 @@
 
-# 🛠️ Software Engineering Docs
+# 🛠️ Software Engineering Handbook
 
-**Read it online: <https://maniebra.github.io/software-engineering-docs/>**
+**Read it online: <https://maniebra.github.io/software-engineering-handbook/>**
 
 Since I am studying software engineering, I encountered many concepts and ideas that every software engineer needs to know. Hence, I decided to compile them all into one repository that my peers and beginners can use.
 

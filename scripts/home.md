@@ -2,7 +2,7 @@
 description: A free, open-source handbook of software engineering concepts, design patterns, software architecture, SOLID principles, process models, Agile, system design and QA, explained with examples.
 ---
 
-# Software Engineering Docs
+# Software Engineering Handbook
 
 A free, open-source handbook of the concepts every software engineer is expected
 to know: **design patterns**, **software architecture**, **SOLID principles**,
@@ -53,7 +53,7 @@ Written while studying software engineering, kept for peers and beginners.
 
 This repository aims to become one of the most useful open software engineering
 guides available, and contributions are very welcome. Fork
-[the repository](https://github.com/maniebra/software-engineering-docs), add or
+[the repository](https://github.com/maniebra/software-engineering-handbook), add or
 improve a page, and open a pull request.
 
 ## Sources & references
