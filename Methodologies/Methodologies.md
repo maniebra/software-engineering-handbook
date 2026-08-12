@@ -25,6 +25,7 @@ management frame with XP for the engineering practices.
 ## Cross-cutting pages
 
 - [Choosing a Methodology](Choosing%20a%20Methodology.md), how to pick, and why hybrids are normal.
+- [Cynefin Framework](Cynefin%20Framework.md), sorting the problem by how cause and effect behave before picking a response.
 - [Scaling Agile](Scaling%20Agile.md), LeSS, SAFe, Scrum@Scale and what actually breaks with many teams.
 - [Other Methodologies](Other%20Methodologies.md), Crystal, FDD, RAD, Scrumban, Spiral and Shape Up.
 - [Agile Anti-patterns](Agile/Agile%20Anti-patterns.md), how adoptions fail while keeping the name.

@@ -44,6 +44,7 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 		- [DSDM Phases and Roles](Methodologies/DSDM/DSDM%20Phases%20and%20Roles.md)
 	- [Scaling Agile](Methodologies/Scaling%20Agile.md)
 	- [Other Methodologies](Methodologies/Other%20Methodologies.md)
+	- [Cynefin Framework](Methodologies/Cynefin%20Framework.md)
 	- [Systems Development Life Cycle (SDLC)](Methodologies/Systems%20Development%20Life%20Cycle%20(SDLC).md)
 - [System Design](/System%20Design/)
 	- [Feasibility Analysis](/System%20Design/Planning/Feasibility%20Analysis.md)

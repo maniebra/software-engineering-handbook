@@ -207,6 +207,7 @@ nav:
       - Methodologies:
               - Methodologies/index.md
               - Choosing a Methodology: Methodologies/Choosing a Methodology.md
+              - Cynefin Framework: Methodologies/Cynefin Framework.md
               - Systems Development Life Cycle (SDLC): Methodologies/Systems Development Life Cycle (SDLC).md
               - Process Models:
                       - Methodologies/Process Models/index.md
