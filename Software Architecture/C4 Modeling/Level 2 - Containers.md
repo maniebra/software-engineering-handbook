@@ -18,36 +18,33 @@ Not containers: a library or JAR (that is code inside a container), a class, a K
 ### The example
 
 ```mermaid
-flowchart TB
-    customer(["<b>Personal Banking Customer</b><br/><i>[Person]</i>"])
+C4Container
+    title Container diagram for Internet Banking System
 
-    subgraph boundary["Internet Banking System"]
-        spa["<b>Single-Page Application</b><br/><i>[Container: TypeScript, React]</i><br/>Account and payment UI<br/>in the customer's browser"]
-        mobile["<b>Mobile App</b><br/><i>[Container: Kotlin, Swift]</i><br/>Limited account and<br/>payment functionality"]
-        web["<b>Web Application</b><br/><i>[Container: Java, Spring MVC]</i><br/>Serves static content<br/>and the SPA bundle"]
-        api["<b>API Application</b><br/><i>[Container: Java, Spring Boot]</i><br/>Banking functionality over<br/>a JSON/HTTPS API"]
-        db[("<b>Database</b><br/><i>[Container: PostgreSQL]</i><br/>Stores users, hashed<br/>credentials, audit log")]
-    end
+    Person(customer, "Personal Banking Customer", "A customer of the bank")
 
-    mainframe["<b>Mainframe Banking System</b><br/><i>[Software System]</i>"]
-    email["<b>E-mail System</b><br/><i>[Software System]</i>"]
+    Container_Boundary(ib, "Internet Banking System") {
+        Container(spa, "Single-Page Application", "TypeScript, React", "Account and payment UI in the customer's browser")
+        Container(mobile, "Mobile App", "Kotlin, Swift", "Limited account and payment functionality")
+        Container(web, "Web Application", "Java, Spring MVC", "Serves static content and the SPA bundle")
+        Container(api, "API Application", "Java, Spring Boot", "Banking functionality over a JSON/HTTPS API")
+        ContainerDb(db, "Database", "PostgreSQL", "Stores users, hashed credentials, audit log")
+    }
 
-    customer -->|"Visits bank.com<br/>[HTTPS]"| web
-    customer -->|"Views accounts,<br/>makes payments using"| spa
-    customer -->|"Views accounts,<br/>makes payments using"| mobile
-    web -->|"Delivers to the<br/>customer's browser"| spa
-    spa -->|"Makes API calls to<br/>[JSON/HTTPS]"| api
-    mobile -->|"Makes API calls to<br/>[JSON/HTTPS]"| api
-    api -->|"Reads from and<br/>writes to [TCP/IP]"| db
-    api -->|"Gets account information<br/>from [XML/HTTPS]"| mainframe
-    api -->|"Sends e-mail using<br/>[SMTP]"| email
+    System_Ext(mainframe, "Mainframe Banking System", "Core banking data")
+    System_Ext(email, "E-mail System", "Microsoft Exchange")
 
-    classDef c fill:#1f6091,stroke:#123f61,color:#fff
-    classDef ext fill:#4d4d4d,stroke:#333,color:#fff
-    classDef person fill:#08427b,stroke:#052e56,color:#fff
-    class spa,mobile,web,api,db c
-    class mainframe,email ext
-    class customer person
+    Rel(customer, web, "Visits bank.com using", "HTTPS")
+    Rel(customer, spa, "Views accounts, makes payments using")
+    Rel(customer, mobile, "Views accounts, makes payments using")
+    Rel(web, spa, "Delivers to the customer's browser")
+    Rel(spa, api, "Makes API calls to", "JSON/HTTPS")
+    Rel(mobile, api, "Makes API calls to", "JSON/HTTPS")
+    Rel(api, db, "Reads from and writes to", "TCP/IP")
+    Rel(api, mainframe, "Gets account information from", "XML/HTTPS")
+    Rel(api, email, "Sends e-mail using", "SMTP")
+
+    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
 ```
 
 Three things this diagram makes obvious that level 1 could not: the browser app talks to the API directly rather than through the web server; the database is reachable only from the API; and the mainframe integration has exactly one caller.

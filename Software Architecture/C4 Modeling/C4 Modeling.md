@@ -33,7 +33,7 @@ C4 defines only a few nouns, and being strict about them is what makes the diagr
 
 ```mermaid
 flowchart LR
-    P([Person<br/><i>a human user of the system</i>])
+    P[Person<br/><i>a human user of the system</i>]
     S[Software System<br/><i>the highest level of abstraction;<br/>delivers value to its users</i>]
     C[Container<br/><i>a separately runnable or<br/>deployable unit: app, service,<br/>database, file system</i>]
     K[Component<br/><i>a grouping of related code<br/>behind an interface, running<br/>inside a container</i>]
@@ -76,7 +76,7 @@ The rest of this section models one system, an internet banking product, at each
 ```mermaid
 flowchart TB
     subgraph L1["Level 1: Context"]
-        cust([Customer]) --> ib[Internet Banking System]
+        cust[Customer] --> ib[Internet Banking System]
         ib --> ms[Mainframe Banking System]
     end
     subgraph L2["Level 2: Containers"]

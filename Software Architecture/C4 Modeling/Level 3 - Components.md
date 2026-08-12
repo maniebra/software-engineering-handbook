@@ -7,44 +7,41 @@ Draw this diagram only for containers where the internal structure is non-obviou
 ### The example: inside the API Application
 
 ```mermaid
-flowchart TB
-    spa["<b>Single-Page Application</b><br/><i>[Container: React]</i>"]
-    mobile["<b>Mobile App</b><br/><i>[Container: Kotlin/Swift]</i>"]
+C4Component
+    title Component diagram for the API Application
 
-    subgraph api["API Application [Container: Spring Boot]"]
-        signin["<b>Sign In Controller</b><br/><i>[Component: Spring MVC REST Controller]</i><br/>Handles sign-in requests"]
-        accounts["<b>Accounts Summary Controller</b><br/><i>[Component: Spring MVC REST Controller]</i><br/>Serves the account summary"]
-        reset["<b>Reset Password Controller</b><br/><i>[Component: Spring MVC REST Controller]</i><br/>Handles password resets"]
-        security["<b>Security Component</b><br/><i>[Component: Spring Bean]</i><br/>Authenticates users against<br/>stored credentials"]
-        mfFacade["<b>Mainframe Facade</b><br/><i>[Component: Spring Bean]</i><br/>Wraps the mainframe protocol<br/>behind a domain interface"]
-        emailer["<b>E-mail Component</b><br/><i>[Component: Spring Bean]</i><br/>Sends e-mail to users"]
-    end
+    Container(spa, "Single-Page Application", "React")
+    Container(mobile, "Mobile App", "Kotlin/Swift")
 
-    db[("<b>Database</b><br/><i>[Container: PostgreSQL]</i>")]
-    mainframe["<b>Mainframe Banking System</b><br/><i>[Software System]</i>"]
-    email["<b>E-mail System</b><br/><i>[Software System]</i>"]
+    Container_Boundary(api, "API Application [Spring Boot]") {
+        Component(signin, "Sign In Controller", "Spring MVC REST Controller", "Handles sign-in requests")
+        Component(accounts, "Accounts Summary Controller", "Spring MVC REST Controller", "Serves the account summary")
+        Component(reset, "Reset Password Controller", "Spring MVC REST Controller", "Handles password resets")
+        Component(security, "Security Component", "Spring Bean", "Authenticates users against stored credentials")
+        Component(mfFacade, "Mainframe Facade", "Spring Bean", "Wraps the mainframe protocol behind a domain interface")
+        Component(emailer, "E-mail Component", "Spring Bean", "Sends e-mail to users")
+    }
 
-    spa -->|"JSON/HTTPS"| signin
-    spa -->|"JSON/HTTPS"| accounts
-    spa -->|"JSON/HTTPS"| reset
-    mobile -->|"JSON/HTTPS"| signin
-    mobile -->|"JSON/HTTPS"| accounts
+    ContainerDb(db, "Database", "PostgreSQL")
+    System_Ext(mainframe, "Mainframe Banking System")
+    System_Ext(email, "E-mail System")
 
-    signin -->|"Uses"| security
-    reset -->|"Uses"| security
-    reset -->|"Uses"| emailer
-    accounts -->|"Uses"| mfFacade
+    Rel(spa, signin, "Calls", "JSON/HTTPS")
+    Rel(spa, accounts, "Calls", "JSON/HTTPS")
+    Rel(spa, reset, "Calls", "JSON/HTTPS")
+    Rel(mobile, signin, "Calls", "JSON/HTTPS")
+    Rel(mobile, accounts, "Calls", "JSON/HTTPS")
 
-    security -->|"Reads credentials from<br/>[TCP/IP]"| db
-    mfFacade -->|"Calls [XML/HTTPS]"| mainframe
-    emailer -->|"Sends via [SMTP]"| email
+    Rel(signin, security, "Uses")
+    Rel(reset, security, "Uses")
+    Rel(reset, emailer, "Uses")
+    Rel(accounts, mfFacade, "Uses")
 
-    classDef comp fill:#2f7fc0,stroke:#1d5c8f,color:#fff
-    classDef cont fill:#1f6091,stroke:#123f61,color:#fff
-    classDef ext fill:#4d4d4d,stroke:#333,color:#fff
-    class signin,accounts,reset,security,mfFacade,emailer comp
-    class spa,mobile,db cont
-    class mainframe,email ext
+    Rel(security, db, "Reads credentials from", "TCP/IP")
+    Rel(mfFacade, mainframe, "Calls", "XML/HTTPS")
+    Rel(emailer, email, "Sends via", "SMTP")
+
+    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
 ```
 
 What the diagram earns its keep for: it shows that every controller depends on the Security component, and that only one component knows the mainframe protocol. Both are architectural facts, and both are checkable.

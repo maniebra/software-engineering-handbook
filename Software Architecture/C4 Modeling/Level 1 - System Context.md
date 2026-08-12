@@ -6,7 +6,7 @@ A **System Context diagram** shows one software system as a single box, the peop
 
 | Element | Meaning | Usual shape |
 | --- | --- | --- |
-| Person | A human role, not a named individual | Rounded box or stick figure |
+| Person | A human role, not a named individual | Box with a head on top, or a stick figure |
 | Software System (in scope) | The system being described | Filled box, centre of the diagram |
 | Software System (external) | Anything owned or run by someone else, or already existing | Greyed box |
 | Relationship | An interaction, labelled with a verb phrase | Arrow |
@@ -16,26 +16,22 @@ Deliberately absent: technologies, protocols at the implementation level, deploy
 ### The example
 
 ```mermaid
-flowchart TB
-    customer(["<b>Personal Banking Customer</b><br/><i>[Person]</i><br/>A customer of the bank with<br/>personal bank accounts"])
+C4Context
+    title System Context diagram for Internet Banking System
 
-    ib["<b>Internet Banking System</b><br/><i>[Software System]</i><br/>Lets customers view information<br/>about their accounts and<br/>make payments"]
+    Person(customer, "Personal Banking Customer", "A customer of the bank with personal bank accounts")
 
-    mainframe["<b>Mainframe Banking System</b><br/><i>[Software System, existing]</i><br/>Stores core banking information<br/>about customers, accounts,<br/>and transactions"]
+    System(ib, "Internet Banking System", "Lets customers view information about their accounts and make payments")
 
-    email["<b>E-mail System</b><br/><i>[Software System, external]</i><br/>The internal Microsoft<br/>Exchange e-mail system"]
+    System_Ext(mainframe, "Mainframe Banking System", "Stores core banking information about customers, accounts, and transactions")
+    System_Ext(email, "E-mail System", "The internal Microsoft Exchange e-mail system")
 
-    customer -->|"Views account balances<br/>and makes payments using"| ib
-    ib -->|"Gets account information from,<br/>and makes payments using<br/>[XML/HTTPS]"| mainframe
-    ib -->|"Sends e-mail using<br/>[SMTP]"| email
-    email -->|"Sends e-mails to"| customer
+    Rel(customer, ib, "Views account balances and makes payments using")
+    Rel(ib, mainframe, "Gets account information from, and makes payments using", "XML/HTTPS")
+    Rel(ib, email, "Sends e-mail using", "SMTP")
+    Rel(email, customer, "Sends e-mails to")
 
-    classDef inScope fill:#0e4f8f,stroke:#08355f,color:#fff
-    classDef external fill:#4d4d4d,stroke:#333,color:#fff
-    classDef person fill:#08427b,stroke:#052e56,color:#fff
-    class ib inScope
-    class mainframe,email external
-    class customer person
+    UpdateLayoutConfig($c4ShapeInRow="2", $c4BoundaryInRow="1")
 ```
 
 Read it as sentences: *a personal banking customer views account balances using the internet banking system, which gets account information from the mainframe banking system.* If a box and arrow cannot be read as a sentence, the label is wrong.
