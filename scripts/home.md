@@ -29,11 +29,11 @@ Written while studying software engineering, kept for peers and beginners.
 -   :material-run-fast: **[Methodologies](Methodologies/index.md)**
 
     Waterfall, V-Model and the Unified Process, plus Agile, Scrum, XP, Kanban,
-    Lean and DSDM, and how to choose between them.
+    Lean and DSDM, the SDLC, and how to choose between them.
 
--   :material-server-network: **[System Design](System Design/Load Balancers.md)**
+-   :material-server-network: **[System Design](System Design/Planning/Feasibility Analysis.md)**
 
-    Load balancers, message queues and the SDLC.
+    Feasibility analysis, load balancers and message queues.
 
 -   :material-test-tube: **[Quality Assurance](Quality Assurance/index.md)**
 

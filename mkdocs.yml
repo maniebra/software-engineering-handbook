@@ -207,6 +207,7 @@ nav:
       - Methodologies:
               - Methodologies/index.md
               - Choosing a Methodology: Methodologies/Choosing a Methodology.md
+              - Systems Development Life Cycle (SDLC): Methodologies/Systems Development Life Cycle (SDLC).md
               - Process Models:
                       - Methodologies/Process Models/index.md
                       - Waterfall Model: Methodologies/Process Models/Waterfall Model.md
@@ -259,7 +260,6 @@ nav:
                       - Structural and Cross-cutting: Assessments/Software Architecture/Structural and Cross-cutting Characteristics Quiz.md
                       - Architectural Patterns: Assessments/Software Architecture/Architectural Patterns Quiz.md
       - System Design:
-              - Systems Development Life Cycle (SDLC): System Design/Introduction/Systems Development Life Cycle (SDLC).md
               - Feasibility Analysis: System Design/Planning/Feasibility Analysis.md
               - NPV Worked Example: System Design/Planning/NPV Worked Example.md
               - Load Balancers: System Design/Load Balancers.md
