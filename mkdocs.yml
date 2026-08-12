@@ -260,6 +260,7 @@ nav:
                       - Architectural Patterns: Assessments/Software Architecture/Architectural Patterns Quiz.md
       - System Design:
               - Systems Development Life Cycle (SDLC): System Design/Introduction/Systems Development Life Cycle (SDLC).md
+              - Feasibility Analysis: System Design/Planning/Feasibility Analysis.md
               - Load Balancers: System Design/Load Balancers.md
               - Message Queues: System Design/Message Queues.md
       - Quality Assurance:
