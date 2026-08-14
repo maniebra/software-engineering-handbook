@@ -245,6 +245,11 @@ nav:
                       - Methodologies/DSDM/index.md
                       - MoSCoW Prioritization: Methodologies/DSDM/MoSCoW.md
                       - DSDM Phases and Roles: Methodologies/DSDM/DSDM Phases and Roles.md
+              - Development Practices:
+                      - Methodologies/Development Practices/index.md
+                      - Test-Driven Development (TDD): Methodologies/Development Practices/Test-Driven Development.md
+                      - Behaviour-Driven Development (BDD): Methodologies/Development Practices/Behaviour-Driven Development.md
+                      - Feature-Driven Development (FDD): Methodologies/Development Practices/Feature-Driven Development.md
               - Scaling Agile: Methodologies/Scaling Agile.md
               - Other Methodologies: Methodologies/Other Methodologies.md
       - Assessments:

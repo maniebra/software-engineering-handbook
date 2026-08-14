@@ -17,14 +17,12 @@ is the learning that happens simply by sitting within earshot of the team.
 
 ## Feature-Driven Development (FDD)
 
-Five processes: build an overall model, build a feature list, plan by feature, then
-design and build by feature. Features are small, client-valued functions written as
-`<action> the <result> <by|for|of|to> a(n) <object>`, and each is expected to take two
-weeks or less.
+Five processes around small, client-valued features of two weeks or less, with an
+explicit up-front domain model and a class owner per area. It scales to larger teams
+more comfortably than XP and appeals to organizations that want documented design.
 
-FDD keeps an explicit up-front domain model and a class-owner per area, so it scales to
-larger teams more comfortably than XP and appeals to organizations that want documented
-design.
+Covered in full on its own page:
+[Feature-Driven Development](Development%20Practices/Feature-Driven%20Development.md).
 
 ## Rapid Application Development (RAD)
 

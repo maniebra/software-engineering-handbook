@@ -15,7 +15,7 @@
 Two developers work together at one computer, one writes code while the other reviews it in real-time. They switch roles frequently, which improves code quality and spreads knowledge across the team.
 
 ## 2. Test-Driven Development (TDD)
-Tests are written _before_ the actual code. This ensures that every part of the software is covered by automated tests and behaves as expected.
+Tests are written _before_ the actual code. This ensures that every part of the software is covered by automated tests and behaves as expected. See [Test-Driven Development](../Development%20Practices/Test-Driven%20Development.md) for the full cycle.
 
 ## 3. Continuous Integration
 Code is integrated and tested multiple times a day. This helps catch issues early and keeps the project in a constantly working state.
