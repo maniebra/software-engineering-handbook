@@ -180,6 +180,22 @@ nav:
                       - Level 2, Containers: Software Architecture/C4 Modeling/Level 2 - Containers.md
                       - Level 3, Components: Software Architecture/C4 Modeling/Level 3 - Components.md
                       - Level 4, Code: Software Architecture/C4 Modeling/Level 4 - Code.md
+              - Domain-Driven Design:
+                      - Software Architecture/Domain-Driven Design/index.md
+                      - Ubiquitous Language: Software Architecture/Domain-Driven Design/Ubiquitous Language.md
+                      - Domain Model: Software Architecture/Domain-Driven Design/Domain Model.md
+                      - Entities: Software Architecture/Domain-Driven Design/Entities.md
+                      - Value Objects: Software Architecture/Domain-Driven Design/Value Objects.md
+                      - Aggregates: Software Architecture/Domain-Driven Design/Aggregates.md
+                      - Repositories: Software Architecture/Domain-Driven Design/Repositories.md
+                      - Domain Services: Software Architecture/Domain-Driven Design/Domain Services.md
+                      - Strategic DDD:
+                              - Software Architecture/Domain-Driven Design/Strategic DDD/index.md
+                              - Bounded Contexts: Software Architecture/Domain-Driven Design/Strategic DDD/Bounded Contexts.md
+                              - Context Maps: Software Architecture/Domain-Driven Design/Strategic DDD/Context Maps.md
+                              - Subdomains: Software Architecture/Domain-Driven Design/Strategic DDD/Subdomains.md
+                              - Core Domain: Software Architecture/Domain-Driven Design/Strategic DDD/Core Domain.md
+                              - Supporting / Generic Domains: Software Architecture/Domain-Driven Design/Strategic DDD/Supporting and Generic Domains.md
               - Architectural Patterns:
                       - Clean Architecture: Software Architecture/Architectural Patterns/Clean Architecture.md
                       - Hexagonal Architecture: Software Architecture/Architectural Patterns/Hexagonal.md

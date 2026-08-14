@@ -47,6 +47,10 @@ Each service owns its own logic and can be deployed or scaled independently.
 - Large-scale distributed systems.
 - Continuous deployment scenarios.
 
+Service boundaries are the hard part. The most defensible way to draw them is along
+[bounded contexts](../Domain-Driven%20Design/index.md), not along technical layers or
+database tables.
+
 ## Check Your Understanding
 
 <quiz>
