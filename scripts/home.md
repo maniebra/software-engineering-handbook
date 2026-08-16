@@ -83,4 +83,41 @@ improve a page, and open a pull request.
 18. Agile Software Development: The Cooperative Game, Alistair Cockburn
 19. [Accelerate](https://itrevolution.com/product/accelerate/), Nicole Forsgren, Jez Humble and Gene Kim
 
+### Quality Assurance & Testing
+
+20. [ISO/IEC 25010, Systems and software quality models](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010), International Organization for Standardization
+21. [ISTQB Certified Tester Foundation Level Syllabus](https://www.istqb.org/certifications/certified-tester-foundation-level), International Software Testing Qualifications Board
+22. [ISTQB Standard Glossary of Terms Used in Software Testing](https://glossary.istqb.org/)
+23. [IEEE 829, Standard for Software and System Test Documentation](https://standards.ieee.org/ieee/829/3787/)
+24. The Art of Software Testing, Glenford J. Myers, Corey Sandler and Tom Badgett
+25. Introduction to Software Testing, Paul Ammann and Jeff Offutt
+26. Lessons Learned in Software Testing, Cem Kaner, James Bach and Bret Pettichord
+27. Agile Testing: A Practical Guide for Testers and Agile Teams, Lisa Crispin and Janet Gregory
+28. More Agile Testing: Learning Journeys for the Whole Team, Janet Gregory and Lisa Crispin
+29. [Exploratory Testing Explained](https://www.satisfice.com/download/exploratory-testing-explained), James Bach
+30. [Session-Based Test Management](https://www.satisfice.com/articles/sbtm.pdf), Jonathan Bach
+31. xUnit Test Patterns: Refactoring Test Code, Gerard Meszaros
+32. [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html), Martin Fowler
+33. [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html), Ham Vocke
+34. Succeeding with Agile, Mike Cohn, source of the test automation pyramid
+35. Growing Object-Oriented Software, Guided by Tests, Steve Freeman and Nat Pryce
+36. Working Effectively with Legacy Code, Michael C. Feathers
+37. Clean Code, Robert C. Martin, source of the FIRST principles
+38. Continuous Delivery, Jez Humble and David Farley
+39. [Testing Strategies in a Microservice Architecture](https://martinfowler.com/articles/microservice-testing/), Toby Clemson
+40. [Consumer-Driven Contracts](https://martinfowler.com/articles/consumerDrivenContracts.html), Ian Robinson
+41. [Pact, contract testing documentation](https://docs.pact.io/)
+42. [Practical Combinatorial Testing](https://csrc.nist.gov/pubs/sp/800/142/final), D. Richard Kuhn, Raghu N. Kacker and Yu Lei, NIST SP 800-142
+43. [What is Property Based Testing?](https://hypothesis.works/articles/what-is-property-based-testing/), David R. MacIver, Hypothesis
+44. A Survey on Metamorphic Testing, Sergio Segura et al., IEEE Transactions on Software Engineering, 2016
+45. An Analysis and Survey of the Development of Mutation Testing, Yue Jia and Mark Harman, IEEE Transactions on Software Engineering, 2011
+46. [OWASP Top 10](https://owasp.org/www-project-top-ten/), Open Worldwide Application Security Project
+47. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
+48. [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/), W3C
+49. [Why You Only Need to Test with 5 Users](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/), Jakob Nielsen
+50. [Site Reliability Engineering](https://sre.google/books/), Google
+51. [Chaos Engineering: Principles](https://principlesofchaos.org/)
+52. [Testing in Production, the Safe Way](https://copyconstruct.medium.com/testing-in-production-the-safe-way-18ca102d0ef1), Cindy Sridharan
+53. [Eradicating Non-Determinism in Tests](https://martinfowler.com/articles/nonDeterminism.html), Martin Fowler
+
 Licensed under the MIT License. Copyright © 2026 Mani Ebrahimi.
