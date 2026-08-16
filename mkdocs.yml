@@ -312,6 +312,40 @@ nav:
                       - System Testing: Quality Assurance/Test Levels/System Testing.md
                       - Acceptance Testing: Quality Assurance/Test Levels/Acceptance Testing.md
                       - End-to-End Testing: Quality Assurance/Test Levels/End-to-End Testing.md
+              - Testing Techniques:
+                      - Black Box Testing: Quality Assurance/Testing Techniques/Black Box Testing.md
+                      - White Box Testing: Quality Assurance/Testing Techniques/White Box Testing.md
+                      - Gray Box Testing: Quality Assurance/Testing Techniques/Gray Box Testing.md
+                      - Equivalence Partitioning: Quality Assurance/Testing Techniques/Equivalence Partitioning.md
+                      - Boundary Value Analysis: Quality Assurance/Testing Techniques/Boundary Value Analysis.md
+                      - Decision Table Testing: Quality Assurance/Testing Techniques/Decision Table Testing.md
+                      - State Transition Testing: Quality Assurance/Testing Techniques/State Transition Testing.md
+                      - Pairwise Testing: Quality Assurance/Testing Techniques/Pairwise Testing.md
+                      - Exploratory Testing: Quality Assurance/Testing Techniques/Exploratory Testing.md
+              - Functional Testing:
+                      - Quality Assurance/Functional Testing/index.md
+                      - Smoke Testing: Quality Assurance/Functional Testing/Smoke Testing.md
+                      - Sanity Testing: Quality Assurance/Functional Testing/Sanity Testing.md
+                      - Regression Testing: Quality Assurance/Functional Testing/Regression Testing.md
+                      - User Acceptance Testing: Quality Assurance/Functional Testing/User Acceptance Testing.md
+              - Non-Functional Testing:
+                      - Quality Assurance/Non-Functional Testing/index.md
+                      - Performance Testing: Quality Assurance/Non-Functional Testing/Performance Testing.md
+                      - Load Testing: Quality Assurance/Non-Functional Testing/Load Testing.md
+                      - Stress Testing: Quality Assurance/Non-Functional Testing/Stress Testing.md
+                      - Scalability Testing: Quality Assurance/Non-Functional Testing/Scalability Testing.md
+                      - Reliability Testing: Quality Assurance/Non-Functional Testing/Reliability Testing.md
+                      - Security Testing: Quality Assurance/Non-Functional Testing/Security Testing.md
+                      - Usability Testing: Quality Assurance/Non-Functional Testing/Usability Testing.md
+                      - Compatibility Testing: Quality Assurance/Non-Functional Testing/Compatibility Testing.md
+                      - Accessibility Testing: Quality Assurance/Non-Functional Testing/Accessibility Testing.md
+              - Test Doubles:
+                      - Quality Assurance/Test Doubles/index.md
+                      - Mocks: Quality Assurance/Test Doubles/Mocks.md
+                      - Stubs: Quality Assurance/Test Doubles/Stubs.md
+                      - Fakes: Quality Assurance/Test Doubles/Fakes.md
+                      - Spies: Quality Assurance/Test Doubles/Spies.md
+                      - Dummies: Quality Assurance/Test Doubles/Dummies.md
       - More:
               - Snippets and Cheatsheets: Snippets and Cheatsheets/index.md
               - Organizational Paradigms: Software Engineering/Organizational Paradigms.md

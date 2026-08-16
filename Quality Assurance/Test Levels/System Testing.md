@@ -53,12 +53,12 @@ incident. In most cases the answer is one row of this table.
 
 - **Trace to requirements.** Each system test should map to a requirement or a risk, so
   the coverage question is answerable. See [traceability](../Testing%20Fundamentals/Traceability.md).
-- **Start with a smoke suite.** If the smoke tests
+- **Start with a smoke suite.** If the [smoke tests](../Functional%20Testing/Smoke%20Testing.md)
   fail, the build does not enter system testing at all, which protects the expensive
   level from wasting time on a broken deployment.
 - **Automate the repeatable, explore the rest.** The regression portion belongs in the
   pipeline. Reserve human time for
-  exploratory sessions on the assembled
+  [exploratory sessions](../Testing%20Techniques/Exploratory%20Testing.md) on the assembled
   product, where most surprising defects are found.
 - **Include the boring operational paths.** Install, upgrade, rollback, backup and
   restore. These are untested in most projects and are exactly what fails during an

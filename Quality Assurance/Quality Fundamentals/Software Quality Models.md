@@ -26,7 +26,7 @@ graph TD
 | **Functional suitability** | Completeness, correctness, appropriateness | Acceptance criteria met, escaped functional defects |
 | **Performance efficiency** | Time behaviour, resource use, capacity | Latency percentiles, CPU and memory per request |
 | **Compatibility** | Coexistence, interoperability | Supported browsers, protocol conformance |
-| **Usability** | Learnability, operability, error protection, accessibility | Task success rate, time on task, WCAG level |
+| **Usability** | Learnability, operability, error protection, [accessibility](../Non-Functional%20Testing/Accessibility%20Testing.md) | Task success rate, time on task, WCAG level |
 | **Reliability** | Maturity, availability, fault tolerance, recoverability | Uptime, MTBF, MTTR |
 | **Security** | Confidentiality, integrity, non-repudiation, accountability, authenticity | Findings by severity, time to patch |
 | **Maintainability** | Modularity, reusability, analysability, modifiability, testability | Change lead time, coupling, [test coverage](../Testing%20Fundamentals/Test%20Coverage.md) |

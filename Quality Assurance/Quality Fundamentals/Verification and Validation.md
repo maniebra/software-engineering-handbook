@@ -46,7 +46,7 @@ against the specification. Every test passes. The spec was wrong.
 | | Verification | Validation |
 |---|---|---|
 | **Against** | Specifications, designs, standards | User needs, business goals |
-| **Techniques** | Reviews, static analysis, unit and integration tests, contract testing | User acceptance testing, demos, usability testing, beta releases, production metrics |
+| **Techniques** | Reviews, static analysis, unit and integration tests, contract testing | User acceptance testing, demos, [usability testing](../Non-Functional%20Testing/Usability%20Testing.md), beta releases, production metrics |
 | **Answers** | Does it match what we wrote down? | Does it help the person it was for? |
 | **Can be fully automated** | Largely yes | Rarely, it needs human judgement |
 | **Cheapest form** | Review the artefact before building on it | Show a working slice to a real user early |

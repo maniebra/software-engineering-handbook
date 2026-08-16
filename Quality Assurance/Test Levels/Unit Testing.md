@@ -22,7 +22,7 @@ graph LR
 ```
 
 The dotted lines are what makes it a unit test: anything slow, shared or non-deterministic
-is replaced with a test double.
+is replaced with a [test double](../Test%20Doubles/index.md).
 
 | Boundary | Real in a unit test? |
 |---|---|
@@ -96,7 +96,7 @@ That is the argument for the whole pyramid rather than for the base alone.
 - No conditionals or loops in test bodies. If a test needs branching, it is two tests.
 - Prefer real collaborators over mocks wherever they are fast and deterministic.
 - Cover boundaries, not just the happy path. See
-  boundary value analysis.
+  [boundary value analysis](../Testing%20Techniques/Boundary%20Value%20Analysis.md).
 - Keep the whole suite under a threshold a developer will tolerate on every save. Once it
   is slow, it stops being run, and an unrun suite has no value at all.
 

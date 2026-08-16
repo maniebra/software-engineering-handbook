@@ -60,7 +60,7 @@ pesticide stops killing the insects that survived it. The suite has already foun
 can find.
 
 Practical consequence: refresh and vary tests, add
-exploratory sessions,
+[exploratory sessions](../Testing%20Techniques/Exploratory%20Testing.md),
 property-based tests, or
 mutation testing to check whether the
 suite is still capable of failing.

@@ -63,8 +63,8 @@ ordering and concurrency and the space stops being countable in any useful sense
 So every test suite is a sample, and the only question that matters is whether it is a
 *well chosen* sample. That is the job of
 [test case design](Test%20Case%20Design.md) techniques such as
-equivalence partitioning and
-boundary value analysis, which
+[equivalence partitioning](../Testing%20Techniques/Equivalence%20Partitioning.md) and
+[boundary value analysis](../Testing%20Techniques/Boundary%20Value%20Analysis.md), which
 pick cases by where defects actually cluster instead of at random.
 
 ## What testing produces
