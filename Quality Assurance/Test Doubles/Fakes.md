@@ -55,7 +55,7 @@ graph LR
 
 Two defences:
 
-1. **A shared contract test suite** run against both the real implementation and the fake.
+1. **A shared [contract test](../Testing%20Approaches/Contract%20Testing.md) suite** run against both the real implementation and the fake.
    The same test cases, two implementations, so any divergence fails immediately. This is
    the single most valuable practice around fakes.
 2. **Integration tests against the real thing.** Fakes make unit tests fast, they never

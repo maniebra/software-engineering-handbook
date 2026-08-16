@@ -60,7 +60,7 @@ only execution, not verification. A test that calls every function and asserts n
 reports 100%.
 
 To find out whether the assertions actually check anything, use
-mutation testing, which changes the code
+[mutation testing](../Testing%20Approaches/Mutation%20Testing.md), which changes the code
 and reports which mutations the suite failed to catch. Mutation score measures the suite's
 power, coverage measures only its reach.
 

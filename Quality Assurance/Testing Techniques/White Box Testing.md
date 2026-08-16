@@ -83,7 +83,7 @@ of white box checking available and requires no test cases at all.
   measure coverage, then use white box thinking on what is left.
 - **On critical modules.** Payment, authorisation, pricing, safety logic justify branch or
   MC/DC targets. A settings page does not.
-- **Paired with mutation testing** where
+- **Paired with [mutation testing](../Testing%20Approaches/Mutation%20Testing.md)** where
   it matters, since coverage proves execution and mutation score proves the assertions can
   actually fail.
 

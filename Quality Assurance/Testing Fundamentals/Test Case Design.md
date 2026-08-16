@@ -72,7 +72,7 @@ comparison operator by one is caught, because the operators live exactly at 50 a
 - **Make expected results explicit and specific.** "Returns successfully" is not an
   oracle. See [testing oracle](Testing%20Oracle.md).
 - **Keep data self-contained.** A case that depends on a row someone loaded last year is
-  a future flaky test.
+  a future [flaky test](../Test%20Quality/Flaky%20Tests.md).
 - **Prefer few strong cases to many weak ones.** Suite value is defects found, not cases
   counted.
 

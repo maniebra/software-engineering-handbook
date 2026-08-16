@@ -52,7 +52,7 @@ graph TD
 ```
 
 Static control can be applied before anything runs, which is why it is the earliest
-possible QC and the natural partner of shift-left work. Dynamic control is the only way
+possible QC and the natural partner of [shift-left](../Quality%20in%20the%20SDLC/Shift-Left%20Testing.md) work. Dynamic control is the only way
 to observe emergent behaviour: timing, concurrency, memory growth, real integration.
 
 ## What good QC needs

@@ -67,7 +67,7 @@ incident. In most cases the answer is one row of this table.
 ## Cost and placement
 
 System tests are slow, broad and comparatively fragile, so they sit near the top of the
-automation pyramid. A failure here
+[automation pyramid](../Automated%20Testing/Test%20Automation%20Pyramid.md). A failure here
 means "something in the product is wrong" and usually needs investigation to localise,
 which is the opposite of a unit failure.
 

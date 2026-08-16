@@ -67,7 +67,7 @@ system is broken.
 - **Do not mock what you do not own.** A mock of a third-party client asserts your
   assumptions about their API, not their actual behaviour. Wrap the third party in your own
   interface, mock that, and verify the real contract separately with a
-  contract test.
+  [contract test](../Testing%20Approaches/Contract%20Testing.md).
 - **Do not mock value objects or pure functions.** Construct them.
 - **Do not assert on call order** unless the order is genuinely part of the requirement.
 - **A mock returning a mock** is a design signal: the unit is reaching through one object to

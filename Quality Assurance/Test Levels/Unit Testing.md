@@ -63,7 +63,7 @@ assertion hides whether the second also broke.
 | **Cheap to write** | Which is why the pyramid puts most tests here |
 | **Design feedback** | Hard to test usually means too many dependencies, see TDD |
 
-See FIRST principles for the same properties
+See [FIRST principles](../Test%20Quality/FIRST%20Principles.md) for the same properties
 stated as a checklist.
 
 ## Test behaviour, not structure

@@ -28,7 +28,7 @@ graph LR
 
 The two are complements. Automating the checking is what buys the human time to explore,
 which is the practical argument for the
-automation pyramid as well.
+[automation pyramid](../Automated%20Testing/Test%20Automation%20Pyramid.md) as well.
 
 ## Session-based test management
 

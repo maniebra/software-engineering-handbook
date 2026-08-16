@@ -55,7 +55,7 @@ The central design decision of an integration test.
 |---|---|---|
 | Your own database | Real, in a container | Schema, constraints and SQL dialect are exactly what you are testing |
 | Message broker | Real or a faithful in-memory version | Ordering and delivery semantics are the risk |
-| Third-party HTTP API | Simulated, plus a contract test against the real one | Speed and reliability, without pretending the contract is verified |
+| Third-party HTTP API | Simulated, plus a [contract test](../Testing%20Approaches/Contract%20Testing.md) against the real one | Speed and reliability, without pretending the contract is verified |
 | Clock and randomness | Controlled | Determinism |
 
 Replacing your own database with an in-memory substitute of a different engine defeats

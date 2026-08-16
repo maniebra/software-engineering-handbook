@@ -64,7 +64,7 @@ not error message wording, not every permutation of a form.
 | **Hard diagnosis** | Capture screenshots, videos, network logs and server logs on failure automatically |
 
 Any E2E test that fails intermittently and cannot be fixed quickly should be quarantined
-rather than tolerated. One tolerated flaky test is enough to start the distrust chain
+rather than tolerated. One tolerated [flaky test](../Test%20Quality/Flaky%20Tests.md) is enough to start the distrust chain
 above.
 
 ## Asserting the whole journey

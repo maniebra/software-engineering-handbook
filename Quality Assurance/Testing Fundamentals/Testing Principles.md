@@ -62,7 +62,7 @@ can find.
 Practical consequence: refresh and vary tests, add
 [exploratory sessions](../Testing%20Techniques/Exploratory%20Testing.md),
 property-based tests, or
-mutation testing to check whether the
+[mutation testing](../Testing%20Approaches/Mutation%20Testing.md) to check whether the
 suite is still capable of failing.
 
 ## 6. Testing is context dependent

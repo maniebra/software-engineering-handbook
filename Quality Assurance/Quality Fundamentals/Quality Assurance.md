@@ -41,8 +41,8 @@ does not come back.
 | **Reviews** | Did we agree on this before it was built? | Requirement review, design review, code review |
 | **Test planning** | How will we know it works? | [Test plan](../Testing%20Fundamentals/Test%20Plan.md), [test strategy](../Testing%20Fundamentals/Test%20Strategy.md) |
 | **Automation** | Which checks should never be manual again? | CI pipeline, quality gates |
-| **Measurement** | Is the process getting better or worse? | Escaped defect rate, lead time, flaky test rate |
-| **Improvement** | What do we change next? | Retrospective actions, root cause analysis |
+| **Measurement** | Is the process getting better or worse? | Escaped defect rate, lead time, [flaky test](../Test%20Quality/Flaky%20Tests.md) rate |
+| **Improvement** | What do we change next? | Retrospective actions, [root cause analysis](../Defects/Root%20Cause%20Analysis.md) |
 
 ## Prevention beats detection
 
@@ -61,7 +61,7 @@ of the subject. A misunderstood requirement caught in a 20 minute review costs a
 conversation. The same misunderstanding caught after release costs a hotfix, a
 regression run, a support queue, and the trust of whoever reported it.
 
-This is the entire argument for shift-left testing
+This is the entire argument for [shift-left](../Quality%20in%20the%20SDLC/Shift-Left%20Testing.md) testing
 and for reviewing requirements at all.
 
 ## QA is not a department

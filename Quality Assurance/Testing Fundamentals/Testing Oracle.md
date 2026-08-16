@@ -53,14 +53,14 @@ graph LR
 ```
 
 This is the backbone of
-property-based testing, which
+[property-based testing](../Testing%20Approaches/Property-Based%20Testing.md), which
 generates the inputs and checks the relation across all of them.
 
 ### Golden files and approval
 
 Record a known-good output and compare future runs against it. Cheap and effective for
 rendered documents, serialisation formats and reports, and the basis of
-snapshot testing.
+[snapshot testing](../Testing%20Approaches/Snapshot%20Testing.md).
 
 The trap is that the approved file is only as correct as the moment someone approved it.
 If updates are routinely accepted without reading the diff, the oracle degrades into

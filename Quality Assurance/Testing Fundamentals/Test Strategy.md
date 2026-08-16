@@ -75,7 +75,7 @@ own answer.
 - **Rarely automated**: usability, exploratory work, one-off migration verification,
   anything whose expected result needs judgement.
 
-See the test automation pyramid
+See the [test automation pyramid](../Automated%20Testing/Test%20Automation%20Pyramid.md)
 for how the proportions should fall, and note that an inverted pyramid is usually the
 symptom of a missing strategy rather than a deliberate choice.
 

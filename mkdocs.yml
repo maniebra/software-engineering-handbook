@@ -346,6 +346,45 @@ nav:
                       - Fakes: Quality Assurance/Test Doubles/Fakes.md
                       - Spies: Quality Assurance/Test Doubles/Spies.md
                       - Dummies: Quality Assurance/Test Doubles/Dummies.md
+              - Automated Testing:
+                      - Test Automation: Quality Assurance/Automated Testing/Test Automation.md
+                      - What Should Be Automated: Quality Assurance/Automated Testing/What Should Be Automated.md
+                      - Test Automation Pyramid: Quality Assurance/Automated Testing/Test Automation Pyramid.md
+                      - Unit Test Automation: Quality Assurance/Automated Testing/Unit Test Automation.md
+                      - API Testing: Quality Assurance/Automated Testing/API Testing.md
+                      - UI Testing: Quality Assurance/Automated Testing/UI Testing.md
+                      - Integration Test Automation: Quality Assurance/Automated Testing/Integration Testing.md
+                      - Automated Testing in CI/CD: Quality Assurance/Automated Testing/Automated Testing in CI-CD.md
+              - Testing Approaches:
+                      - Test-Driven Development: Quality Assurance/Testing Approaches/Test-Driven Development.md
+                      - Behaviour-Driven Development: Quality Assurance/Testing Approaches/Behavior-Driven Development.md
+                      - Acceptance Test-Driven Development: Quality Assurance/Testing Approaches/Acceptance Test-Driven Development.md
+                      - Property-Based Testing: Quality Assurance/Testing Approaches/Property-Based Testing.md
+                      - Mutation Testing: Quality Assurance/Testing Approaches/Mutation Testing.md
+                      - Snapshot Testing: Quality Assurance/Testing Approaches/Snapshot Testing.md
+                      - Contract Testing: Quality Assurance/Testing Approaches/Contract Testing.md
+              - Test Quality:
+                      - Characteristics of Good Tests: Quality Assurance/Test Quality/Characteristics of Good Tests.md
+                      - FIRST Principles: Quality Assurance/Test Quality/FIRST Principles.md
+                      - Test Isolation: Quality Assurance/Test Quality/Test Isolation.md
+                      - Deterministic Tests: Quality Assurance/Test Quality/Deterministic Tests.md
+                      - Flaky Tests: Quality Assurance/Test Quality/Flaky Tests.md
+                      - Testing Anti-Patterns: Quality Assurance/Test Quality/Testing Anti-Patterns.md
+                      - Testing Legacy Code: Quality Assurance/Test Quality/Testing Legacy Code.md
+              - Defects:
+                      - Errors, Defects and Failures: Quality Assurance/Defects/Errors, Defects and Failures.md
+                      - Defect Lifecycle: Quality Assurance/Defects/Defect Lifecycle.md
+                      - Severity vs Priority: Quality Assurance/Defects/Severity vs Priority.md
+                      - Bug Reports: Quality Assurance/Defects/Bug Reports.md
+                      - Root Cause Analysis: Quality Assurance/Defects/Root Cause Analysis.md
+              - Quality in the SDLC:
+                      - QA in the SDLC: Quality Assurance/Quality in the SDLC/QA in the SDLC.md
+                      - Shift-Left Testing: Quality Assurance/Quality in the SDLC/Shift-Left Testing.md
+                      - Shift-Right Testing: Quality Assurance/Quality in the SDLC/Shift-Right Testing.md
+                      - Testing in Agile: Quality Assurance/Quality in the SDLC/Testing in Agile.md
+                      - Testing in CI/CD: Quality Assurance/Quality in the SDLC/Testing in CI-CD.md
+                      - Quality Gates: Quality Assurance/Quality in the SDLC/Quality Gates.md
+                      - Testing in Production: Quality Assurance/Quality in the SDLC/Testing in Production.md
       - More:
               - Snippets and Cheatsheets: Snippets and Cheatsheets/index.md
               - Organizational Paradigms: Software Engineering/Organizational Paradigms.md

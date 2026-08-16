@@ -59,7 +59,7 @@ gets skipped, which returns the team to having none.
 - **Parallelise and shard.** Wall clock time is what determines whether the suite is run.
 - **Delete duplicates.** Many old cases test the same rule through different paths, and
   deleting them loses nothing.
-- **Treat flakiness as a defect.** One tolerated flaky test
+- **Treat flakiness as a defect.** One tolerated [flaky test](../Test%20Quality/Flaky%20Tests.md)
   teaches the team to re-run until green, which disables the whole suite in practice.
 - **Prune by value.** Tests for removed features and long-obsolete behaviours are pure cost.
 

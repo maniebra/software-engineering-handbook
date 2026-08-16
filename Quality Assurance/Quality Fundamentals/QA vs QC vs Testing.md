@@ -29,7 +29,7 @@ is what makes the checks rarely fail.
 | **Object** | The process | The product | The running or readable artefact |
 | **Goal** | Prevent defects | Detect defects | Detect defects by exercising behaviour |
 | **Timing** | Continuous, before and around building | On each artefact | On each build or change |
-| **Typical output** | Standards, gates, improvements | Pass or fail verdicts, defect reports | Test results, coverage, bug reports |
+| **Typical output** | Standards, gates, improvements | Pass or fail verdicts, defect reports | Test results, coverage, [bug reports](../Defects/Bug%20Reports.md) |
 | **Question** | Are we capable of building it right? | Did we build this one right? | Does it behave as specified? |
 | **Owner** | Whole team, often led by engineering leadership | Whole team | Developers and testers |
 

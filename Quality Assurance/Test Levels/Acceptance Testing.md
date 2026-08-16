@@ -58,8 +58,8 @@ The second can pass or fail. The first can only be argued about.
 
 ## Automating acceptance
 
-ATDD and
-BDD turn criteria into
+[ATDD](../Testing%20Approaches/Acceptance%20Test-Driven%20Development.md) and
+[BDD](../Testing%20Approaches/Behavior-Driven%20Development.md) turn criteria into
 executable examples written in business language before development starts.
 
 ```gherkin
@@ -86,7 +86,7 @@ verbose integration tests with an expensive parser attached.
   record what was not covered and who accepted it.
 - **Continue validating after release.** Usage data, funnel drop-off and support tickets
   are acceptance testing that never stops. See
-  testing in production.
+  [testing in production](../Quality%20in%20the%20SDLC/Testing%20in%20Production.md).
 
 ## Check Your Understanding
 
