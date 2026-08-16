@@ -289,6 +289,29 @@ nav:
       - Quality Assurance:
               - Quality Assurance/index.md
               - Methods of Testing: Quality Assurance/Methods of Testing.md
+              - Quality Fundamentals:
+                      - Quality Assurance: Quality Assurance/Quality Fundamentals/Quality Assurance.md
+                      - Quality Control: Quality Assurance/Quality Fundamentals/Quality Control.md
+                      - QA vs QC vs Testing: Quality Assurance/Quality Fundamentals/QA vs QC vs Testing.md
+                      - Verification and Validation: Quality Assurance/Quality Fundamentals/Verification and Validation.md
+                      - Software Quality Models: Quality Assurance/Quality Fundamentals/Software Quality Models.md
+                      - Cost of Quality: Quality Assurance/Quality Fundamentals/Cost of Quality.md
+              - Testing Fundamentals:
+                      - Software Testing: Quality Assurance/Testing Fundamentals/Software Testing.md
+                      - Testing Principles: Quality Assurance/Testing Fundamentals/Testing Principles.md
+                      - Test Process: Quality Assurance/Testing Fundamentals/Test Process.md
+                      - Test Case Design: Quality Assurance/Testing Fundamentals/Test Case Design.md
+                      - Test Plan: Quality Assurance/Testing Fundamentals/Test Plan.md
+                      - Test Strategy: Quality Assurance/Testing Fundamentals/Test Strategy.md
+                      - Test Coverage: Quality Assurance/Testing Fundamentals/Test Coverage.md
+                      - Traceability: Quality Assurance/Testing Fundamentals/Traceability.md
+                      - Testing Oracle: Quality Assurance/Testing Fundamentals/Testing Oracle.md
+              - Test Levels:
+                      - Unit Testing: Quality Assurance/Test Levels/Unit Testing.md
+                      - Integration Testing: Quality Assurance/Test Levels/Integration Testing.md
+                      - System Testing: Quality Assurance/Test Levels/System Testing.md
+                      - Acceptance Testing: Quality Assurance/Test Levels/Acceptance Testing.md
+                      - End-to-End Testing: Quality Assurance/Test Levels/End-to-End Testing.md
       - More:
               - Snippets and Cheatsheets: Snippets and Cheatsheets/index.md
               - Organizational Paradigms: Software Engineering/Organizational Paradigms.md
