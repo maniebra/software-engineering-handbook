@@ -24,6 +24,7 @@ management frame with XP for the engineering practices.
 
 ## Cross-cutting pages
 
+- [AI in Software Methods](AI%20in%20Software%20Methods.md), using LLMs and agents to improve delivery without outsourcing engineering judgment.
 - [Choosing a Methodology](Choosing%20a%20Methodology.md), how to pick, and why hybrids are normal.
 - [Development Practices](Development%20Practices/index.md), TDD, BDD and FDD, the practices that decide how the code gets written inside any of these.
 - [Cynefin Framework](Cynefin%20Framework.md), sorting the problem by how cause and effect behave before picking a response.
