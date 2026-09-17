@@ -282,6 +282,8 @@ nav:
                       - Operational Characteristics: Assessments/Software Architecture/Operational Characteristics Quiz.md
                       - Structural and Cross-cutting: Assessments/Software Architecture/Structural and Cross-cutting Characteristics Quiz.md
                       - Architectural Patterns: Assessments/Software Architecture/Architectural Patterns Quiz.md
+              - System Design:
+                      - System Design and Analysis: Assessments/System Design and Analysis Quiz.md
       - System Design:
               - System Design/index.md
               - Fundamentals:

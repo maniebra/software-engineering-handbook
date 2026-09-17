@@ -20,6 +20,7 @@ Every question can be retried, and each correct answer carries an explanation.
 | [Operational Characteristics](Software%20Architecture/Operational%20Characteristics%20Quiz.md) | Availability, performance, scalability, elasticity, reliability, recoverability | 15 |
 | [Structural and Cross-cutting Characteristics](Software%20Architecture/Structural%20and%20Cross-cutting%20Characteristics%20Quiz.md) | Maintainability, modularity, testability, deployability, security, observability | 15 |
 | [Architectural Patterns](Software%20Architecture/Architectural%20Patterns%20Quiz.md) | Layered, Clean, Hexagonal, EDA, microservices, MVC, MVVM | 16 |
+| [System Design and Analysis](System%20Design%20and%20Analysis%20Quiz.md) | Feasibility, scale, load balancing, caching, queues, and operational signals | 15 |
 
 ## How to use these
 
