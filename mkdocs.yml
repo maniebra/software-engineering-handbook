@@ -286,6 +286,15 @@ nav:
               - Fundamentals:
                       - Client, Server, and DNS: System Design/Client, Server, and DNS.md
                       - Databases in System Design: System Design/Databases in System Design.md
+                      - Data Modeling and RDBMS:
+                              - System Design/Data Modeling/index.md
+                              - ERD Fundamentals: System Design/Data Modeling/ERD Fundamentals.md
+                              - Relational Database Fundamentals: System Design/Data Modeling/Relational Database Fundamentals.md
+                              - Keys and Relationships: System Design/Data Modeling/Keys and Relationships.md
+                              - Normalization: System Design/Data Modeling/Normalization.md
+                              - Integrity and Transactions: System Design/Data Modeling/Integrity and Transactions.md
+                              - Query Design and Indexes: System Design/Data Modeling/Query Design and Indexes.md
+                              - Worked Example, Online Store: System Design/Data Modeling/Worked Example - Online Store.md
                       - Scaling: System Design/Scaling.md
                       - Stateful vs Stateless Architecture: System Design/Stateful vs Stateless Architecture.md
               - Core Building Blocks:
