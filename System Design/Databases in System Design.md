@@ -44,6 +44,8 @@ Use SQL when the system needs:
 - Constraints such as unique keys and foreign keys.
 - Financial, inventory, account, or order correctness.
 
+For a practical, step-by-step guide to designing relational schemas, start with [Data Modeling and RDBMS](Data%20Modeling/index.md). It covers ERDs, keys, normalization, constraints, transactions, and indexes using one connected example.
+
 ```mermaid
 erDiagram
     USER ||--o{ ORDER : places
@@ -108,4 +110,3 @@ An online banking system needs account balances, transfers, and audit records to
 - [ ] A CDN because it is close to users
 - [ ] A message queue as the only data store
 </quiz>
-

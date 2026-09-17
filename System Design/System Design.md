@@ -74,6 +74,7 @@ Good system design is not about naming every infrastructure product. It is about
 
 - [Client, Server, and DNS](Client,%20Server,%20and%20DNS.md)
 - [Databases in System Design](Databases%20in%20System%20Design.md)
+- [Data Modeling and RDBMS](Data%20Modeling/index.md)
 - [Scaling](Scaling.md)
 - [Load Balancers](Load%20Balancers.md)
 - [Database Replication](Database%20Replication.md)
@@ -96,4 +97,3 @@ Why is system design often taught incrementally?
 - [ ] Because databases can only be added after load balancers
 - [ ] Because diagrams are more important than requirements
 </quiz>
-
