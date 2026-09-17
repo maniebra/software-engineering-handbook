@@ -15,7 +15,7 @@ CREATE TABLE products (
 ```
 
 | Key style | Example | Strength | Risk |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Natural key | Email, ISO country code, SKU | Meaningful and externally recognizable | Business meaning may change; values may be long or sensitive |
 | Surrogate key | Generated UUID or integer | Stable and compact relationship target | Still need `UNIQUE` rules for natural identifiers |
 | Composite key | `(order_id, line_number)` | Encodes a genuine scoped identity | Propagates multiple columns into referencing tables |

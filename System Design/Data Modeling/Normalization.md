@@ -45,6 +45,7 @@ Suppose an order-line table uses `(order_id, product_id)` as its key:
 
 | order_id | product_id | product_name | quantity |
 | --- | --- | --- | --- |
+| 101 | `prod_keyboard` | Keyboard | 1 |
 
 `quantity` depends on the pair: it describes this product in this order. But `product_name` depends only on `product_id`. Put the current product name in `products` instead.
 
@@ -67,7 +68,8 @@ erDiagram
 At 3NF, non-key columns should not depend on other non-key columns. For example, avoid this customer table:
 
 | customer_id | postal_code | city | state |
-| --- | --- | --- |
+| --- | --- | --- | --- |
+| `cust_ada` | 94107 | San Francisco | CA |
 
 If business rules say postal code determines city and state, then `city` and `state` depend transitively on `customer_id` through `postal_code`. Consider a reference table when that relationship is reliable in the relevant country and worth maintaining. Do not normalize based only on a simplistic real-world assumption; postal data can be complex.
 
@@ -86,6 +88,50 @@ CREATE TABLE products (
     name TEXT NOT NULL
 );
 ```
+
+## Boyce–Codd normal form (BCNF): every determinant is a key
+
+**BCNF** is a stricter form of 3NF. For every non-trivial functional dependency `X → Y`, `X` must be a **superkey**: it must identify a row. In plain language, no non-key fact may determine another fact.
+
+Consider a deliberately simplified teaching assignment table:
+
+| student_id | course_id | instructor_id |
+| --- | --- | --- |
+| `student_ada` | `course_sql` | `instructor_lee` |
+| `student_omar` | `course_sql` | `instructor_lee` |
+
+Assume these domain rules:
+
+- A student takes one instructor for a course: `(student_id, course_id) → instructor_id`.
+- Each instructor teaches exactly one course: `instructor_id → course_id`.
+
+`instructor_id` determines `course_id`, but it does not identify an enrollment row because many students can have the same instructor. The table therefore violates BCNF. Changing an instructor’s course would require editing every enrolled student’s row, and removing the last enrollment would lose the instructor-to-course fact.
+
+Decompose it into two tables:
+
+```sql
+CREATE TABLE instructor_courses (
+    instructor_id UUID PRIMARY KEY,
+    course_id UUID NOT NULL REFERENCES courses(course_id)
+);
+
+CREATE TABLE student_instructors (
+    student_id UUID NOT NULL REFERENCES students(student_id),
+    instructor_id UUID NOT NULL REFERENCES instructors(instructor_id),
+    PRIMARY KEY (student_id, instructor_id)
+);
+```
+
+The course for an instructor now has one authoritative home. Joining the two tables reconstructs the original enrollment view.
+
+### BCNF versus 3NF
+
+| Form | Rule of thumb | Practical trade-off |
+| --- | --- | --- |
+| 3NF | Non-key facts depend on the key, the whole key, and nothing but the key | Often removes anomalies while preserving important dependencies directly |
+| BCNF | Every determinant is a candidate key or superkey | Removes more redundancy, but a decomposition can make some dependencies harder to enforce in one table |
+
+A relation can be in 3NF and still violate BCNF when the dependent attribute is itself part of a candidate key. Use BCNF when its stronger guarantee fits the domain, but do not decompose mechanically: verify that the decomposition is **lossless** (joins do not invent or lose rows) and decide where any non-preserved business rule will be enforced.
 
 ## Functional dependencies are the underlying idea
 
