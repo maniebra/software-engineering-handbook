@@ -90,6 +90,7 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 		- [Template Method Pattern](Design%20Patterns/Template%20Method%20Pattern.md)
 		- [Visitor Pattern](Design%20Patterns/Visitor%20Pattern.md)
 - [Software Engineering](Software%20Engineering)
+	- [Programming Paradigms](Software%20Engineering/Programming%20Paradigms.md)
 	- [Organizational Paradigms](Software%20Engineering/Organizational%20Paradigms.md)
 - [Quality Assurance](Quality%20Assurance)
 	- [Quality Assurance](Quality%20Assurance/Quality%20Assurance.md)
