@@ -51,6 +51,7 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 	- [Client, Server, and DNS](/System%20Design/Client,%20Server,%20and%20DNS.md)
 	- [Databases in System Design](/System%20Design/Databases%20in%20System%20Design.md)
 	- [Scaling](/System%20Design/Scaling.md)
+	- [Service Clustering](/System%20Design/Service%20Clustering.md)
 	- [Stateful vs Stateless Architecture](/System%20Design/Stateful%20vs%20Stateless%20Architecture.md)
 	- [Database Replication](/System%20Design/Database%20Replication.md)
 	- [Caching](/System%20Design/Caching.md)

@@ -300,6 +300,7 @@ nav:
                               - Query Design and Indexes: System Design/Data Modeling/Query Design and Indexes.md
                               - Worked Example, Online Store: System Design/Data Modeling/Worked Example - Online Store.md
                       - Scaling: System Design/Scaling.md
+                      - Service Clustering: System Design/Service Clustering.md
                       - Stateful vs Stateless Architecture: System Design/Stateful vs Stateless Architecture.md
               - Core Building Blocks:
                       - Load Balancers: System Design/Load Balancers.md
