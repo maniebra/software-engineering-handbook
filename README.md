@@ -13,6 +13,7 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 	- [Flow: Kanban and Lean Quiz](Assessments/Methodologies/Kanban%20and%20Lean%20Quiz.md)
 	- [Practices and Governance Quiz](Assessments/Methodologies/XP%20DSDM%20and%20Scaling%20Quiz.md)
 - [Methodologies](Methodologies/Methodologies.md)
+	- [Multi-Agent Software Development](Methodologies/Multi-Agent%20Software%20Development.md)
 	- [Choosing a Methodology](Methodologies/Choosing%20a%20Methodology.md)
 	- [Process Models](Methodologies/Process%20Models/Process%20Models.md)
 		- [Waterfall Model](Methodologies/Process%20Models/Waterfall%20Model.md)
@@ -124,6 +125,7 @@ Since I am studying software engineering, I encountered many concepts and ideas 
 - [Snippets and Cheatsheets](Snippets%20and%20Cheatsheets)
 	- [Process Models Use Cases](Snippets%20and%20Cheatsheets/Process%20Models%20Use%20cases.md)
 	- [Dependency Injection Pattern](Snippets%20and%20Cheatsheets/Dependency%20Injection%20Pattern.md)
+	- [Git Worktrees](Snippets%20and%20Cheatsheets/Git%20Worktrees.md)
 
 
 # 📚 Sources & References
