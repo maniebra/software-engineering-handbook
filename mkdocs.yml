@@ -223,6 +223,7 @@ nav:
       - Methodologies:
               - Methodologies/index.md
               - AI in Software Methods: Methodologies/AI in Software Methods.md
+              - Multi-Agent Software Development: Methodologies/Multi-Agent Software Development.md
               - Choosing a Methodology: Methodologies/Choosing a Methodology.md
               - Cynefin Framework: Methodologies/Cynefin Framework.md
               - Systems Development Life Cycle (SDLC): Methodologies/Systems Development Life Cycle (SDLC).md
@@ -299,6 +300,7 @@ nav:
                               - Query Design and Indexes: System Design/Data Modeling/Query Design and Indexes.md
                               - Worked Example, Online Store: System Design/Data Modeling/Worked Example - Online Store.md
                       - Scaling: System Design/Scaling.md
+                      - Service Clustering: System Design/Service Clustering.md
                       - Stateful vs Stateless Architecture: System Design/Stateful vs Stateless Architecture.md
               - Core Building Blocks:
                       - Load Balancers: System Design/Load Balancers.md
@@ -415,5 +417,6 @@ nav:
                       - Testing in Production: Quality Assurance/Quality in the SDLC/Testing in Production.md
       - More:
               - Snippets and Cheatsheets: Snippets and Cheatsheets/index.md
+              - Git Worktrees: Snippets and Cheatsheets/Git Worktrees.md
               - Programming Paradigms: Software Engineering/Programming Paradigms.md
               - Organizational Paradigms: Software Engineering/Organizational Paradigms.md
